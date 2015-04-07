@@ -1,0 +1,96 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	{% include '_header.twig' %}
+	<div class="paginapartner">
+		<div class="container partner">
+			<h1>Partners</h1>
+		</div>
+		<div class="row brugge">
+			<div class="container">
+				
+					<img src="{{ image("@ColdkitchenBundle/Resources/public/images/brugge.png").grayscale().colorize(255,255,255) }}">
+					<br/>
+					<h3>Een speciale vermelding gaat uit naar alle diensten van de stad Brugge</h3>
+				
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="container">
+				<div class="galerij fieldpartners">
+					<div class="row">
+					{% for partner in fieldpartners  %}
+						{% if partner.zichtbaar %}
+							<div class="fieldpartner col-sm-4 col-xs-6 {{ ((loop.index-1) is divisible by(3) and loop.last) ? 'col-sm-offset-4' :'niets' }}">
+								{% if partner.website|length == 0 %}
+									<img class="vertical img-responsive" src="{{ image(partner.getLogoWeb()) }}">
+								{% else %}
+									<a href="{{ partner.website }}"><img class="img-responsive" src="{{ image(partner.getLogoWeb()) }}"></a>
+								{% endif %}
+								
+							</div>
+						{% endif %}
+					{% endfor %}
+					
+				</div>
+				<div class="galerij suppliers">
+					{% for partner in suppliers %}
+						{% if partner.zichtbaar %}
+							<div class="suppliers col-sm-3 col-xs-4 ">
+								{% if partner.website|length == 0 %}
+									<img class="vertical img-responsive" src="{{ image(partner.getLogoWeb()) }}">
+								{% else %}
+									<a href="{{ partner.website }}"><img class="img-responsive" src="{{ image(partner.getLogoWeb()) }}"></a>
+								{% endif %}
+							</div>
+						{% endif %}
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<h1>Partner worden</h1>
+				<p>
+					De organisatie van een evenement staat en valt met de ondersteuning van partners en sponsors.<br/>
+					Dat geldt ook voor het Cold Kitchentornooi.
+				</p>
+				<h5>
+					We zijn al onze partners en sponsors dan ook erg dankbaar.
+				</h5>
+				<br/>
+				<h3>
+					Indien u met uw bedrijf partner wenst te worden van het Cold Kitchen Tornooi kunt u contact opnemen met Wouter De Jonckheere via mail <a href="mailto:dejonckheerewouter@gmail.com">dejonckheerewouter@gmail.com</a> of gsm 0473/82.45.85
+				</h3>
+				<br/>
+				<h4>
+					Voor elke partner en elk budget stellen wij een pakket op maat samen. Onze mogelijkheden:
+				</h4>
+				<ul>
+					<li>
+						Uw spandoeken / beachflags exclusief rond een veld
+					</li>
+					<li>
+						Uw publiciteit 1 jaar lang op de website
+					</li>
+					<li>
+						Uw publiciteit in de 1000 programmaboekjes
+					</li>
+					<li>
+						Uw publiciteit op de 1500 affiches
+					</li>
+					<li>
+						Uw publiciteit op de 1250 flyers
+					</li>
+					<li>
+						Uw spandoek / beachflag op het tornooi
+					</li>
+					<li>
+						Uw publiciteit op alle uitnodigingen 
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+{% endblock %}

@@ -1,0 +1,61 @@
+#section-contact, #section-footer {
+	background-color: $groencontact;
+	color: white;
+	text-align: center;
+	height: 100%;
+	.container {
+		height: 100%;
+	}
+	position: relative;
+	h1, h2, h3, h4, h5 {
+		color: white;
+	}
+	.row {
+		height: 33%;
+	}
+
+	h1 {
+		@include vertical-align();
+	}
+	p {
+		
+		font-size: 16px;
+		font-family: 'MyriadProRegular';
+		@include breakpoint(tablet) {
+			font-size: 26px;
+		}
+		@include breakpoint(desktop) {
+			font-size: 34px;
+		}
+	}
+}
+
+#section-footer {
+	.container {
+		height: 100%;
+	}
+	#map-canvas {
+		margin-top: 5px;
+		height: 70%;
+		width: 100%;
+	}
+	.row.footer {
+		height: 25%;
+		@include breakpoint(tablet) {
+			position: relative;
+			top: 15%;
+		}
+	}
+	.row.copyright {
+		height: 5%;
+	}
+	a, a:hover, a:focus {
+		font-size: 24px;
+		color: white;
+		text-decoration: none;
+		font-family: 'MyriadProSemiBoldItalic';
+	}
+	a.powered {
+		font-size: 14px;
+	}
+}

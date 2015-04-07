@@ -1,0 +1,48 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <div class="container">
+    <h1>AchtergrondFoto list</h1>
+
+    <table class="table ">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Filename</th>
+                <th>Zichtbaar</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr class="table-striped">
+                <td><a href="{{ path('achtergrondfoto_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>
+                    <img src="{{ image(entity.getLogoWeb).grayscale().colorize(83,93,0).resize(150,150) }}">
+                </td>
+                <td>{{ entity.filename }}</td>
+                <td>{{ entity.zichtbaar }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('achtergrondfoto_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('achtergrondfoto_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('achtergrondfoto_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    </div>
+    {% endblock %}

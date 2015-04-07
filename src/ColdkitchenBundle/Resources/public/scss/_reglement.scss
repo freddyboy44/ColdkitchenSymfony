@@ -1,0 +1,30 @@
+.paginareglement {
+
+	h1 {
+
+		margin-bottom: 25px;
+		margin-top: 25px;
+
+		@include breakpoint(tablet) {
+			margin-bottom: 35px;
+			margin-top: 35px;
+		}	
+
+	}
+
+	footer {
+		width: 100%;
+		background-color: $groenpartners;
+		//text-align: center;
+		
+		padding: 25px;
+
+		ul {
+			color: white;
+			li {
+				list-style-position: outside;
+			}
+		}
+
+	}
+}

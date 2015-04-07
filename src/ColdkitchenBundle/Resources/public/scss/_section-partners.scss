@@ -1,0 +1,23 @@
+#section-partners {
+	background-color: $partnerskleur;
+	
+	height: 100%;
+	.container  {
+		height: 100%;
+		position: relative;
+	}
+	.row {
+		
+	}
+	.partnerfoto {
+		
+		position: relative;
+	
+		img {
+			//@include vertical-align();
+			max-height: 130px;
+			display: block;
+			margin:auto;
+		}
+	}
+}

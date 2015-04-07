@@ -1,0 +1,44 @@
+<div id="carousel-spelers" class="carousel slide" data-ride="carousel"> 
+  <!-- Wrapper for slides -->
+  <div class="controls">
+    <div class="col-xs-3">
+      <a class="vorige" href="#carousel-spelers" role="button" data-slide="prev">
+        <span ><i class="fa fa-caret-left fa-2x"></i></span>
+      </a>
+    </div>
+    <div class="col-xs-6">
+      <div id="spelernaam">
+        Speler 1
+      </div>
+    </div>
+    <div class="col-xs-3">
+      <a class="volgende" href="#carousel-spelers" role="button" data-slide="next">
+        <span ><i class="fa fa-caret-right  fa-2x "></i></span>
+      </a>
+    </div>
+      
+      
+  </div>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      testje
+    </div>
+    <div class="item">
+      testje2
+    </div>
+  </div>
+
+  <!-- Controls -->
+
+</div>
+<script>
+  $('#carousel-spelers').carousel(
+    {
+      interval: false
+    });
+  $('#carousel-spelers').on('slide.bs.carousel', function (e) {
+    var slideFrom = $(this).find('.active').index();
+    var slideTo = $(e.relatedTarget).index();
+    console.log(slideFrom+' => '+slideTo);
+  })
+</script>

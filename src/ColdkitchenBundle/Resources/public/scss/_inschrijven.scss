@@ -1,0 +1,226 @@
+.paginainschrijven {
+
+	.row {
+		margin: 0px;
+	}
+	@include breakpoint(tablet) {
+		margin-top: 35px;
+	}
+	h1 {
+		@include breakpoint(tablet) {
+			margin-bottom: 35px;
+		}	
+	}
+	
+	p {
+		text-align: center;
+	}
+
+	.formulier {
+		.alert {
+			max-width : 600px;
+			@include border-radius(4px);
+			background-color: white;
+			color: $groenpartners;
+			font-family: 'MyriadProBold';
+			margin: auto;
+
+		}
+		.alert.success {
+			
+		}
+		.alert.fout {
+			font: white;
+			background-color: red;
+		}
+
+
+		#tabs {
+			ul {
+				padding-top: 15px;
+				width: 100%;
+				max-width: 600px;
+				text-align: left;
+				display: block;
+				margin:auto;
+				li {
+					font-size : 23px;
+					font-family: 'MyriadProBold';
+					display: inline-block;
+					padding: 10px;
+					color: white;
+					@include box-shadow(rgba(white, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
+				}
+			}
+		}
+
+
+		input[type='submit'] {
+			background-color: white;
+			color: $groenpartners;
+			font-family: 'MyriadProBoldItalic';
+			text-transform: uppercase;
+			padding: 10px 35px;
+			@include border-radius(5px);
+			border: 0px;
+
+		}
+		@include breakpoint(tablet) {
+			margin-top: 35px;
+		}
+		width: 100%;
+		background-color: $groenpartners;
+		text-align: center;
+		color: white;
+		h1, h2, h3, h4, h5 {
+			color:white;
+		}
+
+		h2 {
+			margin-bottom: 35px;
+			margin-top: 35px;
+		}
+
+		p {
+			font-size: 22px;
+		}
+		padding-bottom: 20px;
+		@include breakpoint(tablet) {
+			padding-bottom: 40px;	
+		}
+
+		ul {
+			list-style: none;
+			padding: 0px;
+			li {
+				list-style: none;
+			}
+		}
+
+		a, a:hover, a:focus {
+			color: white;
+		}
+		
+	}
+	form {
+		max-width: 600px;
+		display: block;
+		margin: auto; 
+
+
+		.titel {
+			width: 100%;
+			display: block;
+			color: white;
+			text-align: left;
+			font-family: 'MyriadProLight';
+			font-weight:100;
+			font-size: 22px;
+			padding-left:3px;
+			margin-top: 7px;
+		}
+
+		.invoerveld {
+			width: 100%;
+			text-align: left;
+			color: black; 
+			@include border-radius(4px);
+			input, select#coldkitchenbundle_ploeg_competitie {
+				width: 100%;
+				color: black; 
+				@include border-radius(5px);
+				height: 32px;
+				border:0;
+				padding:6px;
+			}
+
+			select[id^='coldkitchenbundle_ploeg_geboortedatum']{
+				  border-radius: 7px;
+				  height: 32px;
+				  padding: 5px;
+				  margin-right: 5px;
+			}
+
+			select {
+				text-align: left;
+			}
+		}
+
+		.adres {
+			.nopaddingright {
+				padding-right: 0px;
+				padding-left: 7px;
+			}
+
+			.nopaddingleft {
+				padding-left: 0px;
+				padding-right: 7px;
+			}
+		}
+
+		.captcha {
+			margin-top: 20px;
+			@include border-radius(5px);
+
+			label {
+				display: none;
+			}
+			background-color: $grijzeachtergrond;
+			.image {
+				padding: 7px;
+				img {
+					@include border-radius(5px);
+				}
+			}
+			.antwoord {
+				padding-right: 0px;
+				h5 {
+					font-family: 'MyriadProBold';
+					font-size: 16px;
+					color: black;
+					text-align: left;
+				}
+				
+
+
+				.row {
+					div {
+						padding:0px;
+						input[type='submit'] {
+							background-color: $groenpartners;
+							color: white;
+							font-family: 'MyriadProBoldItalic';
+							text-transform: uppercase;
+							
+						}
+						input {
+							height: 28px;
+							border: 0;
+							@include border-radius(6px);
+						}
+						padding-right: 5px;
+					}
+					
+
+				}
+			}
+		}
+	}
+}
+
+#carousel-spelers {
+	margin-top: 15px;
+	.controls {
+		margin-bottom: 10px;
+
+		.vorige {
+			float: right;
+		}
+		.volgende {
+			float:left;
+		}
+		#spelernaam {
+			font-size: 20px;
+		}
+	}
+}

@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'MyriadProBoldItalic';
+  src: url("../../bundles/coldkitchen/fonts/MYRIADPRO-BOLDIT-webfont.eot");
+  src: url("../../bundles/coldkitchen/fonts/MYRIADPRO-BOLDIT-webfont.eot?#iefix") format("embedded-opentype"), url("../../bundles/coldkitchen/fonts/MYRIADPRO-BOLDIT-webfont.woff2") format("woff2"), url("../../bundles/coldkitchen/fonts/MYRIADPRO-BOLDIT-webfont.woff") format("woff"), url("../../bundles/coldkitchen/fonts/MYRIADPRO-BOLDIT-webfont.ttf") format("truetype"), url("../../bundles/coldkitchen/fonts/MYRIADPRO-BOLDIT-webfont.svg#webfontregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*# sourceMappingURL=_fonts.css.map */

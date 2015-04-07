@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	{% include '_header.twig' %}
+	<div class="paginainschrijven">
+		<h1>Online inschrijven</h1>
+		<br/>
+		<h2>
+			De inschrijving werd goed ontvangen.<br/>
+			Een mail met daarin alle gegevens werd verstuurd naar {{ email }}.
+		</h2>
+{% endblock %}

@@ -1,0 +1,18 @@
+{
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				"src/ColdkitchenBundle/Resources/public/scss/.sass-cache"
+			],
+			"path": "."
+		}
+	],
+	"settings": {
+        "xdebug": {
+             "url": "http://coldkitchen.homeip.net/",
+        }
+    }
+}
+

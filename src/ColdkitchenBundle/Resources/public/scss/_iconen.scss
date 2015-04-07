@@ -1,0 +1,129 @@
+.iconen {
+	a {
+		overflow:hidden;
+		display: block;
+		width:95%;
+		height:95%;
+	}
+
+	padding-top: 60px;
+	top: 120px;
+	@include breakpoint(tablet) {
+		top: 50%;
+	}
+	//position: absolute;
+	width:100%;
+
+	div {
+		padding: 8px;
+		position: relative;
+		height: 160px;
+		.background {
+			background-color: white;
+		}
+
+		.dummy {
+			z-index: 2;
+			@include box-shadow(rgba($donkergroenekleur, 0.4) 0 0 25px, rgba(black, 0.2) 0 0 3px 1px inset);
+		}
+		.background, .dummy {
+			display: block;
+			@include transform(skew(-12deg, 0deg) translate(-50%));
+			@include border-radius(5px);
+			position:absolute;
+			top:0;
+			left:50%;
+			width:100%;
+			@include breakpoint(tablet) {
+				max-width: 180px;
+				max-height: 120px;	
+			}
+			max-width: 110px;
+			max-height: 100px;
+			
+			height: 100%;
+			
+			overflow:hidden;
+
+			
+		}
+
+		.dummy:hover {
+			//@include box-shadow(rgba($donkergroenekleur, 0.6) 0 0 25px, rgba(black, 0.2) 0 0 3px 1px inset);	
+			-webkit-box-shadow: 0px 0px 14px 12px rgba(64, 70, 4, 0.75);
+			-moz-box-shadow:    0px 0px 14px 12px rgba(64, 70, 4, 0.75);
+			box-shadow:         0px 0px 14px 12px rgba(64, 70, 4, 0.75);
+			cursor: pointer;
+			
+		}
+
+		.background.groot, .dummy.groot {
+			max-width: 140px;
+			max-height: 100px;
+			@include breakpoint(tablet) {
+				max-width: 240px;
+				max-height: 160px;	
+			}
+			
+		}
+
+		.content {
+			//padding: 10px;
+			display: block;
+			width: 100%;
+			height: 100%;
+			left: -8px;
+			color: $donkergroenekleur;
+			font-family: 'MyriadProBoldItalic';
+			
+
+			img {
+				display: block;
+				//margin-left: 37%;
+				position: absolute;
+				left: 50%;
+				@include transform(translate(-38%,0%));
+			}
+			.titel {
+				@include breakpoint(tablet) {
+					font-size: 26px;	
+				}
+				font-size: 16px;
+				clear:both;
+				display: block;
+				margin:auto;
+				text-align: center;
+				width: 97%;
+				position: absolute;
+				top: 70px;
+			}
+
+			.klein {
+				//height: 45px;
+				img {
+					max-height: 30px;
+				}
+			}
+
+			.groot {
+				//height: 60px;
+				img {
+					max-height: 45px;
+				}
+			}
+		}
+	}
+
+	.groot {
+		height: 190px;
+		@include breakpoint(laptop) {
+			top: -20px;	
+		}
+		.content {
+			.titel {
+				top: 110px;
+			}
+		}
+	}
+	
+}

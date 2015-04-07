@@ -20,7 +20,25 @@
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~3.0,>=3.0.12",
         "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "incenteev/composer-parameter-handler": "~2.0",
+        "twbs/bootstrap": "3.2.*",
+        "components/jquery": "2.1.*",
+        "zurb/foundation": "dev-master",
+        "components/modernizr": "dev-master",
+        "dimsemenov/magnific-popup": "dev-master",
+        "components/underscore": "dev-master",
+        "moment/moment": "dev-master",
+        "egeloen/ckeditor-bundle": "~2.0",
+        "knplabs/gaufrette": "0.2.*@dev",
+        "oneup/uploader-bundle": "~1.3",
+        "liip/imagine-bundle": "~1.2",
+        "gregwar/image-bundle": "dev-master",
+        "suncat/mobile-detect-bundle": "0.10.*",
+        "genemu/form-bundle": "2.2.*",
+        "friendsofsymfony/rest-bundle": "~1.5",
+        "jms/serializer-bundle": "0.13.*",
+        "ircmaxell/password-compat": "~1.0.3",
+        "friendsofsymfony/user-bundle": "~2.0@dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

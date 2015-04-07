@@ -1,0 +1,49 @@
+#section-ladies {
+	.container {
+		height: 100%;
+	}
+	position: relative;
+	background-color: $rozekleur;
+	color: white;
+	text-align: center;
+	h2, h3, h4, h5 {
+		font-family: 'MyriadProSemiBoldItalic';
+		font-size: 22px;
+
+		@include breakpoint(tablet) {
+			font-size: 36px;
+		}		
+
+		@include breakpoint(desktop) {
+			font-size: 56px;
+		}
+	}
+
+	p {
+		font-family: 'MyriadProRegular';
+		font-size: 16px;
+		@include breakpoint(desktop) {
+			font-size: 32px;
+		}
+	}
+
+	a.nextslide {
+		color: $rozekleur;
+	}
+}
+
+.logo-coldkitchenladies {
+	margin-top: $margestartpagina;
+	img {
+		max-width: 500px;
+		width: 100%;	
+		height: auto;	
+		display: block;
+		margin: auto;
+	}
+	
+}
+
+.rij {
+	min-height: 20%;
+}

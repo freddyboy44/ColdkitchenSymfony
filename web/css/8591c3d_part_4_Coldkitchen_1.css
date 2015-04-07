@@ -1,0 +1,265 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-mrt-2015, 10:08:54
+    Author     : Gebruiker
+*/
+@font-face {
+  font-family: 'MyriadProBoldItalic';
+  src: url("../../bundles/coldkitchen/fonts/MYRIADPRO-BOLDIT-webfont.eot");
+  src: url("../../bundles/coldkitchen/fonts/MYRIADPRO-BOLDIT-webfont.eot?#iefix") format("embedded-opentype"), url("../../bundles/coldkitchen/fonts/MYRIADPRO-BOLDIT-webfont.woff2") format("woff2"), url("../../bundles/coldkitchen/fonts/MYRIADPRO-BOLDIT-webfont.woff") format("woff"), url("../../bundles/coldkitchen/fonts/MYRIADPRO-BOLDIT-webfont.ttf") format("truetype"), url("../../bundles/coldkitchen/fonts/MYRIADPRO-BOLDIT-webfont.svg#webfontregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-mrt-2015, 10:24:24
+    Author     : Gebruiker
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-mrt-2015, 10:25:10
+    Author     : Gebruiker
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-mrt-2015, 16:19:01
+    Author     : Gebruiker
+*/
+/* line 1, ../scss/_iconen.scss */
+.iconen {
+  padding-top: 60px;
+}
+/* line 4, ../scss/_iconen.scss */
+.iconen div {
+  padding: 8px;
+  position: relative;
+}
+/* line 7, ../scss/_iconen.scss */
+.iconen div .background {
+  background-color: white;
+}
+/* line 11, ../scss/_iconen.scss */
+.iconen div .dummy {
+  z-index: 2;
+  -moz-box-shadow: rgba(64, 70, 4, 0.4) 0 0 25px, rgba(0, 0, 0, 0.2) 0 0 3px 1px inset;
+  -webkit-box-shadow: rgba(64, 70, 4, 0.4) 0 0 25px, rgba(0, 0, 0, 0.2) 0 0 3px 1px inset;
+  box-shadow: rgba(64, 70, 4, 0.4) 0 0 25px, rgba(0, 0, 0, 0.2) 0 0 3px 1px inset;
+}
+/* line 15, ../scss/_iconen.scss */
+.iconen div .background, .iconen div .dummy {
+  display: block;
+  -moz-transform: skew(-12deg, 0deg) translate(-50%);
+  -ms-transform: skew(-12deg, 0deg) translate(-50%);
+  -webkit-transform: skew(-12deg, 0deg) translate(-50%);
+  transform: skew(-12deg, 0deg) translate(-50%);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  max-width: 180px;
+  height: 100%;
+  max-height: 120px;
+  overflow: hidden;
+}
+/* line 31, ../scss/_iconen.scss */
+.iconen div .dummy:hover {
+  -webkit-box-shadow: 0px 0px 14px 12px rgba(64, 70, 4, 0.75);
+  -moz-box-shadow: 0px 0px 14px 12px rgba(64, 70, 4, 0.75);
+  box-shadow: 0px 0px 14px 12px rgba(64, 70, 4, 0.75);
+  cursor: pointer;
+}
+/* line 40, ../scss/_iconen.scss */
+.iconen div .background.groot, .iconen div .dummy.groot {
+  max-width: 240px;
+  max-height: 160px;
+}
+/* line 45, ../scss/_iconen.scss */
+.iconen div .content {
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: -8px;
+  color: #404604;
+  font-family: 'MyriadProBoldItalic';
+}
+/* line 55, ../scss/_iconen.scss */
+.iconen div .content img {
+  display: block;
+  margin: auto;
+}
+/* line 59, ../scss/_iconen.scss */
+.iconen div .content .titel {
+  font-size: 26px;
+  clear: both;
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+/* line 70, ../scss/_iconen.scss */
+.iconen div .content .klein img {
+  max-height: 30px;
+}
+/* line 77, ../scss/_iconen.scss */
+.iconen div .content .groot img {
+  max-height: 45px;
+}
+@media (min-width: 720px) {
+  /* line 84, ../scss/_iconen.scss */
+  .iconen .groot {
+    top: -20px;
+  }
+}
+
+/* line 22, ../scss/Coldkitchen.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 29, ../scss/Coldkitchen.scss */
+.section {
+  overflow: hidden;
+}
+
+/* line 34, ../scss/Coldkitchen.scss */
+.test {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+/* line 41, ../scss/Coldkitchen.scss */
+.test:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -moz-radial-gradient(center, ellipse cover, transparent 0%, rgba(0, 0, 0, 0.65) 91%, rgba(0, 0, 0, 0.65) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, transparent), color-stop(91%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 0.65)));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, transparent 0%, rgba(0, 0, 0, 0.65) 91%, rgba(0, 0, 0, 0.65) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, transparent 0%, rgba(0, 0, 0, 0.65) 91%, rgba(0, 0, 0, 0.65) 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, transparent 0%, rgba(0, 0, 0, 0.65) 91%, rgba(0, 0, 0, 0.65) 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 91%, rgba(0, 0, 0, 0.65) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+/* line 62, ../scss/Coldkitchen.scss */
+.logo {
+  top: 5%;
+}
+/* line 64, ../scss/Coldkitchen.scss */
+.logo img {
+  max-height: 40px;
+}
+@media (min-width: 600px) {
+  /* line 64, ../scss/Coldkitchen.scss */
+  .logo img {
+    max-height: 60px;
+  }
+}
+@media (min-width: 720px) {
+  /* line 64, ../scss/Coldkitchen.scss */
+  .logo img {
+    max-height: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 64, ../scss/Coldkitchen.scss */
+  .logo img {
+    max-height: 100px;
+  }
+}
+
+/* line 80, ../scss/Coldkitchen.scss */
+.knoplinks {
+  position: absolute;
+  left: 5%;
+}
+@media (min-width: 720px) {
+  /* line 80, ../scss/Coldkitchen.scss */
+  .knoplinks {
+    left: 15%;
+  }
+}
+
+/* line 88, ../scss/Coldkitchen.scss */
+.ladies {
+  top: auto;
+  bottom: 5%;
+}
+
+/* line 95, ../scss/Coldkitchen.scss */
+.knoprechts {
+  position: absolute;
+  right: 5%;
+}
+@media (min-width: 720px) {
+  /* line 95, ../scss/Coldkitchen.scss */
+  .knoprechts {
+    right: 15%;
+  }
+}
+
+/* line 103, ../scss/Coldkitchen.scss */
+.facebook {
+  top: 5%;
+}
+
+/* line 107, ../scss/Coldkitchen.scss */
+.ergo {
+  bottom: 5%;
+}
+
+/* line 111, ../scss/Coldkitchen.scss */
+.datum {
+  position: absolute;
+  font-family: 'MyriadProBoldItalic';
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  text-shadow: rgba(64, 70, 4, 0.2) 1px 1px 0, rgba(64, 70, 4, 0.2) 2px 2px 0, rgba(64, 70, 4, 0.2) 3px 3px 0;
+}
+@media (min-width: 1200px) {
+  /* line 111, ../scss/Coldkitchen.scss */
+  .datum {
+    font-size: 72px;
+  }
+}
+
+/* line 126, ../scss/Coldkitchen.scss */
+.pagina {
+  overflow: hidden;
+}

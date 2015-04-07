@@ -1,0 +1,77 @@
+<html>
+	<head>
+		{% block title %}
+			<title>Inschrijving Cold Kitchentornooi</title>
+		{% endblock %}
+		<style>
+			html, body {
+				width: 100%;
+			}
+			h4 {
+				font-size: 26px;
+				color: #aaae01;
+			}
+			ul {
+				list-style: none;
+				li {
+					list-style: none;
+				}
+			}
+		</style>
+	</head>
+	<body style="width:100%">
+		<h4>Hartelijk dank voor uw inschrijving voor het Cold Kitchentornooi</h4><br/>
+		<div style="width:100%">Dit zijn de gegevens die we mochten ontvangen.</div>
+			<br/>
+		
+			<table style="width:100%">
+				<tr>
+					<td style="width:20%;max-width:100px">
+						<b>Uw naam:</b>
+					</td>
+					<td>
+						{{ ploeg.kapiteinvoornaam }} {{ ploeg.kapiteinnaam }}
+					</td>
+				</tr>
+				<tr>
+					<td style="width:20%;max-width:100px">
+						<b>Uw email:</b>
+					</td>
+					<td>
+						{{ ploeg.emailadres }}
+					</td>
+				</tr>
+				<tr>
+					<td style="width:20%;max-width:100px">
+						<b>Uw wachtwoord:</b>
+					</td>
+					<td>
+						{{ ploeg.wachtwoord }}
+					</td>
+				</tr>
+				<tr>
+					<td style="width:20%;max-width:100px">
+						<b>Competitie:</b>
+					</td>
+					<td>
+						{{ ploeg.competitie }}
+					</td>
+				</tr>
+			</table>
+			<br/>
+			Om uw ploeg verder te beheren, <a href="{{ url('ploeg_edit', { 'id': ploeg.id }, true) }}">klik hier</a>
+			
+			
+			<br/>
+			<H4>Om volledig in orde te kunnen zijn met de verzekering vragen we met aandrang om de ploeg volledig in te vullen!</H4>
+			<br/>
+			De inschrijving is pas definitief na ontvangst van de betaling !
+
+			
+		
+		<br/>
+		Met vriendelijke groeten,<br/>
+		De organisatoren,<br/>
+		Cold Kitchentornooi
+	</body>
+</html>

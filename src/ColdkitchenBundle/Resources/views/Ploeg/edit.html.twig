@@ -1,0 +1,96 @@
+{% extends 'ColdkitchenBundle:Ploeg:inschrijven.html.twig' %}
+
+{% block javascripts %}
+	{{ parent() }}
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script>
+	  $(function() {
+	    $( "#tabs" ).tabs();
+	  });
+	  </script>
+	  <script>
+		  setTimeout(fade_out, 2500);
+
+			function fade_out() {
+			  $(".alert").slideUp().empty();
+			}
+	  </script>
+{% endblock %}
+
+{% block body %}
+	{% include '_header.twig' %}
+	<div class="paginainschrijven">
+		<h1>Online inschrijven</h1>
+		<br/>
+		<p>
+			Alvast bedankt om je online in te schrijven!<br/>
+			Hieronder kan je alle gegevens van je medespelers invullen.<br/>
+			Als er later nog spelers bijkomen kan je dit steeds wijzigen.
+		</p>
+
+
+		<div class="formulier">
+			<div class="container">
+				<br/>
+				{% if app.session.flashBag.has('success') %}
+			        <div class="alert success">
+			            {% for msg in app.session.flashBag.get('success') %}
+			                {{ msg }}
+			            {% endfor %}
+			        </div>
+			    {% endif %}
+
+				<div id="tabs">
+					<ul>
+						<li><a href="#spelers">Spelers</a></li>
+					    <li><a href="#teaminfo">Teaminfo</a></li>
+					    
+					</ul>
+					<div id="spelers">
+					    {% include 'ColdkitchenBundle:Ploeg:spelers.html.twig' %}
+					</div>
+					<div id="teaminfo">
+						<h2>Gegevens ploegverantwoordelijke</h2>
+						{{ form_start(form) }}
+
+						{{ form_row(form.kapiteinNaam) }}
+						{{ form_row(form.kapiteinVoornaam) }}
+						{{ form_row(form.geboortedatum) }}
+						<div class="adres">
+							<div class="row">
+								<div class="col-xs-8 nopaddingleft">
+									{{ form_row(form.straat) }}
+								</div>
+								<div class="col-xs-2 nopadding">
+									{{ form_row(form.huisnr) }}
+								</div>
+								<div class="col-xs-2 nopaddingright">
+									{{ form_row(form.bus) }}
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-9 nopaddingleft">
+									{{ form_row(form.woonplaats) }}
+								</div>
+								<div class="col-xs-3 nopaddingright">{{ form_row(form.postcode) }}</div>
+							</div>
+						</div>
+						{{ form_row(form.telefoon) }}
+						{{ form_row(form.gsm) }}
+						{{ form_row(form.emailadres) }}
+						<br/>
+						<h3>Ploeginformatie</h3>
+						{{ form_row(form.ploegnaam) }}
+						{{ form_row(form.competitie) }}
+						<br/>
+						<input type="submit" value="Gegevens opslaan">
+						{{ form_widget(form._token) }}
+						{{ form_end(form, {'render_rest': false}) }}
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

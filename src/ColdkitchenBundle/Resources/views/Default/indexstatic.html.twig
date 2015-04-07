@@ -1,0 +1,35 @@
+{% extends 'ColdkitchenBundle:Default:index.html.twig' %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset("bundles/coldkitchen/js/jquery.fullPage.min.js") }}"></script>
+    <script src="{{ asset("bundles/coldkitchen/js/jquery.slimscroll.min.js") }}"></script>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}    
+    <link rel="stylsheet" href="{{ asset("bundles/coldkitchen/css/jquery.fullPage.css") }}">
+{% endblock %}
+
+
+{% block divtest %}
+    <div class="test">
+    </div>  
+    <div class="section1fixed">     
+    </div>
+    <div id="fullpage">
+        <div id="section-home" class="section">
+{% endblock %}    
+        
+        
+{% block backstretch %}   
+    $.backstretch([
+        {% for foto in fotos|shuffle %}
+        {% set url = 'uploads/achtergrondfotos/' ~ foto.filename %}
+        
+          "{{ image(url).grayscale().colorize(83,93,0) }}"
+          {{ loop.last ? '' : ',' }}
+        {% endfor %}
+    ], {duration: 7000, fade: 450});
+{% endblock %}
+            	

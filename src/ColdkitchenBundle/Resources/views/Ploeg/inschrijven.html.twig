@@ -1,0 +1,121 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme form _self %}
+
+
+{% block form_row %}
+	{% spaceless %}
+	    <div>
+	        <div class="titel">
+	        	{{ form_label(form) }}
+	        </div>
+	        {{ form_errors(form) }}
+	        <div class="invoerveld">
+	        	{{ form_widget(form) }}
+	        </div>
+
+	    </div>
+	{% endspaceless %}
+{% endblock form_row %}
+
+{% block form_widget_simple %}
+    {% set type = type|default('text') %}
+    <input type="{{ type }}" {{ block('widget_attributes') }} {% if value is not empty %}value="{{ value }}" {% endif %}/>
+{% endblock form_widget_simple %}
+
+{% block genemu_captcha_widget %}
+	<div class="row nopadding">
+		<div class="col-xs-6 col-sm-3 image">
+			<img id="{{ id }}_image" src="{{ src }}" width="{{ width }}" height="{{ height }}" title="{{ name|trans }}" />	
+		</div>
+		<div class="col-xs-6 col-sm-9 antwoord">
+			<h5>Typ de tekst na</h5>
+			<div class="row nopadding">
+				<div class="col-xs-7 ">
+					<input type="textbox" class="captchaantwoord" {{ block('widget_attributes') }}/>		
+				</div>	
+				<div class="col-xs-5 ">
+					<input type="submit" value="Inschrijven">
+				</div>
+			</div>
+			
+		</div>
+	</div>
+    
+{% endblock %}
+
+{% block button %}
+	<div>Test</div>
+{% endblock %}
+
+{% block genemu_captcha_javascript %}
+    <script type="text/javascript">
+        $(function () {
+            {# Image will be refreshed when the link is clicked #}
+            $('#{{ id }}_refresh').click(function() {
+                $('#{{ id }}_image').attr('src', '{{ path('genemu_captcha_refresh') }}?' + Math.random());
+            });
+        });
+    </script>
+
+    {{ parent() }}
+{% endblock %}
+
+
+{% block body %}
+	{% include '_header.twig' %}
+	<div class="paginainschrijven">
+		<h1>Online inschrijven</h1>
+		<br/>
+		<p>
+			Hieronder kan je als ploegverantwoordelijke alle gegevens invullen die wij van jou en de ploeg nodig hebben.<br/>
+			Na het invullen van deze gegevens zal u een bevestigingsemail ontvangen met een link naar uw ploegbeheer.<br/>
+			In de pagina ploegbeheer zal je dan alle gegevens van de medespelers kunnen invullen.
+		</p>
+
+		<div class="formulier">
+			<div class="container">
+				<h2>Gegevens ploegverantwoordelijke</h2>
+				{{ form_start(form) }}
+
+				{{ form_row(form.kapiteinNaam) }}
+				{{ form_row(form.kapiteinVoornaam) }}
+				{{ form_row(form.geboortedatum) }}
+				<div class="adres">
+					<div class="row">
+						<div class="col-xs-8 nopaddingleft">
+							{{ form_row(form.straat) }}
+						</div>
+						<div class="col-xs-2 nopadding">
+							{{ form_row(form.huisnr) }}
+						</div>
+						<div class="col-xs-2 nopaddingright">
+							{{ form_row(form.bus) }}
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-9 nopaddingleft">
+							{{ form_row(form.woonplaats) }}
+						</div>
+						<div class="col-xs-3 nopaddingright">{{ form_row(form.postcode) }}</div>
+					</div>
+				</div>
+				{{ form_row(form.telefoon) }}
+				{{ form_row(form.gsm) }}
+				{{ form_row(form.emailadres) }}
+				<br/>
+				<h3>Ploeginformatie</h3>
+				{{ form_row(form.ploegnaam) }}
+				{{ form_row(form.competitie) }}
+
+				<div class="captcha">
+					{{ form_row(form.captcha) }}
+
+				</div>
+				{{ form_widget(form._token) }}
+				{{ form_end(form, {'render_rest': false}) }}
+			</div>
+		</div>
+	</div>
+	
+{% endblock %}
