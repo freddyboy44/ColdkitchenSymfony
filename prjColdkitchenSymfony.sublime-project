@@ -12,7 +12,8 @@
 	"settings": {
         "xdebug": {
              "url": "http://coldkitchen.homeip.net/",
-        }
+        },
+        "follow_symlinks": false
     }
 }
 

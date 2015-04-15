@@ -1,0 +1,45 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>PartnerType list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Naam</th>
+                <th>Hoogte</th>
+                <th>Breedte</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('partnertype_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.naam }}</td>
+                <td>{{ entity.hoogte }}</td>
+                <td>{{ entity.breedte }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('partnertype_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('partnertype_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('partnertype_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

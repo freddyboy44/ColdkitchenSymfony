@@ -4,9 +4,7 @@ security:
     # http://symfony.com/doc/current/book/security.html#encoding-the-user-s-password
     encoders:
         Symfony\Component\Security\Core\User\User: bcrypt
-        ColdkitchenBundle\Entity\Ploeg:
-            algorithm: bcrypt
-            cost: 12
+        ColdkitchenBundle\Entity\Ploeg: bcrypt
 
     # http://symfony.com/doc/current/book/security.html#hierarchical-roles
     role_hierarchy:
@@ -18,7 +16,7 @@ security:
         coldkitchen_provider:
             entity:
                 class: ColdkitchenBundle:Ploeg
-                property: username
+                property: emailadres
         in_memory:
             memory:
                 users:
@@ -38,6 +36,9 @@ security:
             anonymous: ~
             http_basic: ~
             provider: coldkitchen_provider
+            form_login:
+                login_path: /login
+                check_path: /login_check
 
     # with these settings you can restrict or allow access for different parts
     # of your application based on roles, ip, host or methods
@@ -45,3 +46,4 @@ security:
     access_control:
         #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
         - { path: ^/ploeg, roles: ROLE_USER }
+        - { path: ^/bewerkploeg, roles: ROLE_USER }

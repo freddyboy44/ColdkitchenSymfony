@@ -1,0 +1,118 @@
+
+.data {
+    .row.ladies {
+        //margin-bottom: $margestartpagina;
+        min-height: 5%;
+        @include breakpoint(tablet) {
+            min-height: 10%;    
+        }
+        
+    }
+    .row.logos {
+        margin-top: $margestartpagina;
+        min-height: 5%;
+        @include breakpoint(tablet) {
+            min-height: 10%;    
+        }
+    }
+    .row.logos, .row.ladies {
+        
+        // Logo coldkitchen en facebook
+        .logo-coldkitchen, .logo-coldkitchen, .logo-coldkitchenladies, .logo-ergo {
+            img {
+                max-height:32px;
+                width: auto;
+                @include breakpoint(tablet) {
+                    max-height: 60px;
+                }
+                @include breakpoint(laptop) {
+                    max-height: 80px;
+                }
+                @include breakpoint(desktop) {
+                    max-height: 100px;
+                }
+            }
+            text-align:left;
+        }
+        .logo-coldkitchen, .logo-coldkitchenladies {
+            img {
+                float:left;    
+            }
+            
+        }
+    
+        .logo-ergo {
+            margin-top: $margestartpagina;
+        }
+
+        .logo-facebook, .logo-ergo {
+            img {
+                float:right; 
+                max-height: 35px;
+                @include breakpoint(tablet) {
+                    max-height: initial;
+                }
+            }
+            
+        }
+    }
+
+    .row.datum{
+        //datum
+        //
+        min-height: 10%;
+        @include breakpoint(tablet) {
+            min-height: 20%;    
+        }
+        font-family: 'MyriadProBoldItalic';
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 36px;
+        @include breakpoint(desktop){
+            font-size: 72px;
+        }
+        @include text-shadow(rgba($donkergroenekleur, 0.2) 1px 1px 0, rgba($donkergroenekleur, 0.2) 2px 2px 0, rgba($donkergroenekleur, 0.2) 3px 3px 0);
+        
+    }
+    .row.midden{
+        //iconen
+        height: 66%;
+        padding: 0 2%;
+        @include breakpoint(tablet) {
+            height: 40%;
+            min-height: 30%;    
+        }
+        
+    }
+
+}
+
+.data {
+    height: 100%;
+}
+
+a.nextslide {
+    height: 100%;
+    width: 100%;
+    display: block;
+    img {
+        width: 75px;
+        height: 75px;
+        display: block;
+        margin:auto;
+    }
+}
+
+.onderaan {
+    display: none;
+    @include breakpoint(tablet) {
+        display: inline-block;
+        position: absolute;
+        bottom: 0px;
+        left:0px;
+        height: 120px;
+        width: 100%;    
+    }
+    
+}

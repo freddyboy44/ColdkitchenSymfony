@@ -1,0 +1,76 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Speler</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Naam</th>
+                <td>{{ entity.naam }}</td>
+            </tr>
+            <tr>
+                <th>Voornaam</th>
+                <td>{{ entity.voornaam }}</td>
+            </tr>
+            <tr>
+                <th>Geboortedatum</th>
+                <td>{{ entity.geboortedatum|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Straat</th>
+                <td>{{ entity.straat }}</td>
+            </tr>
+            <tr>
+                <th>Huisnr</th>
+                <td>{{ entity.huisnr }}</td>
+            </tr>
+            <tr>
+                <th>Bus</th>
+                <td>{{ entity.bus }}</td>
+            </tr>
+            <tr>
+                <th>Woonplaats</th>
+                <td>{{ entity.woonplaats }}</td>
+            </tr>
+            <tr>
+                <th>Postcode</th>
+                <td>{{ entity.postcode }}</td>
+            </tr>
+            <tr>
+                <th>Telefoon</th>
+                <td>{{ entity.telefoon }}</td>
+            </tr>
+            <tr>
+                <th>Gsm</th>
+                <td>{{ entity.gSM }}</td>
+            </tr>
+            <tr>
+                <th>Emailadres</th>
+                <td>{{ entity.emailadres }}</td>
+            </tr>
+            <tr>
+                <th>Rugnummer</th>
+                <td>{{ entity.rugnummer }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('speler') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('speler_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

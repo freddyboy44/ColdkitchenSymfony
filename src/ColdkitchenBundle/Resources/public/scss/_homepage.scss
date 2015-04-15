@@ -2,18 +2,26 @@
 .data {
     .row.ladies {
         //margin-bottom: $margestartpagina;
-        min-height: 10%;
+        min-height: 5%;
+        @include breakpoint(tablet) {
+            min-height: 10%;    
+        }
+        
     }
     .row.logos {
         margin-top: $margestartpagina;
-        min-height: 10%;
+        min-height: 5%;
+        @include breakpoint(tablet) {
+            min-height: 10%;    
+        }
     }
     .row.logos, .row.ladies {
         
         // Logo coldkitchen en facebook
         .logo-coldkitchen, .logo-coldkitchen, .logo-coldkitchenladies, .logo-ergo {
             img {
-                max-height:40px;
+                max-height:32px;
+                width: auto;
                 @include breakpoint(tablet) {
                     max-height: 60px;
                 }
@@ -32,9 +40,18 @@
             }
             
         }
+    
+        .logo-ergo {
+            margin-top: $margestartpagina;
+        }
+
         .logo-facebook, .logo-ergo {
             img {
-                float:right;    
+                float:right; 
+                max-height: 35px;
+                @include breakpoint(tablet) {
+                    max-height: initial;
+                }
             }
             
         }
@@ -42,7 +59,11 @@
 
     .row.datum{
         //datum
-        min-height: 20%;
+        //
+        min-height: 10%;
+        @include breakpoint(tablet) {
+            min-height: 20%;    
+        }
         font-family: 'MyriadProBoldItalic';
         width: 100%;
         text-align: center;
@@ -56,7 +77,12 @@
     }
     .row.midden{
         //iconen
-        min-height:30%;
+        height: 66%;
+        padding: 0 2%;
+        @include breakpoint(tablet) {
+            height: 40%;
+            min-height: 30%;    
+        }
         
     }
 
@@ -69,7 +95,7 @@
 a.nextslide {
     height: 100%;
     width: 100%;
-    display: block;
+    //display: none;
     img {
         width: 75px;
         height: 75px;
@@ -79,13 +105,14 @@ a.nextslide {
 }
 
 .onderaan {
-    display: none;
+    margin-top: 20px;
+    //display: none;
     @include breakpoint(tablet) {
-        display: inline-block;
-        position: absolute;
-        bottom: 0px;
-        left:0px;
-        height: 120px;
+        //display: none;
+        //position: absolute;
+        //bottom: 0px;
+        //left:0px;
+        //height: 120px;
         width: 100%;    
     }
     

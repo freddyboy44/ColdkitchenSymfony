@@ -1,0 +1,26 @@
+{% extends '::base.html.twig' %}
+
+{% form_theme edit_form _self %}
+
+{% block file_widget %}
+    {% spaceless %}
+	fred
+    {{ block('form_widget') }}
+    {% if image_url is not null %}
+        <img src="{{ asset(image_url) }}"/>
+    {% endif %}
+
+    {% endspaceless %}
+{% endblock %}
+
+{% block body -%}
+    <h1>AchtergrondFoto edit</h1>
+	
+
+    {{ form(edit_form) }}
+    
+        <a href="{{ path('achtergrondfoto') }}">
+            Back to the list
+        </a>
+    {{ form(delete_form) }}
+{% endblock %}

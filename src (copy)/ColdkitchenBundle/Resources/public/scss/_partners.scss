@@ -1,0 +1,110 @@
+.paginapartner {
+	.row {
+		margin: 0px;
+	}
+	@include breakpoint(tablet) {
+		margin-top: 35px;
+	}
+	h1 {
+		@include breakpoint(tablet) {
+			margin-bottom: 35px;
+		}	
+	}
+	.brugge {
+		padding: 25px;
+		margin: 0px;
+		width: 100%;
+		background-color: $groenpartners;
+		text-align: center;
+		@include breakpoint(tablet) {
+			margin-bottom: 25px;
+		}
+		img {
+			display: block;
+			margin: auto;
+		}
+		h3 {
+			color: white;
+			font-family: 'MyriadProSemiBold';
+		}
+	}
+	position: relative;
+	.gallerij {
+		position: relative;
+		margin-bottom: 25px;
+	}
+	
+
+	.fieldpartner, .suppliers, .partners {
+		
+		
+		a {
+			display: block;
+			@include vertical-align();
+		}
+		img {
+			margin: auto;
+			display: block
+
+		}
+		img.vertical {
+			display: block;
+			@include vertical-align();
+		}
+	}
+
+	.fieldpartner {
+		@include breakpoint(desktop) {
+			padding: 60px;	
+		}
+		height: 200px;
+		img {
+			max-height: 200px;
+		}
+	}
+	.suppliers {
+		@include breakpoint(desktop) {
+			padding: 35px;	
+		}
+		height:170px;
+		img {
+			max-height: 150px;
+		}
+	}
+
+	footer {
+		width: 100%;
+		background-color: $groenpartners;
+		text-align: center;
+		color: white;
+		h1, h2, h3, h4, h5 {
+			color:white;
+		}
+
+		h1 {
+			margin-bottom: 25px;
+			margin-top: 15px;
+		}
+
+		p {
+			font-size: 22px;
+		}
+		padding-bottom: 20px;
+		@include breakpoint(tablet) {
+			padding-bottom: 40px;	
+		}
+
+		ul {
+			list-style: none;
+			padding: 0px;
+			li {
+				list-style: none;
+			}
+		}
+
+		a, a:hover, a:focus {
+			color: white;
+		}
+		
+	}
+}

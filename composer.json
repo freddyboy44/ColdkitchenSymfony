@@ -38,7 +38,9 @@
         "friendsofsymfony/rest-bundle": "~1.5",
         "jms/serializer-bundle": "0.13.*",
         "ircmaxell/password-compat": "~1.0.3",
-        "friendsofsymfony/user-bundle": "~2.0@dev"
+        "friendsofsymfony/user-bundle": "~2.0@dev",
+        "facebook/php-sdk-v4" : "4.0.*",
+        "guzzlehttp/guzzle": "~5.0"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

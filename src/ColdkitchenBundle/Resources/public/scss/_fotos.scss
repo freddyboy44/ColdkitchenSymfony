@@ -1,0 +1,100 @@
+
+.niettonen {
+	display: none;
+}
+
+.fotolijn {
+	height: 100%;
+
+	.eerstefoto, .tweedefoto, .derdefoto {
+		display: block;
+		float: left;
+		position: relative;
+		height: 350px;
+		.overlay, .foto {
+			margin: auto;
+			display: block;
+		}
+		
+		.overlay {
+			overflow: hidden;
+			position: relative;
+			 
+			/*@include translateY(-50%); */
+			z-index: 2;
+			background:transparent;
+			border: solid 5px white;
+			@include border-radius(5px);
+			
+			top: 50%;
+
+			@include transform(translateY(-50%) skewX(-$skewfotos));
+
+			img {
+				/* min-width: 120%;
+				min-height: 120%;
+				width: 120%;
+				height:auto; */
+				
+				@include skewX($skewfotos);
+				position: relative;
+				left: -50px;
+			}
+		}
+
+		.foto {
+			@include vertical-alignabsolute();
+			z-index: 1;
+		}
+	}
+	.eerstefoto, .derdefoto {
+		.overlay {
+			width: 200px;
+			height: 200px;
+			//top: 50px;
+			img {
+				width: 300px;
+				height: auto;
+			}
+		}
+		width: 25%;
+		
+	}
+	.tweedefoto {
+		.overlay {
+			width: 300px;
+			height: 300px;
+			img {
+				width: 450px;
+				height: auto;
+				left: -70px;
+			}
+		}
+		width: 50%;
+	}
+}
+
+.fotos {
+	i {
+		@include vertical-align();
+		color: white;
+		cursor: pointer;
+	}
+	.row {
+		height: 350px;
+		.col-xs-1 {
+			height: 100%;
+		}
+	}
+}
+
+#huidige, #aantalfotos {
+	display: none;
+}
+
+.volgendefoto, .vorigefoto {
+	display: inline-block;
+}
+.volgendefoto.onzichtbaar, .vorigefoto.onzichtbaar {
+	display: none;
+}

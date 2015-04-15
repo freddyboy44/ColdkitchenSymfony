@@ -8,10 +8,7 @@ and open the template in the editor.
     Author     : Gebruiker
 */
 
-@import 'compass/css3/transform';
-@import 'compass/css3/border-radius';
-@import 'compass/css3/box-shadow';
-@import 'compass/css3/text-shadow';
+@import 'compass';
 
 @import 'fonts';
 @import 'mixins';
@@ -30,10 +27,14 @@ and open the template in the editor.
 @import 'header';
 @import 'reglement';
 @import 'inschrijven';
+@import 'fotos';
 
 html, body {
     width: 100%;
     height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0px;
 }
 body {
     font-family: 'MyriadProRegular';
@@ -69,7 +70,8 @@ h5 {
 
 .section {
 	overflow:hidden;
-		
+	padding: 20px 0px;	
+	
 }
 
 .test {
@@ -110,4 +112,34 @@ h5 {
 
 .nopaddingleft {
 	padding-left: 0px;
+}
+
+.modalloading {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../images/socceranimation.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modalloading {
+    display: block;
+}
+
+.hidden {
+	display: hidden;
 }

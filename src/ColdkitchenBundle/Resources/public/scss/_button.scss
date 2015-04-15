@@ -14,6 +14,9 @@ a.button,a.button:hover,a.button:active {
 	@include border-radius(7px);
 	font-size: 24px;
 	font-family: 'MyriadProBoldItalic';
+	cursor: pointer;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 .button.inschrijvingen {
@@ -22,6 +25,15 @@ a.button,a.button:hover,a.button:active {
 
 .button.ladies {
 	background-color: $donkerrozekleur;
+}
+
+.button.fotos {
+	color: #4c4c06;
+	background-color: white;
+	
+}
+.button.fotos:hover {
+	color: #4c4c06;
 }
 
 
@@ -51,3 +63,7 @@ a.nextslide, a.nextslide:hover, a.nextslide:focus {
 	margin:auto;
 }
 
+.button.disabled {
+	cursor: default;
+	@include filter(opacity(0.4));
+}

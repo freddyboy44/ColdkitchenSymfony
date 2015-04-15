@@ -14,6 +14,7 @@ and open the template in the editor.
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'MyriadProRegular';
   src: url("../fonts/MYRIADPRO-REGULAR-webfont.eot");
@@ -21,6 +22,7 @@ and open the template in the editor.
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'MyriadProLight';
   src: url("../fonts/MyriadProLight.eot");
@@ -28,6 +30,7 @@ and open the template in the editor.
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'MyriadProSemiBoldItalic';
   src: url("../fonts/MYRIADPRO-SEMIBOLDIT-webfont.eot");
@@ -35,6 +38,7 @@ and open the template in the editor.
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'MyriadProBold';
   src: url("../fonts/MYRIADPRO-BOLD-webfont.eot");
@@ -42,6 +46,7 @@ and open the template in the editor.
   font-weight: normal;
   font-style: normal;
 }
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -71,9 +76,9 @@ and open the template in the editor.
 */
 /* line 1, ../scss/_iconen.scss */
 .iconen {
-  padding-top: 60px;
-  top: 120px;
+  top: 20px;
   width: 100%;
+  height: 100%;
 }
 /* line 2, ../scss/_iconen.scss */
 .iconen a {
@@ -86,34 +91,44 @@ and open the template in the editor.
   /* line 1, ../scss/_iconen.scss */
   .iconen {
     top: 50%;
+    padding-top: 60px;
   }
 }
 /* line 17, ../scss/_iconen.scss */
 .iconen div {
   padding: 8px;
   position: relative;
-  height: 160px;
+  height: 130px;
 }
-/* line 21, ../scss/_iconen.scss */
+@media (min-width: 600px) {
+  /* line 17, ../scss/_iconen.scss */
+  .iconen div {
+    height: 160px;
+  }
+}
+/* line 26, ../scss/_iconen.scss */
 .iconen div .background {
   background-color: white;
 }
-/* line 25, ../scss/_iconen.scss */
+/* line 30, ../scss/_iconen.scss */
 .iconen div .dummy {
   z-index: 2;
-  -moz-box-shadow: rgba(64, 70, 4, 0.4) 0 0 25px, rgba(0, 0, 0, 0.2) 0 0 3px 1px inset;
   -webkit-box-shadow: rgba(64, 70, 4, 0.4) 0 0 25px, rgba(0, 0, 0, 0.2) 0 0 3px 1px inset;
+  -moz-box-shadow: rgba(64, 70, 4, 0.4) 0 0 25px, rgba(0, 0, 0, 0.2) 0 0 3px 1px inset;
   box-shadow: rgba(64, 70, 4, 0.4) 0 0 25px, rgba(0, 0, 0, 0.2) 0 0 3px 1px inset;
 }
-/* line 29, ../scss/_iconen.scss */
+/* line 34, ../scss/_iconen.scss */
 .iconen div .background, .iconen div .dummy {
   display: block;
+  -webkit-transform: skew(-12deg, 0deg) translate(-50%);
   -moz-transform: skew(-12deg, 0deg) translate(-50%);
   -ms-transform: skew(-12deg, 0deg) translate(-50%);
-  -webkit-transform: skew(-12deg, 0deg) translate(-50%);
+  -o-transform: skew(-12deg, 0deg) translate(-50%);
   transform: skew(-12deg, 0deg) translate(-50%);
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
   position: absolute;
   top: 0;
@@ -125,32 +140,43 @@ and open the template in the editor.
   overflow: hidden;
 }
 @media (min-width: 600px) {
-  /* line 29, ../scss/_iconen.scss */
+  /* line 34, ../scss/_iconen.scss */
   .iconen div .background, .iconen div .dummy {
     max-width: 180px;
     max-height: 120px;
   }
 }
-/* line 51, ../scss/_iconen.scss */
+/* line 57, ../scss/_iconen.scss */
 .iconen div .dummy:hover {
   -webkit-box-shadow: 0px 0px 14px 12px rgba(64, 70, 4, 0.75);
   -moz-box-shadow: 0px 0px 14px 12px rgba(64, 70, 4, 0.75);
   box-shadow: 0px 0px 14px 12px rgba(64, 70, 4, 0.75);
   cursor: pointer;
 }
-/* line 60, ../scss/_iconen.scss */
+/* line 66, ../scss/_iconen.scss */
 .iconen div .background.groot, .iconen div .dummy.groot {
-  max-width: 140px;
-  max-height: 100px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  max-width: 150px;
+  max-height: 105px;
+  height: 100%;
+  width: 100%;
 }
 @media (min-width: 600px) {
-  /* line 60, ../scss/_iconen.scss */
+  /* line 66, ../scss/_iconen.scss */
+  .iconen div .background.groot, .iconen div .dummy.groot {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+}
+@media (min-width: 600px) {
+  /* line 66, ../scss/_iconen.scss */
   .iconen div .background.groot, .iconen div .dummy.groot {
     max-width: 240px;
     max-height: 160px;
   }
 }
-/* line 70, ../scss/_iconen.scss */
+/* line 84, ../scss/_iconen.scss */
 .iconen div .content {
   display: block;
   width: 100%;
@@ -159,17 +185,25 @@ and open the template in the editor.
   color: #404604;
   font-family: 'MyriadProBoldItalic';
 }
-/* line 80, ../scss/_iconen.scss */
+/* line 94, ../scss/_iconen.scss */
 .iconen div .content img {
   display: block;
   position: absolute;
   left: 50%;
+  -webkit-transform: translate(-38%, 0%);
   -moz-transform: translate(-38%, 0%);
   -ms-transform: translate(-38%, 0%);
-  -webkit-transform: translate(-38%, 0%);
+  -o-transform: translate(-38%, 0%);
   transform: translate(-38%, 0%);
+  max-height: 40px;
 }
-/* line 87, ../scss/_iconen.scss */
+@media (min-width: 600px) {
+  /* line 94, ../scss/_iconen.scss */
+  .iconen div .content img {
+    max-height: 50px;
+  }
+}
+/* line 107, ../scss/_iconen.scss */
 .iconen div .content .titel {
   font-size: 16px;
   clear: both;
@@ -178,40 +212,92 @@ and open the template in the editor.
   text-align: center;
   width: 97%;
   position: absolute;
-  top: 70px;
+  top: 45px;
 }
 @media (min-width: 600px) {
-  /* line 87, ../scss/_iconen.scss */
+  /* line 107, ../scss/_iconen.scss */
   .iconen div .content .titel {
     font-size: 26px;
   }
 }
-/* line 103, ../scss/_iconen.scss */
+@media (min-width: 600px) {
+  /* line 107, ../scss/_iconen.scss */
+  .iconen div .content .titel {
+    top: 70px;
+  }
+}
+/* line 128, ../scss/_iconen.scss */
 .iconen div .content .klein img {
+  max-height: 20px;
+}
+@media (min-width: 600px) {
+  /* line 128, ../scss/_iconen.scss */
+  .iconen div .content .klein img {
+    max-height: 30px;
+  }
+}
+/* line 139, ../scss/_iconen.scss */
+.iconen div .content .groot img {
   max-height: 30px;
 }
-/* line 110, ../scss/_iconen.scss */
-.iconen div .content .groot img {
-  max-height: 45px;
+@media (min-width: 600px) {
+  /* line 139, ../scss/_iconen.scss */
+  .iconen div .content .groot img {
+    max-height: 45px;
+  }
 }
-/* line 117, ../scss/_iconen.scss */
+/* line 149, ../scss/_iconen.scss */
 .iconen .groot {
-  height: 190px;
+  height: 40%;
+}
+@media (min-width: 600px) {
+  /* line 149, ../scss/_iconen.scss */
+  .iconen .groot {
+    height: 190px;
+  }
 }
 @media (min-width: 720px) {
-  /* line 117, ../scss/_iconen.scss */
+  /* line 149, ../scss/_iconen.scss */
   .iconen .groot {
     top: -20px;
   }
 }
-/* line 123, ../scss/_iconen.scss */
+/* line 158, ../scss/_iconen.scss */
+.iconen .groot .content img {
+  max-height: 60px;
+}
+@media (min-width: 600px) {
+  /* line 158, ../scss/_iconen.scss */
+  .iconen .groot .content img {
+    max-height: 90px;
+  }
+}
+/* line 164, ../scss/_iconen.scss */
 .iconen .groot .content .titel {
-  top: 110px;
+  top: 75px;
+}
+@media (min-width: 600px) {
+  /* line 164, ../scss/_iconen.scss */
+  .iconen .groot .content .titel {
+    top: 110px;
+  }
+}
+/* line 173, ../scss/_iconen.scss */
+.iconen .klein {
+  height: 30%;
+}
+@media (min-width: 600px) {
+  /* line 173, ../scss/_iconen.scss */
+  .iconen .klein {
+    height: auto;
+    height: 100%;
+  }
 }
 
 /* line 1, ../scss/_section-inschrijvingen.scss */
 #section-inschrijven {
   position: relative;
+  background-color: white;
 }
 /* line 5, ../scss/_section-inschrijvingen.scss */
 #section-inschrijven img {
@@ -271,7 +357,7 @@ and open the template in the editor.
 
 /* line 35, ../scss/_section-ladies.scss */
 .logo-coldkitchenladies {
-  margin-top: 5%;
+  margin-top: 2%;
 }
 /* line 37, ../scss/_section-ladies.scss */
 .logo-coldkitchenladies img {
@@ -282,7 +368,7 @@ and open the template in the editor.
   margin: auto;
 }
 
-/* line 47, ../scss/_section-ladies.scss */
+/* line 48, ../scss/_section-ladies.scss */
 .rij {
   min-height: 20%;
 }
@@ -311,6 +397,10 @@ and open the template in the editor.
 /* line 1, ../scss/_section-fotos.scss */
 #section-fotos {
   position: relative;
+}
+/* line 4, ../scss/_section-fotos.scss */
+#section-fotos h1 {
+  color: white;
 }
 
 /* line 1, ../scss/_section-programma.scss */
@@ -422,36 +512,52 @@ a.button, a.button:hover, a.button:active {
   padding-top: 8px;
   padding-bottom: 8px;
   text-align: center;
-  -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
   border-radius: 7px;
   font-size: 24px;
   font-family: 'MyriadProBoldItalic';
+  cursor: pointer;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
-/* line 19, ../scss/_button.scss */
+/* line 22, ../scss/_button.scss */
 .button.inschrijvingen {
   background-color: #d3d800;
 }
 
-/* line 23, ../scss/_button.scss */
+/* line 26, ../scss/_button.scss */
 .button.ladies {
   background-color: #e4013a;
 }
 
-/* line 28, ../scss/_button.scss */
+/* line 30, ../scss/_button.scss */
+.button.fotos {
+  color: #4c4c06;
+  background-color: white;
+}
+
+/* line 35, ../scss/_button.scss */
+.button.fotos:hover {
+  color: #4c4c06;
+}
+
+/* line 40, ../scss/_button.scss */
 .button.partners, .button.partners:hover, .button.partners:focus {
   background-color: white;
   color: #d3d800;
 }
 
-/* line 33, ../scss/_button.scss */
+/* line 45, ../scss/_button.scss */
 .button.contact, .button.contact:hover, .button.contact:focus {
   color: #808429;
   background-color: white;
 }
 
-/* line 39, ../scss/_button.scss */
+/* line 51, ../scss/_button.scss */
 a.nextslide, a.nextslide:hover, a.nextslide:focus {
   /* width: 75px;
   height: 75px;
@@ -467,52 +573,84 @@ a.nextslide, a.nextslide:hover, a.nextslide:focus {
   margin: auto;
 }
 
+/* line 66, ../scss/_button.scss */
+.button.disabled {
+  cursor: default;
+  -webkit-filter: opacity(0.4);
+  -moz-filter: opacity(0.4);
+  filter: opacity(0.4);
+}
+
 /* line 3, ../scss/_homepage.scss */
 .data .row.ladies {
-  min-height: 10%;
+  min-height: 5%;
 }
-/* line 7, ../scss/_homepage.scss */
+@media (min-width: 600px) {
+  /* line 3, ../scss/_homepage.scss */
+  .data .row.ladies {
+    min-height: 10%;
+  }
+}
+/* line 11, ../scss/_homepage.scss */
 .data .row.logos {
-  margin-top: 5%;
-  min-height: 10%;
+  margin-top: 2%;
+  min-height: 5%;
 }
-/* line 14, ../scss/_homepage.scss */
+@media (min-width: 600px) {
+  /* line 11, ../scss/_homepage.scss */
+  .data .row.logos {
+    min-height: 10%;
+  }
+}
+/* line 21, ../scss/_homepage.scss */
 .data .row.logos .logo-coldkitchen, .data .row.logos .logo-coldkitchen, .data .row.logos .logo-coldkitchenladies, .data .row.logos .logo-ergo, .data .row.ladies .logo-coldkitchen, .data .row.ladies .logo-coldkitchen, .data .row.ladies .logo-coldkitchenladies, .data .row.ladies .logo-ergo {
   text-align: left;
 }
-/* line 15, ../scss/_homepage.scss */
+/* line 22, ../scss/_homepage.scss */
 .data .row.logos .logo-coldkitchen img, .data .row.logos .logo-coldkitchen img, .data .row.logos .logo-coldkitchenladies img, .data .row.logos .logo-ergo img, .data .row.ladies .logo-coldkitchen img, .data .row.ladies .logo-coldkitchen img, .data .row.ladies .logo-coldkitchenladies img, .data .row.ladies .logo-ergo img {
-  max-height: 40px;
+  max-height: 32px;
+  width: auto;
 }
 @media (min-width: 600px) {
-  /* line 15, ../scss/_homepage.scss */
+  /* line 22, ../scss/_homepage.scss */
   .data .row.logos .logo-coldkitchen img, .data .row.logos .logo-coldkitchen img, .data .row.logos .logo-coldkitchenladies img, .data .row.logos .logo-ergo img, .data .row.ladies .logo-coldkitchen img, .data .row.ladies .logo-coldkitchen img, .data .row.ladies .logo-coldkitchenladies img, .data .row.ladies .logo-ergo img {
     max-height: 60px;
   }
 }
 @media (min-width: 720px) {
-  /* line 15, ../scss/_homepage.scss */
+  /* line 22, ../scss/_homepage.scss */
   .data .row.logos .logo-coldkitchen img, .data .row.logos .logo-coldkitchen img, .data .row.logos .logo-coldkitchenladies img, .data .row.logos .logo-ergo img, .data .row.ladies .logo-coldkitchen img, .data .row.ladies .logo-coldkitchen img, .data .row.ladies .logo-coldkitchenladies img, .data .row.ladies .logo-ergo img {
     max-height: 80px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 15, ../scss/_homepage.scss */
+  /* line 22, ../scss/_homepage.scss */
   .data .row.logos .logo-coldkitchen img, .data .row.logos .logo-coldkitchen img, .data .row.logos .logo-coldkitchenladies img, .data .row.logos .logo-ergo img, .data .row.ladies .logo-coldkitchen img, .data .row.ladies .logo-coldkitchen img, .data .row.ladies .logo-coldkitchenladies img, .data .row.ladies .logo-ergo img {
     max-height: 100px;
   }
 }
-/* line 30, ../scss/_homepage.scss */
+/* line 38, ../scss/_homepage.scss */
 .data .row.logos .logo-coldkitchen img, .data .row.logos .logo-coldkitchenladies img, .data .row.ladies .logo-coldkitchen img, .data .row.ladies .logo-coldkitchenladies img {
   float: left;
 }
-/* line 36, ../scss/_homepage.scss */
+/* line 44, ../scss/_homepage.scss */
+.data .row.logos .logo-ergo, .data .row.ladies .logo-ergo {
+  margin-top: 2%;
+}
+/* line 49, ../scss/_homepage.scss */
 .data .row.logos .logo-facebook img, .data .row.logos .logo-ergo img, .data .row.ladies .logo-facebook img, .data .row.ladies .logo-ergo img {
   float: right;
+  max-height: 35px;
 }
-/* line 43, ../scss/_homepage.scss */
+@media (min-width: 600px) {
+  /* line 49, ../scss/_homepage.scss */
+  .data .row.logos .logo-facebook img, .data .row.logos .logo-ergo img, .data .row.ladies .logo-facebook img, .data .row.ladies .logo-ergo img {
+    max-height: initial;
+  }
+}
+/* line 60, ../scss/_homepage.scss */
 .data .row.datum {
-  min-height: 20%;
+  min-height: 10%;
   font-family: 'MyriadProBoldItalic';
   width: 100%;
   text-align: center;
@@ -520,29 +658,42 @@ a.nextslide, a.nextslide:hover, a.nextslide:focus {
   font-size: 36px;
   text-shadow: rgba(64, 70, 4, 0.2) 1px 1px 0, rgba(64, 70, 4, 0.2) 2px 2px 0, rgba(64, 70, 4, 0.2) 3px 3px 0;
 }
+@media (min-width: 600px) {
+  /* line 60, ../scss/_homepage.scss */
+  .data .row.datum {
+    min-height: 20%;
+  }
+}
 @media (min-width: 1200px) {
-  /* line 43, ../scss/_homepage.scss */
+  /* line 60, ../scss/_homepage.scss */
   .data .row.datum {
     font-size: 72px;
   }
 }
-/* line 57, ../scss/_homepage.scss */
+/* line 78, ../scss/_homepage.scss */
 .data .row.midden {
-  min-height: 30%;
+  height: 66%;
+  padding: 0 2%;
+}
+@media (min-width: 600px) {
+  /* line 78, ../scss/_homepage.scss */
+  .data .row.midden {
+    height: 40%;
+    min-height: 30%;
+  }
 }
 
-/* line 65, ../scss/_homepage.scss */
+/* line 91, ../scss/_homepage.scss */
 .data {
   height: 100%;
 }
 
-/* line 69, ../scss/_homepage.scss */
+/* line 95, ../scss/_homepage.scss */
 a.nextslide {
   height: 100%;
   width: 100%;
-  display: block;
 }
-/* line 73, ../scss/_homepage.scss */
+/* line 99, ../scss/_homepage.scss */
 a.nextslide img {
   width: 75px;
   height: 75px;
@@ -550,18 +701,13 @@ a.nextslide img {
   margin: auto;
 }
 
-/* line 81, ../scss/_homepage.scss */
+/* line 107, ../scss/_homepage.scss */
 .onderaan {
-  display: none;
+  margin-top: 20px;
 }
 @media (min-width: 600px) {
-  /* line 81, ../scss/_homepage.scss */
+  /* line 107, ../scss/_homepage.scss */
   .onderaan {
-    display: inline-block;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    height: 120px;
     width: 100%;
   }
 }
@@ -737,29 +883,44 @@ header .box .dummy, header .box .terug {
   width: 80px;
   height: 50px;
   left: 50%;
+  -webkit-transform: translate(-50%, 0%);
   -moz-transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%);
-  -webkit-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
+  margin-top: 4px;
 }
-/* line 31, ../scss/_header.scss */
+@media (min-width: 600px) {
+  /* line 24, ../scss/_header.scss */
+  header .box .dummy, header .box .terug {
+    margin-top: 0px;
+  }
+}
+/* line 36, ../scss/_header.scss */
 header .box .dummy {
-  background-color: #ccc;
+  background-color: #cccccc;
+  -webkit-transform: skew(-12deg, 0deg) translate(-50%, 0%);
   -moz-transform: skew(-12deg, 0deg) translate(-50%, 0%);
   -ms-transform: skew(-12deg, 0deg) translate(-50%, 0%);
-  -webkit-transform: skew(-12deg, 0deg) translate(-50%, 0%);
+  -o-transform: skew(-12deg, 0deg) translate(-50%, 0%);
   transform: skew(-12deg, 0deg) translate(-50%, 0%);
   border-radius: 4px;
 }
-/* line 36, ../scss/_header.scss */
+/* line 41, ../scss/_header.scss */
 header .box .terug, header .box .terug:hover, header .box .terug:active {
   font-family: 'MyriadProBoldItalic';
   color: white;
   font-size: 22px;
-  margin-top: 7px;
   margin-left: 12px;
+  margin-top: 11px;
 }
-/* line 46, ../scss/_header.scss */
+@media (min-width: 600px) {
+  /* line 41, ../scss/_header.scss */
+  header .box .terug, header .box .terug:hover, header .box .terug:active {
+    margin-top: 7px;
+  }
+}
+/* line 54, ../scss/_header.scss */
 header img {
   display: block;
   margin: auto;
@@ -781,15 +942,29 @@ header img {
 .paginareglement footer {
   width: 100%;
   background-color: #aaae01;
-  padding: 25px;
+  padding: 5px;
 }
-/* line 22, ../scss/_reglement.scss */
-.paginareglement footer ul {
-  color: white;
+@media (min-width: 600px) {
+  /* line 15, ../scss/_reglement.scss */
+  .paginareglement footer {
+    padding: 25px;
+  }
 }
 /* line 24, ../scss/_reglement.scss */
+.paginareglement footer ul {
+  padding-left: 0px;
+  color: white;
+}
+/* line 27, ../scss/_reglement.scss */
 .paginareglement footer ul li {
   list-style-position: outside;
+  margin-bottom: 3px;
+}
+@media (min-width: 600px) {
+  /* line 27, ../scss/_reglement.scss */
+  .paginareglement footer ul li {
+    margin-bottom: 6px;
+  }
 }
 
 /* line 3, ../scss/_inschrijven.scss */
@@ -821,50 +996,54 @@ header img {
   padding-bottom: 20px;
 }
 /* line 20, ../scss/_inschrijven.scss */
+.paginainschrijven .formulier #coldkitchenbundle_speler_geboortedatumold {
+  display: none;
+}
+/* line 23, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier .alert {
   max-width: 600px;
-  -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
   background-color: white;
   color: #aaae01;
   font-family: 'MyriadProBold';
   margin: auto;
 }
-/* line 32, ../scss/_inschrijven.scss */
+/* line 35, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier .alert.fout {
   font: white;
   background-color: red;
 }
-/* line 39, ../scss/_inschrijven.scss */
+/* line 42, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier #tabs ul {
   padding-top: 15px;
   width: 100%;
   max-width: 600px;
   text-align: left;
   display: block;
-  margin: auto;
 }
-/* line 46, ../scss/_inschrijven.scss */
+/* line 49, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier #tabs ul li {
   font-size: 23px;
   font-family: 'MyriadProBold';
   display: inline-block;
   padding: 10px;
   color: white;
-  -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
-  box-shadow: rgba(255, 255, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
 }
-/* line 58, ../scss/_inschrijven.scss */
+/* line 61, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier input[type='submit'] {
   background-color: white;
   color: #aaae01;
   font-family: 'MyriadProBoldItalic';
   text-transform: uppercase;
   padding: 10px 35px;
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
   border: 0px;
 }
@@ -874,16 +1053,16 @@ header img {
     margin-top: 35px;
   }
 }
-/* line 75, ../scss/_inschrijven.scss */
+/* line 78, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier h1, .paginainschrijven .formulier h2, .paginainschrijven .formulier h3, .paginainschrijven .formulier h4, .paginainschrijven .formulier h5 {
   color: white;
 }
-/* line 79, ../scss/_inschrijven.scss */
+/* line 82, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier h2 {
   margin-bottom: 35px;
   margin-top: 35px;
 }
-/* line 84, ../scss/_inschrijven.scss */
+/* line 87, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier p {
   font-size: 22px;
 }
@@ -893,26 +1072,34 @@ header img {
     padding-bottom: 40px;
   }
 }
-/* line 92, ../scss/_inschrijven.scss */
+/* line 95, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier ul {
   list-style: none;
   padding: 0px;
 }
-/* line 95, ../scss/_inschrijven.scss */
+/* line 98, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier ul li {
   list-style: none;
 }
-/* line 100, ../scss/_inschrijven.scss */
+/* line 103, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier a, .paginainschrijven .formulier a:hover, .paginainschrijven .formulier a:focus {
   color: white;
 }
-/* line 105, ../scss/_inschrijven.scss */
+/* line 108, ../scss/_inschrijven.scss */
+.paginainschrijven form.spelers {
+  max-width: 100%;
+}
+/* line 111, ../scss/_inschrijven.scss */
+.paginainschrijven form.spelers .invoerveld label {
+  font-size: 16px;
+}
+/* line 117, ../scss/_inschrijven.scss */
 .paginainschrijven form {
   max-width: 600px;
   display: block;
   margin: auto;
 }
-/* line 111, ../scss/_inschrijven.scss */
+/* line 123, ../scss/_inschrijven.scss */
 .paginainschrijven form .titel {
   width: 100%;
   display: block;
@@ -924,139 +1111,447 @@ header img {
   padding-left: 3px;
   margin-top: 7px;
 }
-/* line 123, ../scss/_inschrijven.scss */
+/* line 127, ../scss/_inschrijven.scss */
 .paginainschrijven form .invoerveld {
   width: 100%;
   text-align: left;
   color: black;
-  -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 128, ../scss/_inschrijven.scss */
+/* line 132, ../scss/_inschrijven.scss */
 .paginainschrijven form .invoerveld input, .paginainschrijven form .invoerveld select#coldkitchenbundle_ploeg_competitie {
   width: 100%;
   color: black;
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
-  height: 32px;
+  min-height: 32px;
   border: 0;
   padding: 6px;
 }
-/* line 137, ../scss/_inschrijven.scss */
-.paginainschrijven form .invoerveld select[id^='coldkitchenbundle_ploeg_geboortedatum'] {
+/* line 141, ../scss/_inschrijven.scss */
+.paginainschrijven form .invoerveld select[id^='coldkitchenbundle_ploeg_geboortedatum'], .paginainschrijven form .invoerveld select[id^='coldkitchenbundle_speler_geboortedatum'] {
   border-radius: 7px;
-  height: 32px;
+  min-height: 32px;
   padding: 5px;
   margin-right: 5px;
 }
-/* line 144, ../scss/_inschrijven.scss */
+/* line 148, ../scss/_inschrijven.scss */
 .paginainschrijven form .invoerveld select {
   text-align: left;
 }
-/* line 150, ../scss/_inschrijven.scss */
+/* line 152, ../scss/_inschrijven.scss */
+.paginainschrijven form .invoerveld label {
+  width: 100%;
+  display: block;
+  color: white;
+  text-align: left;
+  font-family: 'MyriadProLight';
+  font-weight: 100;
+  font-size: 22px;
+  padding-left: 3px;
+  margin-top: 7px;
+}
+/* line 158, ../scss/_inschrijven.scss */
 .paginainschrijven form .adres .nopaddingright {
   padding-right: 0px;
   padding-left: 7px;
 }
-/* line 155, ../scss/_inschrijven.scss */
+/* line 163, ../scss/_inschrijven.scss */
 .paginainschrijven form .adres .nopaddingleft {
   padding-left: 0px;
   padding-right: 7px;
 }
-/* line 161, ../scss/_inschrijven.scss */
+/* line 169, ../scss/_inschrijven.scss */
 .paginainschrijven form .captcha {
   margin-top: 20px;
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
-  background-color: #ccc;
+  background-color: #cccccc;
 }
-/* line 165, ../scss/_inschrijven.scss */
+/* line 173, ../scss/_inschrijven.scss */
 .paginainschrijven form .captcha label {
   display: none;
 }
-/* line 169, ../scss/_inschrijven.scss */
+/* line 177, ../scss/_inschrijven.scss */
 .paginainschrijven form .captcha .image {
   padding: 7px;
 }
-/* line 171, ../scss/_inschrijven.scss */
+/* line 179, ../scss/_inschrijven.scss */
 .paginainschrijven form .captcha .image img {
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 175, ../scss/_inschrijven.scss */
+/* line 183, ../scss/_inschrijven.scss */
 .paginainschrijven form .captcha .antwoord {
   padding-right: 0px;
 }
-/* line 177, ../scss/_inschrijven.scss */
+/* line 185, ../scss/_inschrijven.scss */
 .paginainschrijven form .captcha .antwoord h5 {
   font-family: 'MyriadProBold';
   font-size: 16px;
   color: black;
   text-align: left;
 }
-/* line 187, ../scss/_inschrijven.scss */
+/* line 195, ../scss/_inschrijven.scss */
 .paginainschrijven form .captcha .antwoord .row div {
   padding: 0px;
   padding-right: 5px;
 }
-/* line 189, ../scss/_inschrijven.scss */
+/* line 197, ../scss/_inschrijven.scss */
 .paginainschrijven form .captcha .antwoord .row div input[type='submit'] {
   background-color: #aaae01;
   color: white;
   font-family: 'MyriadProBoldItalic';
   text-transform: uppercase;
 }
-/* line 196, ../scss/_inschrijven.scss */
+/* line 204, ../scss/_inschrijven.scss */
 .paginainschrijven form .captcha .antwoord .row div input {
   height: 28px;
   border: 0;
-  -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
   border-radius: 6px;
 }
 
-/* line 211, ../scss/_inschrijven.scss */
+/* line 219, ../scss/_inschrijven.scss */
 #carousel-spelers {
   margin-top: 15px;
 }
-/* line 213, ../scss/_inschrijven.scss */
+/* line 221, ../scss/_inschrijven.scss */
 #carousel-spelers .controls {
   margin-bottom: 10px;
 }
-/* line 216, ../scss/_inschrijven.scss */
+/* line 224, ../scss/_inschrijven.scss */
+#carousel-spelers .controls .volgende, #carousel-spelers .controls .vorige {
+  cursor: pointer;
+}
+/* line 227, ../scss/_inschrijven.scss */
 #carousel-spelers .controls .vorige {
   float: right;
+  visibility: hidden;
 }
-/* line 219, ../scss/_inschrijven.scss */
+/* line 231, ../scss/_inschrijven.scss */
 #carousel-spelers .controls .volgende {
   float: left;
 }
-/* line 222, ../scss/_inschrijven.scss */
+/* line 234, ../scss/_inschrijven.scss */
 #carousel-spelers .controls #spelernaam {
   font-size: 20px;
 }
+/* line 240, ../scss/_inschrijven.scss */
+#carousel-spelers .uitleg h5, #carousel-spelers .uitleg h6 {
+  color: #6b7103;
+  font-family: 'MyriadProRegular';
+}
+/* line 245, ../scss/_inschrijven.scss */
+#carousel-spelers .uitleg h5 {
+  font-size: 20px;
+}
+/* line 249, ../scss/_inschrijven.scss */
+#carousel-spelers .uitleg h6 {
+  font-size: 16px;
+}
 
-/* line 34, ../scss/Coldkitchen.scss */
-html, body {
+/* line 258, ../scss/_inschrijven.scss */
+.hiddenspelernummer, .hiddendirty, .hiddenrow {
+  display: none;
+}
+
+/* line 261, ../scss/_inschrijven.scss */
+.spelerstabel {
+  margin-top: 15px;
+  background-color: #bebf87;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: solid 2px white;
+}
+/* line 267, ../scss/_inschrijven.scss */
+.spelerstabel table {
+  margin-bottom: 0px;
+}
+/* line 271, ../scss/_inschrijven.scss */
+.spelerstabel table tbody tr td, .spelerstabel table tbody tr th {
+  padding: 1px;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 4px;
+}
+/* line 278, ../scss/_inschrijven.scss */
+.spelerstabel table tbody tr td:last-child img {
+  display: block;
+  margin: auto;
+}
+/* line 286, ../scss/_inschrijven.scss */
+.spelerstabel table tbody tr:hover td, .spelerstabel table tbody tr:hover th {
+  background-color: #83853d;
+  cursor: pointer;
+}
+
+/* line 297, ../scss/_inschrijven.scss */
+#modalbevestig, .modal {
+  color: #6b7103;
+}
+/* line 299, ../scss/_inschrijven.scss */
+#modalbevestig .modal-title, .modal .modal-title {
+  color: #6b7103;
+  font-family: 'MyriadProBoldItalic';
+}
+/* line 304, ../scss/_inschrijven.scss */
+#modalbevestig .modal-body p, .modal .modal-body p {
+  font-size: 16px;
+  font-family: 'MyriadProRegular';
+}
+/* line 309, ../scss/_inschrijven.scss */
+#modalbevestig .btn-primary, .modal .btn-primary {
+  background-image: -webkit-gradient(linear, to bottom, to top, color-stop(0%, #d3d800), color-stop(100%, #6b7103));
+  background-image: -webkit-linear-gradient(to bottom, #d3d800, #6b7103);
+  background-image: -moz-linear-gradient(to bottom, #d3d800, #6b7103);
+  background-image: -o-linear-gradient(to bottom, #d3d800, #6b7103);
+  background-image: linear-gradient(to bottom, #d3d800, #6b7103);
+  border: solid 1px white;
+}
+/* line 313, ../scss/_inschrijven.scss */
+#modalbevestig .btn-primary:hover, #modalbevestig .btn-primary:focus, #modalbevestig .btn-primary:active, .modal .btn-primary:hover, .modal .btn-primary:focus, .modal .btn-primary:active {
+  background-image: -webkit-gradient(linear, to bottom, to top, color-stop(0%, #6b7103), color-stop(100%, #d3d800));
+  background-image: -webkit-linear-gradient(to bottom, #6b7103, #d3d800);
+  background-image: -moz-linear-gradient(to bottom, #6b7103, #d3d800);
+  background-image: -o-linear-gradient(to bottom, #6b7103, #d3d800);
+  background-image: linear-gradient(to bottom, #6b7103, #d3d800);
+  border: solid 1px darkgray;
+  background-color: transparent;
+  background-position: 0;
+}
+
+/* line 321, ../scss/_inschrijven.scss */
+#modalload {
+  -webkit-transition: 0.05s;
+  -moz-transition: 0.05s;
+  -o-transition: 0.05s;
+  transition: 0.05s;
+  color: #d3d800;
+}
+
+/* line 326, ../scss/_inschrijven.scss */
+#foutmelding {
+  display: none;
+  color: red;
+  font-family: 'MyriadProRegular';
+  font-size: 18px;
+  float: right;
+  padding-top: 15px;
+}
+@media (min-width: 600px) {
+  /* line 326, ../scss/_inschrijven.scss */
+  #foutmelding {
+    padding-top: 40px;
+  }
+}
+
+/* line 342, ../scss/_inschrijven.scss */
+.groen {
+  background-color: #d3d800;
   width: 100%;
+  padding: 30px;
+}
+
+/* line 349, ../scss/_inschrijven.scss */
+#login input {
+  width: 100%;
+  color: black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  min-height: 32px;
+  border: 0;
+  padding: 6px;
+}
+/* line 357, ../scss/_inschrijven.scss */
+#login label {
+  width: 100%;
+  display: block;
+  color: white;
+  text-align: left;
+  font-family: 'MyriadProLight';
+  font-weight: 100;
+  font-size: 22px;
+  padding-left: 3px;
+  margin-top: 7px;
+}
+/* line 361, ../scss/_inschrijven.scss */
+#login input[type='submit'] {
+  border: 0;
+  color: #d3d800;
+}
+
+/* line 2, ../scss/_fotos.scss */
+.niettonen {
+  display: none;
+}
+
+/* line 6, ../scss/_fotos.scss */
+.fotolijn {
+  height: 100%;
+}
+/* line 9, ../scss/_fotos.scss */
+.fotolijn .eerstefoto, .fotolijn .tweedefoto, .fotolijn .derdefoto {
+  display: block;
+  float: left;
+  position: relative;
+  height: 350px;
+}
+/* line 14, ../scss/_fotos.scss */
+.fotolijn .eerstefoto .overlay, .fotolijn .eerstefoto .foto, .fotolijn .tweedefoto .overlay, .fotolijn .tweedefoto .foto, .fotolijn .derdefoto .overlay, .fotolijn .derdefoto .foto {
+  margin: auto;
+  display: block;
+}
+/* line 19, ../scss/_fotos.scss */
+.fotolijn .eerstefoto .overlay, .fotolijn .tweedefoto .overlay, .fotolijn .derdefoto .overlay {
+  overflow: hidden;
+  position: relative;
+  /*@include translateY(-50%); */
+  z-index: 2;
+  background: transparent;
+  border: solid 5px white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) skewX(-10deg);
+  -moz-transform: translateY(-50%) skewX(-10deg);
+  -ms-transform: translateY(-50%) skewX(-10deg);
+  -o-transform: translateY(-50%) skewX(-10deg);
+  transform: translateY(-50%) skewX(-10deg);
+}
+/* line 33, ../scss/_fotos.scss */
+.fotolijn .eerstefoto .overlay img, .fotolijn .tweedefoto .overlay img, .fotolijn .derdefoto .overlay img {
+  /* min-width: 120%;
+  min-height: 120%;
+  width: 120%;
+  height:auto; */
+  -webkit-transform: skewX(10deg);
+  -moz-transform: skewX(10deg);
+  -ms-transform: skewX(10deg);
+  -o-transform: skewX(10deg);
+  transform: skewX(10deg);
+  position: relative;
+  left: -50px;
+}
+/* line 45, ../scss/_fotos.scss */
+.fotolijn .eerstefoto .foto, .fotolijn .tweedefoto .foto, .fotolijn .derdefoto .foto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+/* line 50, ../scss/_fotos.scss */
+.fotolijn .eerstefoto, .fotolijn .derdefoto {
+  width: 25%;
+}
+/* line 51, ../scss/_fotos.scss */
+.fotolijn .eerstefoto .overlay, .fotolijn .derdefoto .overlay {
+  width: 200px;
+  height: 200px;
+}
+/* line 55, ../scss/_fotos.scss */
+.fotolijn .eerstefoto .overlay img, .fotolijn .derdefoto .overlay img {
+  width: 300px;
+  height: auto;
+}
+/* line 63, ../scss/_fotos.scss */
+.fotolijn .tweedefoto {
+  width: 50%;
+}
+/* line 64, ../scss/_fotos.scss */
+.fotolijn .tweedefoto .overlay {
+  width: 300px;
+  height: 300px;
+}
+/* line 67, ../scss/_fotos.scss */
+.fotolijn .tweedefoto .overlay img {
+  width: 450px;
+  height: auto;
+  left: -70px;
+}
+
+/* line 78, ../scss/_fotos.scss */
+.fotos i {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: white;
+  cursor: pointer;
+}
+/* line 83, ../scss/_fotos.scss */
+.fotos .row {
+  height: 350px;
+}
+/* line 85, ../scss/_fotos.scss */
+.fotos .row .col-xs-1 {
   height: 100%;
 }
 
-/* line 38, ../scss/Coldkitchen.scss */
+/* line 91, ../scss/_fotos.scss */
+#huidige, #aantalfotos {
+  display: none;
+}
+
+/* line 95, ../scss/_fotos.scss */
+.volgendefoto, .vorigefoto {
+  display: inline-block;
+}
+
+/* line 98, ../scss/_fotos.scss */
+.volgendefoto.onzichtbaar, .vorigefoto.onzichtbaar {
+  display: none;
+}
+
+/* line 32, ../scss/Coldkitchen.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0px;
+}
+
+/* line 39, ../scss/Coldkitchen.scss */
 body {
   font-family: 'MyriadProRegular';
 }
 
-/* line 42, ../scss/Coldkitchen.scss */
+/* line 43, ../scss/Coldkitchen.scss */
 a, a:hover, a:focus, a:active {
   text-decoration: none;
 }
 
-/* line 46, ../scss/Coldkitchen.scss */
+/* line 47, ../scss/Coldkitchen.scss */
 h1, h2, h3, h4, h5 {
   text-align: center;
   width: 100%;
@@ -1064,36 +1559,37 @@ h1, h2, h3, h4, h5 {
   font-family: 'MyriadProBoldItalic';
 }
 
-/* line 52, ../scss/Coldkitchen.scss */
+/* line 53, ../scss/Coldkitchen.scss */
 h1 {
   font-size: 36px;
   color: #080808;
 }
 @media (min-width: 600px) {
-  /* line 52, ../scss/Coldkitchen.scss */
+  /* line 53, ../scss/Coldkitchen.scss */
   h1 {
     font-size: 72px;
   }
 }
 
-/* line 60, ../scss/Coldkitchen.scss */
+/* line 61, ../scss/Coldkitchen.scss */
 h3 {
   color: #605f60;
   font-size: 22px;
 }
 
-/* line 64, ../scss/Coldkitchen.scss */
+/* line 65, ../scss/Coldkitchen.scss */
 h5 {
   font-family: 'MyriadProLight';
   font-size: 22px;
 }
 
-/* line 70, ../scss/Coldkitchen.scss */
+/* line 71, ../scss/Coldkitchen.scss */
 .section {
   overflow: hidden;
+  padding: 20px 0px;
 }
 
-/* line 75, ../scss/Coldkitchen.scss */
+/* line 77, ../scss/Coldkitchen.scss */
 .test {
   position: fixed;
   top: 0;
@@ -1102,7 +1598,7 @@ h5 {
   height: 100%;
   z-index: -1;
 }
-/* line 82, ../scss/Coldkitchen.scss */
+/* line 84, ../scss/Coldkitchen.scss */
 .test:before {
   content: '';
   position: absolute;
@@ -1110,38 +1606,69 @@ h5 {
   right: 0;
   bottom: 0;
   left: 0;
-  background: -moz-radial-gradient(center, ellipse cover, transparent 0%, rgba(0, 0, 0, 0.65) 91%, rgba(0, 0, 0, 0.65) 100%);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 91%, rgba(0, 0, 0, 0.65) 100%);
   /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, transparent), color-stop(91%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 0.65)));
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(91%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 0.65)));
   /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover, transparent 0%, rgba(0, 0, 0, 0.65) 91%, rgba(0, 0, 0, 0.65) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 91%, rgba(0, 0, 0, 0.65) 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover, transparent 0%, rgba(0, 0, 0, 0.65) 91%, rgba(0, 0, 0, 0.65) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 91%, rgba(0, 0, 0, 0.65) 100%);
   /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover, transparent 0%, rgba(0, 0, 0, 0.65) 91%, rgba(0, 0, 0, 0.65) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 91%, rgba(0, 0, 0, 0.65) 100%);
   /* IE10+ */
   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 91%, rgba(0, 0, 0, 0.65) 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
 
-/* line 99, ../scss/Coldkitchen.scss */
+/* line 101, ../scss/Coldkitchen.scss */
 .pagina {
   overflow: hidden;
 }
 
-/* line 103, ../scss/Coldkitchen.scss */
+/* line 105, ../scss/Coldkitchen.scss */
 .nopadding {
   padding: 0px;
 }
 
-/* line 107, ../scss/Coldkitchen.scss */
+/* line 109, ../scss/Coldkitchen.scss */
 .nopaddingright {
   padding-right: 0px;
 }
 
-/* line 111, ../scss/Coldkitchen.scss */
+/* line 113, ../scss/Coldkitchen.scss */
 .nopaddingleft {
   padding-left: 0px;
+}
+
+/* line 117, ../scss/Coldkitchen.scss */
+.modalloading {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8) url("../images/socceranimation.gif") 50% 50% no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+/* line 133, ../scss/Coldkitchen.scss */
+body.loading {
+  overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+/* line 139, ../scss/Coldkitchen.scss */
+body.loading .modalloading {
+  display: block;
+}
+
+/* line 143, ../scss/Coldkitchen.scss */
+.hidden {
+  display: hidden;
 }

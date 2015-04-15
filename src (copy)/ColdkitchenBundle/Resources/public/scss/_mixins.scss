@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-mrt-2015, 10:24:24
+    Author     : Gebruiker
+*/
+
+
+@mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (min-width: 1200px) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (min-width: 720px) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (min-width: 600px) { @content ; }
+  }
+   @else if $point == phablet {
+     @media (min-width: 420px)  { @content ; }
+  }
+  @else if $point == mobileonly {
+     @media (max-width: 420px)  { @content ; }
+  }
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin labelform {
+  width: 100%;
+      display: block;
+      color: white;
+      text-align: left;
+      font-family: 'MyriadProLight';
+      font-weight:100;
+      font-size: 22px;
+      padding-left:3px;
+      margin-top: 7px;
+  }

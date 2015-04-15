@@ -8,6 +8,3 @@ _liip_imagine:
 
 genemu_base64:
     resource: "@GenemuFormBundle/Resources/config/routing/base64.xml"
-
-fos_user:
-    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

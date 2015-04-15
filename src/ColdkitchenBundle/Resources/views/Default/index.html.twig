@@ -1,25 +1,14 @@
 {% extends 'base.html.twig' %}
 
-{% block javascripts %}
-    {{ parent() }}
-    <script src="{{ asset("bundles/coldkitchen/js/jquery.fullPage.min.js") }}"></script>
-    <script src="{{ asset("bundles/coldkitchen/js/jquery.slimscroll.min.js") }}"></script>
-{% endblock %}
-
-{% block stylesheets %}
-    {{ parent() }}    
-    <link rel="stylsheet" href="{{ asset("bundles/coldkitchen/css/jquery.fullPage.css") }}">
-{% endblock %}
-
-
 {% block body %}
     
-      {% block divtest %}
+     
+        <div class="test">
+        </div>  
+        <div class="section1fixed">     
+        </div>
         <div id="fullpage">
-            <div id="section-home" class="section section1">
-                <div class="test">
-                </div>
-        {% endblock %}
+            <div id="section-home" class="section">
         
             <div class="data">
                 <div class="row logos">
@@ -28,7 +17,7 @@
                             <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/logo.png") }}">
                         </div>
                         <div class="logo-facebook col-xs-4 col-sm-6">
-                            <img src="{{ image("@ColdkitchenBundle/Resources/public/images/facebook.png") }}">
+                            <a href="https://www.facebook.com/coldkitchentornooi"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/facebook.png") }}"></a>
                         </div>
                     </div>
                 </div>
@@ -54,7 +43,7 @@
                             
                         </div>
                         <div class="klein programma col-xs-6 col-sm-2">                    
-                            <a href="{{ path('programma') }}" class="titel dummy"></a>
+                            <a href="#section-programma" class="titel dummy"></a>
                             <div class="background">
                                 &nbsp;
                             </div>
@@ -74,7 +63,7 @@
                             </div>
                         </div>
                         <div class="klein fotos col-xs-6 col-sm-2">
-                             <a href="{{ path('programma') }}" class="titel dummy"></a>
+                             <a href="{{ path('fotos') }}" class="titel dummy"></a>
                              <div class="background">
                                 &nbsp;
                             </div>
@@ -84,7 +73,7 @@
                             </div>
                         </div>
                         <div class="klein contact col-xs-6 col-sm-2">
-                             <a href="{{ path('programma') }}" class="titel dummy"></a>
+                             <a href="{{ path('contact') }}" class="titel dummy"></a>
                              <div class="background">
                                 &nbsp;
                             </div>
@@ -116,7 +105,7 @@
                 
             </div>
         </div>
-        <div id="section-inschrijven" class="section">
+        <div id="section-inschrijven" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
             <div class="container">
                 <h1>Hoe inschrijven?</h1>
                 <h3>Volg onderstaande stappen</h3>
@@ -167,7 +156,7 @@
                 <a class="nextslide" href="#"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlgrijs.png") }}"></a>
             </div> 
         </div>
-        <div id="section-ladies" class="section">
+        <div id="section-ladies" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
             <div class="container">
                 <div class="rij">
                     <div class="logo-coldkitchenladies ">
@@ -193,26 +182,27 @@
              
         </div>
         
-        <div id="section-fotos" class="section">
-            <div class="row">
+        <div id="section-fotos" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
+            <!-- <div class="row">
                 <div class="container">
                     <h1>Foto's</h1>
                 </div>
             </div>
             <div class="onderaan">
                 <div class="container">
-                    <a class="nextslide" href="#"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlgrijs.png") }}"></a>    
+                    
                 </div>
-            </div> 
+            </div>  -->
+            {% include 'ColdkitchenBundle:Default:facebook.html.twig' %}
         </div>
-        <div id="section-partners" class="section">
+        <div id="section-partners" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
             <div class="container">
                 <div class="row">
                     <div class="container">
                     {% for partner in partners %}
 
                         <div class="partnerfoto col-sm-4 col-xs-6">
-                            <img class="img-responsive" src="{{ image(partner.getLogoWeb()) }}">
+                            <img class="img-responsive" src="{{ image(partner.getLogoWeb()).grayscale().colorize(255,255,255) }}">
                         </div>
                         {% if loop.index is divisible by(3) %}
                         
@@ -231,7 +221,7 @@
                 </div>
             </div> 
         </div>
-        <div id="section-programma" class="section">
+        <div id="section-programma" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-4">
@@ -252,7 +242,7 @@
                 </div>
             </div> 
         </div>
-        <div id="section-contact" class="section">
+        <div id="section-contact" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
             <div class="container">
                 <div class="row contact">
                     <h1>Contacteer het Cold Kitchen Team</h1>
@@ -276,33 +266,36 @@
                         <a class="button contact" href="#">Meer over ons</a>    
                     </div>
                 </div>
-                <div class="onderaan">
-                    <a class="nextslide" href="#"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlwit.png") }}"></a>    
-                </div>  
             </div>
         </div>
-        <div id="section-footer" class="section">
+        <div id="section-footer" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
             <div class="container">
                 <div id="map-canvas"></div>
                 <div class="row footer">
-                    <div class="col-sm-3">
-                        <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/logo.png") }}">
+                    <div class="col-xs-3">
+                        <img class="img-responsive hidden-xs" src="{{ image("@ColdkitchenBundle/Resources/public/images/logo.png") }}">
+                        <img class="img-responsive visible-xs hidden-sm" src="{{ image("@ColdkitchenBundle/Resources/public/images/logoklein.png") }}">
                     </div>
-                    <div class="col-sm-2">
-                        <a href="#">Tornooireglement</a>
+                    <div class="col-xs-6">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a href="{{ path("reglement") }}">Tornooireglement</a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="{{ path("ploeg_edit_kort") }}">Ploegbeheer</a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="https://www.facebook.com/coldkitchentornooi">Facebook</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-2">
-                        <a href="#">Ploegbeheer</a>
-                    </div>
-                    <div class="col-sm-2">
-                        <a href="#">Facebook</a>
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/logoladies.png") }}">
+                    <div class="col-xs-3">
+                        <img class="img-responsive hidden-xs" src="{{ image("@ColdkitchenBundle/Resources/public/images/logoladies.png") }}">
+                        <img class="img-responsive visible-xs hidden-sm" src="{{ image("@ColdkitchenBundle/Resources/public/images/logoladiesklein.png") }}">
                     </div>
                 </div>
                 <div class="row copyright">
-                    <a class="powered" href="#">Powered by MagicT</a>
+                    <a class="powered" href="http://www.magict.be">Powered by MagicT</a>
                 </div>
             </div>
         </div>
@@ -312,7 +305,7 @@
         <script>
             $(document).ready(function(){
                 {% block backstretch %}
-                	$('.section1').backstretch([
+                	$.backstretch([
                         {% for foto in fotos|shuffle %}
                         {% set url = 'uploads/achtergrondfotos/' ~ foto.filename %}
                         
@@ -327,18 +320,32 @@
                     $.fn.fullpage.moveSectionDown();
                 });
 
+                $( '#section-home' ).width( $( window ).width() );
+                $( '#section-home' ).height( $( window ).height() );
+
+                /*{% if not is_mobile() %}
+
                 $('#fullpage').fullpage({
                         responsive: 600,
                         autoScrolling: true,
                         scrollOverflow: true,
-                        fitToSection: true
-                        /*afterResize: function(){
-                            var pluginContainer = $(this);
-                            alert("The sections have finished resizing");
-                        }*/
+                        fitToSection: true,
+
+                        
                         
                 });
-                
+                 
+
+                {% else %}*/
+
+                    /*$('#section-home').fullpage({
+                        autoScrolling: false    
+                    });*/
+                    $( '#section-home' ).width( $( window ).width() );
+                    $( '#section-home' ).height( $( window ).height() );
+
+
+                /*{% endif %}*/
             });
             
             
@@ -354,8 +361,8 @@
                     var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
                     var marker = new google.maps.Marker({
                       position: new google.maps.LatLng(51.2196677,3.2466486),
-                      map: map/*,
-                      icon: 'images/logomap.png'*/
+                      map: map,
+                      icon: '{{ image("@ColdkitchenBundle/Resources/public/images/logomap.png") }}'
                     });
 
                     google.maps.event.addListener(marker, 'click', function() { 
