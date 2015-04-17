@@ -1,0 +1,31 @@
+.loginpagina {
+	height: 90%;
+
+	.container {
+		@include breakpoint(tablet) {
+			height: 30%;	
+		}
+		
+	}
+
+	p {
+		font-family: 'MyriadProRegular';
+		font-size: 18px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.groen {
+		@include breakpoint(tablet) {
+			height: 70%;	
+		}
+		
+		form {
+			max-width: 500px;
+			display: block;
+			margin:auto;
+		}
+	}
+
+
+}

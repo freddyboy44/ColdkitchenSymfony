@@ -27,6 +27,17 @@ a.button,a.button:hover,a.button:active {
 	background-color: $donkerrozekleur;
 }
 
+.button.ploegbeheer {
+	background-color: $grijzeachtergrond;
+	color: white;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	@include breakpoint(tablet) {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+}
+
 .button.fotos {
 	color: #4c4c06;
 	background-color: white;

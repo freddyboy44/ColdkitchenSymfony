@@ -1,0 +1,173 @@
+<html>
+	<head>
+		{% block title %}
+			<title>Inschrijving Cold Kitchentornooi</title>
+		{% endblock %}
+		<style>
+			html, body {
+				width: 100%;
+			}
+			body {
+				
+			}
+			h4 {
+				font-size: 26px;
+				color: black;
+				font-family: 'MyriadProSemiBoldItalic';
+			}
+			ul {
+				list-style: none;
+				li {
+					list-style: none;
+				}
+			}
+			.vierkant {
+				border: solid 3px #aaae01;
+				padding-top: 40px;padding-bottom: 40px;
+				padding-left: 30px;padding-right:30px;
+				width: 85%;
+				margin: auto;
+				max-width: 750px;
+			}
+			#logocoldkitchen, #logoladies {
+				display: block;
+				height: 40px;
+				width: auto;
+				margin-bottom: 20px;
+			}
+			#logocoldkitchen {
+				float: left;
+			}
+			#logoladies {
+				float: right;
+			}
+			.logos {
+				margin-bottom: 30px;
+				overflow: hidden;
+			}
+			.voornaam {
+				color: #aaae01;
+			}
+
+			p {
+				font-family: 'MyriadProRegular';
+			}
+			p.dikker {
+				font-family: 'MyriadProSemiBold';
+			}
+
+			a, a:hover, a:focus, a.active {
+				color: #aaae01;
+				text-decoration: none;
+			}
+
+			a.button {
+				color: white;
+				background-color: #aaae01;
+				padding: 10px 50px;
+				-webkit-border-radius: 7px;
+				-moz-border-radius: 7px;
+				border-radius: 7px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				display: inline-block;
+				font-family: 'MyriadProBoldItalic';
+				font-size: 34px;
+			}
+
+			.wachtwoord {
+				color: #aaae01;
+				margin-left: 30px;
+			}
+
+			@font-face {
+			    font-family: 'MyriadProSemiBoldItalic';
+			    src: url('{{ asset('bundles/coldkitchen/fonts/MYRIADPRO-SEMIBOLDIT-webfont.eot', absolute=true) }}');
+			    src: url('{{ asset('bundles/coldkitchen/fonts/MYRIADPRO-SEMIBOLDIT-webfont.eot', absolute=true) }}?#iefix') format('embedded-opentype'),
+			         url('{{ asset('bundles/coldkitchen/fonts/MYRIADPRO-SEMIBOLDIT-webfont.woff2', absolute=true) }}') format('woff2'),
+			         url('{{ asset('bundles/coldkitchen/fonts/MYRIADPRO-SEMIBOLDIT-webfont.woff', absolute=true) }}') format('woff'),
+			         url('{{ asset('bundles/coldkitchen/fonts/MYRIADPRO-SEMIBOLDIT-webfont.ttf', absolute=true) }}') format('truetype'),
+			         url('{{ asset('bundles/coldkitchen/fonts/MYRIADPRO-SEMIBOLDIT-webfont.svg#webfontregular', absolute=true) }}') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+			}
+			@font-face {
+			    font-family: 'MyriadProRegular';
+			    src: url('{{ asset('bundles/coldkitchen/fonts/MYRIADPRO-REGULAR-webfont.eot', absolute=true) }}');
+			    src: url('{{ asset('bundles/coldkitchen/fonts/MYRIADPRO-REGULAR-webfont.eot', absolute=true) }}?#iefix') format('embedded-opentype'),
+			         url('{{ asset('bundles/coldkitchen/fonts/MYRIADPRO-REGULAR-webfont.woff2', absolute=true) }}') format('woff2'),
+			         url('{{ asset('bundles/coldkitchen/fonts/MYRIADPRO-REGULAR-webfont.woff', absolute=true) }}') format('woff'),
+			         url('{{ asset('bundles/coldkitchen/fonts/MYRIADPRO-REGULAR-webfont.ttf', absolute=true) }}') format('truetype'),
+			         url('{{ asset('bundles/coldkitchen/fonts/MYRIADPRO-REGULAR-webfont.svg#webfontregular', absolute=true) }}') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+			}
+			@font-face {
+			    font-family: 'MyriadProSemiBold';
+			    src: url('{{ asset('bundles/coldkitchen/fonts/myriadpro-semibold-webfont.eot', absolute=true) }}');
+			    src: url('{{ asset('bundles/coldkitchen/fonts/myriadpro-semibold-webfont.eot', absolute=true) }}?#iefix') format('embedded-opentype'),
+			         url('{{ asset('bundles/coldkitchen/fonts/myriadpro-semibold-webfont.woff2', absolute=true) }}') format('woff2'),
+			         url('{{ asset('bundles/coldkitchen/fonts/myriadpro-semibold-webfont.woff', absolute=true) }}') format('woff'),
+			         url('{{ asset('bundles/coldkitchen/fonts/myriadpro-semibold-webfont.ttf', absolute=true) }}') format('truetype'),
+			         url('{{ asset('bundles/coldkitchen/fonts/myriadpro-semibold-webfont.svg#webfontregular', absolute=true) }}') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+			}
+			@font-face {
+			    font-family: 'MyriadProBoldItalic';
+			    src: url('{{ asset('bundles/coldkitchen/fonts/MYRIADPRO-BOLDIT-webfont.eot', absolute=true) }}');
+			    src: url('{{ asset('bundles/coldkitchen/fonts/MYRIADPRO-BOLDIT-webfont.eot', absolute=true) }}?#iefix') format('embedded-opentype'),
+			         url('{{ asset('bundles/coldkitchen/fonts/MYRIADPRO-BOLDIT-webfont.woff2', absolute=true) }}') format('woff2'),
+			         url('{{ asset('bundles/coldkitchen/fonts/MYRIADPRO-BOLDIT-webfont.woff', absolute=true) }}') format('woff'),
+			         url('{{ asset('bundles/coldkitchen/fonts/MYRIADPRO-BOLDIT-webfont.ttf', absolute=true) }}') format('truetype'),
+			         url('{{ asset('bundles/coldkitchen/fonts/MYRIADPRO-BOLDIT-webfont.svg#webfontregular', absolute=true) }}') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+			}
+
+
+			
+
+		</style>
+	</head>
+	<body style="width:100%">
+		<div class="vierkant">
+			<div class="logos">
+				<img id="logocoldkitchen" alt="Logo Coldkitchen" src="{{ asset("bundles/coldkitchen/images/logozwart.png", absolute=true) }}">
+				<img id="logoladies" alt="Logo Coldkitchen" src="{{ asset("bundles/coldkitchen/images/logoladieszwart.png", absolute=true) }}">
+			</div>
+			<h4>Vraag via de website</h4><br/>
+			<p class="dikker">
+				{{ vraag.tekst }}
+			</p>
+			
+			
+			<table>
+				<tr>
+					<th>
+						Email : 
+					</th>	
+					<td>
+						{{ vraag.email }}
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Telefoon : 
+					</th>	
+					<td>
+						{{ vraag.telefoon }}
+					</td>
+				</tr>
+				
+				
+			</table>
+			
+			
+			<p>
+				Met sportieve groeten<br/>
+				{{ vraag.naam }}
+			</p>	
+		</div>
+	</body>
+</html>

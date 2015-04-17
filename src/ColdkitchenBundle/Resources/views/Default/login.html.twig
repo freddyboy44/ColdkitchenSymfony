@@ -2,49 +2,58 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-	{% include '_header.twig' %}
-	<div class="paginainschrijven">
-		<h1>Inloggen</h1>
-		<br/>
-		<p>
-			Gebruik de aanmeldgegevens vermeld in je bevestigingsmail.
-		</p>
-		{% if error %}
-	    <div>{{ error.messageKey|trans(error.messageData) }}</div>
-	{% endif %}
-	<div class="groen">
-		<div class="container">
-			<form id="login" action="{{ path('login_check') }}" method="post">
-				<div class="row">
-					<div class="col-xs-4">
-						<label for="username">Emailadres:</label>
-					</div>
-					<div class="col-xs-8">
-						<input type="text" id="username" name="_username" value="{{ last_username }}" />		
-					</div>
+	<div class="fullpage">
+		{% include '_header.twig' %}
+		<div class="loginpagina">
+			<div class="container">
+				<h1>Inloggen</h1>
+				<br/>
+				<p>
+					Gebruik de aanmeldgegevens vermeld in je bevestigingsmail.
+				</p>
+				{% if error %}
+			    	<div>{{ error.messageKey|trans(error.messageData) }}</div>
+				{% endif %}
+			</div>
+			<div class="groen">
+				<div class="container">
+					<form id="login" action="{{ path('login_check') }}" method="post">
+						<div class="row">
+							<div class="col-xs-4">
+								<label for="username">Emailadres:</label>
+							</div>
+							<div class="col-xs-8">
+								<input type="text" id="username" name="_username" value="{{ last_username }}" />		
+							</div>
+						</div>
+					    <div class="row">
+							<div class="col-xs-4">
+								<label for="password">Wachtwoord:</label>
+							</div>
+							<div class="col-xs-8">
+								<input type="password" id="password" name="_password" />
+							</div>
+						</div>
+					    <div class="row">
+					    	<input type='submit' class="button partners"  value="Login"></input>
+					    	
+					    </div>
+					   
+					    {#
+					        If you want to control the URL the user
+					        is redirected to on success (more details below)
+					        
+					    #}
+					    <input type="hidden" name="_target_path" value="/bewerkploeg" />
+					</form>
 				</div>
-			    <div class="row">
-					<div class="col-xs-4">
-						<label for="password">Wachtwoord:</label>
-					</div>
-					<div class="col-xs-8">
-						<input type="password" id="password" name="_password" />
-					</div>
-				</div>
-			    <div class="row">
-			    	<input type='submit' class="button partners"  value="Login"></input>
-			    	
-			    </div>
-			   
-			    {#
-			        If you want to control the URL the user
-			        is redirected to on success (more details below)
-			        
-			    #}
-			    <input type="hidden" name="_target_path" value="/bewerkploeg" />
-
-			    
-			</form>
+			</div>
 		</div>
 	</div>
+	<script>
+		$(document).ready(function(){
+			$( '.fullpage' ).width( $( window ).width() );
+            $( '.fullpage' ).height( $( window ).height() );
+		})
+	</script>
 {% endblock %}

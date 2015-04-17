@@ -9,6 +9,7 @@
 	h2, h3, h4, h5 {
 		font-family: 'MyriadProSemiBoldItalic';
 		font-size: 22px;
+		color: white;
 
 		@include breakpoint(tablet) {
 			font-size: 36px;
@@ -19,30 +20,57 @@
 		}
 	}
 
+	h2 {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		@include breakpoint(tablet) {
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+	}
+
 	p {
 		font-family: 'MyriadProRegular';
 		font-size: 16px;
 		@include breakpoint(desktop) {
-			font-size: 32px;
+			font-size: 24px;
+		}
+		@include breakpoint(tablet) {
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+	}
+
+	a.button {
+		display: block;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		@include breakpoint(tablet) {
+			margin-top: 40px;
+			margin-bottom: 40px;
 		}
 	}
 
 	a.nextslide {
 		color: $rozekleur;
 	}
+
+	.logo-coldkitchenladies {
+		@include breakpoint(tablet) {
+			margin-top: 50px;
+		}
+		img {
+			max-width: 500px;
+			width: 100%;	
+			height: auto;	
+			display: block;
+			margin: auto;
+		}
+		
+	}
 }
 
-.logo-coldkitchenladies {
-	margin-top: $margestartpagina;
-	img {
-		max-width: 500px;
-		width: 100%;	
-		height: auto;	
-		display: block;
-		margin: auto;
-	}
-	
-}
+
 
 
 .rij {

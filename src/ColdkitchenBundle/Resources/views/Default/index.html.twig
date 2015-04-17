@@ -1,351 +1,387 @@
 {% extends 'base.html.twig' %}
 
+
 {% block body %}
     
-     
+        <div class="overtest">
+        </div>
         <div class="test">
         </div>  
+
         <div class="section1fixed">     
         </div>
         <div id="fullpage">
-            <div id="section-home" class="section">
-        
-            <div class="data">
-                <div class="row logos">
-                    <div class="container">
-                        <div class="logo-coldkitchen col-xs-8 col-sm-6">
-                            <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/logo.png") }}">
-                        </div>
-                        <div class="logo-facebook col-xs-4 col-sm-6">
-                            <a href="https://www.facebook.com/coldkitchentornooi"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/facebook.png") }}"></a>
+            <div id="section-home" class="section eerstepagina">
+                <div class="data">
+                    <div class="row logos">
+                        
+                            <div class="logo-coldkitchen col-xs-8 col-sm-offset-1 col-sm-5">
+                                <img id="logocoldkitchen" class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/logo.png") }}">
+                            </div>
+                            <div class="logo-facebook col-xs-4 col-sm-5">
+                                <a href="https://www.facebook.com/coldkitchentornooi"><img id="logofacebook" src="{{ image("@ColdkitchenBundle/Resources/public/images/facebook.png") }}"></a>
+                            </div>
+                        
+                    </div>  
+                    <div class="row datum">
+                        <div class="container">
+                            <div class="col-xs-12 datumtekst">23 mei 2015</div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="row datum">
-                    <div class="container">
-                        <div class="">
-                            23 mei 2015
+                    <div class="row midden">
+                        <div class="iconen">
+                            <div class="col-xs-6 col-sm-2 col-sm-offset-1">
+                                <a class="knop klein" href="{{ path('partners') }}">
+                                    <div class="inhoudicoon">
+                                        <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/partners.png") }}">
+                                        <!-- class="titel">Partners</span>    -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-2">                    
+                                <a class="knop klein" href="{{ path('programma') }}">
+                                    <div class="inhoudicoon">
+                                        <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/programma.png") }}">
+                                        <!-- class="titel">Programma</span>    -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-2">
+                                <a class="knop groot" href="{{ path('ploeg_create') }}">
+                                    <div class="inhoudicoon">
+                                        <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/inschrijven.png") }}">
+                                        <!-- class="titel">Inschrijven</span>    -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-2">
+                                 <a class="knop klein" href="{{ path('fotos') }}">
+                                    <div class="inhoudicoon">
+                                        <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/fotos.png") }}">
+                                        <!-- class="titel">Foto's</span>    -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-2">
+                                <a class="knop klein" href="{{ path('contact') }}">
+                                    <div class="inhoudicoon">
+                                        <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/contact.png") }}">
+                                        <!-- class="titel">Contact</span>    -->
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="row midden">
-                    <div class="iconen">
-                        <div class="klein partners col-xs-6 col-sm-2 col-sm-offset-1">
-                            <a href="{{ path('partners') }}" class="titel dummy"></a>
-                            <div class="background">
-                            </div>
-                            <div class="content">
-                                <img src="{{ image("@ColdkitchenBundle/Resources/public/images/partners.png") }}">
-                                <span class="titel">Partners</span>    
-                            </div>
-                            
-                        </div>
-                        <div class="klein programma col-xs-6 col-sm-2">                    
-                            <a href="#section-programma" class="titel dummy"></a>
-                            <div class="background">
-                                &nbsp;
-                            </div>
-                            <div class="content">
-                                <img src="{{ image("@ColdkitchenBundle/Resources/public/images/programma.png") }}">
-                                <span class="titel">Programma</span>
-                            </div>
-                        </div>
-                        <div class="groot inschrijven col-xs-12 col-sm-2">
-                            <a href="{{ path('ploeginschrijven') }}" class="groot dummy"></a>
-                            <div class="groot background">
-                                &nbsp;
-                            </div>
-                            <div class="content">
-                                <img src="{{ image("@ColdkitchenBundle/Resources/public/images/inschrijven.png") }}">
-                                <span class="titel">Inschrijven</span>
-                            </div>
-                        </div>
-                        <div class="klein fotos col-xs-6 col-sm-2">
-                             <a href="{{ path('fotos') }}" class="titel dummy"></a>
-                             <div class="background">
-                                &nbsp;
-                            </div>
-                            <div class="content">
-                                <img src="{{ image("@ColdkitchenBundle/Resources/public/images/fotos.png") }}">
-                                <span class="titel">Fotos</span>
-                            </div>
-                        </div>
-                        <div class="klein contact col-xs-6 col-sm-2">
-                             <a href="{{ path('contact') }}" class="titel dummy"></a>
-                             <div class="background">
-                                &nbsp;
-                            </div>
-                            <div class="content">
-                                <img src="{{ image("@ColdkitchenBundle/Resources/public/images/contact.png") }}">
-                                <span class="titel">Contact</span>
-                            </div>
-                       
-                        </div>
+                    <div class="row legerij">
                     </div>
-                </div>
-                
-                <div class="row ladies">
-                    <div class="container">
-                        <div class="logo-coldkitchenladies col-xs-8 col-sm-6">
-                            <img src="{{ image("@ColdkitchenBundle/Resources/public/images/logoladies.png") }}">
-                        </div>
-                        <div class="logo-ergo col-xs-4 col-sm-6">
-                            <img src="{{ image("@ColdkitchenBundle/Resources/public/images/ergo.png") }}">
-                        </div>
+                    <div class="row ladies">
+                            <div class="logo-coldkitchenladies col-xs-8 col-sm-5 col-sm-offset-1">
+                                <img id="logoladies" src="{{ image("@ColdkitchenBundle/Resources/public/images/logoladies.png") }}">
+                            </div>
+                            <div class="logo-ergo col-xs-4 col-sm-5">
+                                <img id="logoergo" src="{{ image("@ColdkitchenBundle/Resources/public/images/ergowit.png") }}">
+                            </div>
                     </div>
-                </div>
-                <div class="onderaan">
-                    <div class="container">
-                    <a class="nextslide" href="#"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlwit.png") }}"></a>    
-                    </div>
-                </div>  
-                
-                
-            </div>
-        </div>
-        <div id="section-inschrijven" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
-            <div class="container">
-                <h1>Hoe inschrijven?</h1>
-                <h3>Volg onderstaande stappen</h3>
-                <div class="inschrijven-iconen">   
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-12">
-                            <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/shirt.png") }}">
-                            <h4>Registreren</h4>
-                            <span class="uitleg">
-                                Door op "inschrijven" te klikken, kan je je ploeg registreren.<br/>
-                                Op de registratie geef je je ploegnaam en je eigen gegevens in.<br/><br/>
-                                Je maakt er ook de keuze voor de competitieve of recreatieve reeks of voor de damesreeks. 
-                            </span>
+                    <div class="onderaan eerstepagina">
+                        <div class="container">
+                        <a class="nextslide" href="#section-inschrijven"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlwit.png") }}"></a>    
                         </div>
-                        <div class="col-sm-4 col-xs-12">
-                            <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/broekje.png") }}">
-                            <h4>Bevestigen</h4>
-                            <span class="uitleg">
-                                Daarop krijg je een automatische mail zodat om je inschrijving te bevestigen. <br/>
-                                Let wel, je ploeg is pas definitief ingeschreven op het moment dat de storting binnen is (zie hieronder).
-                            </span>
-                        </div>
-                         <div class="clearfix visible-xs-block"></div>
-                        <div class="col-sm-4 col-xs-12">
-                            <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/kousen.png") }}">
-                            <h4>Ploeg beheren</h4>
-                            <span class="uitleg">
-                                Nadat je bevestigde, kan je je ploeg beheren: spelers toevoegen en verwijderen.<br/>
-                                1 week voor het tornooi moet je ploeg compleet zijn.
-                            </span>
-                        </div>
-                        <!-- <div class="col-sm-3 col-xs-6">
-                            <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/schoenen.png") }}">
-                            <h4>Afsluiten</h4>
-                            <span class="uitleg">
-                                Uiterlijk 1 week voor het tornooi moet je ploeg volledig ingevuld zijn. 
-                            </span>
-                        </div> -->
-                    </div>
-                </div>     
-                <h4>Inschrijven kan door €110 te storten op rekeningnummer 733-0260669-60. Dat is €80 inschrijvingsgeld + €30 waarborg.</h4>
-                <h5>
-                    Bij de mededeling plaats je je ploegnaam, e-mail, gsm + "competitie" of "recreatie" of "dames", afhankelijk van de reeks waarin je wenst deel te nemen.
-                </h5>
-                <a class="button inschrijvingen" href="{{ path('ploeginschrijven') }}">Inschrijven</a>
-            </div>
-            <div class="onderaan">
-                <a class="nextslide" href="#"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlgrijs.png") }}"></a>
-            </div> 
-        </div>
-        <div id="section-ladies" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
-            <div class="container">
-                <div class="rij">
-                    <div class="logo-coldkitchenladies ">
-                        <img src="{{ image("@ColdkitchenBundle/Resources/public/images/logoladies.png") }}">
-                    </div>
-                </div>
-                <div class="rij">
-                    <h2>Welkom dames</h2>
-                </div>
-                <div class="rij">
-                    <p>
-                        In 2015 zijn we toe aan de derde editie .<br/><br/>
-                        De eerste jaren van Cold Kitchen Ladies waren een succes , daarop willen we verder bouwen.
-                    </p>
-                </div>
-                <div class="rij">
-                    <a class="button ladies" href="#">Inschrijven</a>    
-                </div>
-                <div class="onderaan">
-                    <a class="nextslide" href="#"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlwit.png") }}"></a>    
-                </div>  
-            </div>
-             
-        </div>
-        
-        <div id="section-fotos" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
-            <!-- <div class="row">
-                <div class="container">
-                    <h1>Foto's</h1>
-                </div>
-            </div>
-            <div class="onderaan">
-                <div class="container">
+                    </div>  
+                    
                     
                 </div>
-            </div>  -->
-            {% include 'ColdkitchenBundle:Default:facebook.html.twig' %}
-        </div>
-        <div id="section-partners" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
-            <div class="container">
-                <div class="row">
-                    <div class="container">
-                    {% for partner in partners %}
-
-                        <div class="partnerfoto col-sm-4 col-xs-6">
-                            <img class="img-responsive" src="{{ image(partner.getLogoWeb()).grayscale().colorize(255,255,255) }}">
+            </div>
+            <div id="section-inschrijven" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
+                <div class="container">
+                    <h1>Hoe inschrijven?</h1>
+                    <h3>Volg onderstaande stappen</h3>
+                    <div class="inschrijven-iconen">   
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12">
+                                <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/shirt.png") }}">
+                                <h4>Registreren</h4>
+                                <span class="uitleg">
+                                    Door op "inschrijven" te klikken, kan je je ploeg registreren.<br/>
+                                    Op de registratie geef je je ploegnaam en je eigen gegevens in.<br/>
+                                    Je maakt er ook de keuze voor de competitieve of recreatieve reeks of voor de damesreeks. 
+                                </span>
+                            </div>
+                            <div class="col-sm-4 col-xs-12">
+                                <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/broekje.png") }}">
+                                <h4>Bevestigen</h4>
+                                <span class="uitleg">
+                                    Daarop krijg je een automatische mail zodat om je inschrijving te bevestigen. <br/>
+                                    Let wel, je ploeg is pas definitief ingeschreven op het moment dat de storting binnen is (zie hieronder).
+                                </span>
+                            </div>
+                             <div class="clearfix visible-xs-block"></div>
+                            <div class="col-sm-4 col-xs-12">
+                                <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/kousen.png") }}">
+                                <h4>Ploeg beheren</h4>
+                                <span class="uitleg">
+                                    Nadat je bevestigde, kan je je ploeg beheren: spelers toevoegen en verwijderen.<br/>
+                                    1 week voor het tornooi moet je ploeg compleet zijn.
+                                </span>
+                            </div>
+                            <!-- <div class="col-sm-3 col-xs-6">
+                                <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/schoenen.png") }}">
+                                <h4>Afsluiten</h4>
+                                <span class="uitleg">
+                                    Uiterlijk 1 week voor het tornooi moet je ploeg volledig ingevuld zijn. 
+                                </span>
+                            </div> -->
                         </div>
-                        {% if loop.index is divisible by(3) %}
-                        
-                            {% if not loop.last %}
-                                
-                            {% endif %}
-                        {% endif %}
-                    {% endfor %}  
-                    </div>
-                </div>
-                <div class="row">
-                    <a class="button partners" href="#">Partner worden</a>    
+                    </div>     
+                    <span class="extra">
+                        <center>
+                            Inschrijven kan door €110 te storten op rekeningnummer 733-0260669-60.<br/>
+                            Dat is €80 inschrijvingsgeld + €30 waarborg.
+                            <br/><br/>
+                            Bij de mededeling plaats je voor alle zekerheid nog eens je naam en ploegnaam, emailadres, gsm en reeks.
+                        </center>
+                    </span>
+                    <a class="button inschrijvingen" href="{{ path('ploeginschrijven') }}">Inschrijven</a>
                 </div>
                 <div class="onderaan">
-                    <a class="nextslide" href="#"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlwit.png") }}"></a>    
-                </div>
-            </div> 
-        </div>
-        <div id="section-programma" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-4">
-                        <h2>Programma</h2>
-                        <br/>
-                        <h3>
-                            De wedstrijden gaan van start vanaf 9 uur.<br/><br/>
-                            De finale wordt omstreeks 18u15 gespeeld.
-                        </h3>
-                        <a class="button inschrijvingen" href="#">TORNOOIREGLEMENT</a>
-                    </div>
-                    <div class="col-md-6 col-sm-8"><img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/tornooitabel.png") }}"></div>
-                </div>
+                    <a class="nextslide" href="#section-ladies"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlgrijs.png") }}"></a>
+                </div> 
             </div>
-            <div class="onderaan">
+            <div id="section-ladies" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
                 <div class="container">
-                    <a class="nextslide" href="#"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlgrijs.png") }}"></a>    
-                </div>
-            </div> 
-        </div>
-        <div id="section-contact" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
-            <div class="container">
-                <div class="row contact">
-                    <h1>Contacteer het Cold Kitchen Team</h1>
-                </div>
-                <div class="row tekst">
-                    <div class="col-sm-5 col-sm-offset-1">
-                        <p>Hebt u vragen rondom het tornooi?<br/>
-                        Neem dan gerust contact op met ons via deze weg.</p>
-
+                    <div class="rij">
+                        <div class="logo-coldkitchenladies ">
+                            <img src="{{ image("@ColdkitchenBundle/Resources/public/images/logoladies.png") }}">
+                        </div>
                     </div>
-                    <div class="col-sm-5 ">
-                        <p>Wilt u meer weten over hoe onze organisatie ontstaan is? <br/>Klik dan hieronder </p>
+                    <div class="rij">
+                        <h2>Welkom dames</h2>
+                    </div>
+                    <div class="rij">
+                        <p>
+                            In 2015 zijn we toe aan de derde editie.<br/>
+                            De eerste jaren van Cold Kitchen Ladies waren een succes , daarop willen we verder bouwen.
+                        </p>
+                    </div>
+                    <div class="rij">
+                        <a class="button ladies" href="{{ path('ploeg_create') }}">Inschrijven</a>    
+                    </div>
+                    <div class="onderaan">
+                        <a class="nextslide" href="#section-fotos"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlwit.png") }}"></a>    
+                    </div>  
+                </div>
+                 
+            </div>
+            
+            <div id="section-fotos" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
+                <!-- <div class="row">
+                    <div class="container">
+                        <h1>Foto's</h1>
+                    </div>
+                </div>
+                <div class="onderaan">
+                    <div class="container">
                         
                     </div>
-                </div>
-                <div class="row knoppen">
-                    <div class="col-sm-5 col-sm-offset-1">
-                        <a class="button contact" href="#">Contacteer Ons</a>    
-                    </div>
-                    <div class="col-sm-5">
-                        <a class="button contact" href="#">Meer over ons</a>    
-                    </div>
-                </div>
+                </div>  -->
+                {% include 'ColdkitchenBundle:Default:facebook.html.twig' %}
+                <div class="onderaan">
+                        <a class="nextslide" href="#section-partners"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlwit.png") }}"></a>    
+                    </div> 
             </div>
-        </div>
-        <div id="section-footer" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
-            <div class="container">
-                <div id="map-canvas"></div>
-                <div class="row footer">
-                    <div class="col-xs-3">
-                        <img class="img-responsive hidden-xs" src="{{ image("@ColdkitchenBundle/Resources/public/images/logo.png") }}">
-                        <img class="img-responsive visible-xs hidden-sm" src="{{ image("@ColdkitchenBundle/Resources/public/images/logoklein.png") }}">
-                    </div>
-                    <div class="col-xs-6">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <a href="{{ path("reglement") }}">Tornooireglement</a>
+            <div id="section-partners" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
+                <div class="container">
+                    <div class="row">
+                        <div class="container">
+                            <div class="row">
+                            {% for partner in fieldpartners %}
+                                {% if partner.zichtbaar %}
+                                    <div class="clearfix fieldpartnerfoto col-sm-4 col-xs-6">
+                                        {% if partner.website|length > 1 %}
+                                            <a target=_new href="{{ partner.website }}"><img class="img-responsive" src="{{ image(partner.getLogoWeb()).scaleResize(400) }}"></a>
+                                        {% else %}
+                                        <span class="leeg"><img class="img-responsive" src="{{ image(partner.getLogoWeb()).scaleResize(400) }}"></span>
+                                        {% endif %}
+                                    </div>
+                                {% endif %}
+                            {% endfor %}  
                             </div>
-                            <div class="col-sm-4">
-                                <a href="{{ path("ploeg_edit_kort") }}">Ploegbeheer</a>
+                            <br/><br/>
+                            <div class="row">
+                                {% for partner in suppliers %}
+                                    {% if partner.zichtbaar %}
+                                        <div class="clearfix supplierfoto col-md-2 col-sm-3 col-xs-4">
+                                            {% if partner.website|length > 1 %}
+                                                <a target=_new href="{{ partner.website }}"><img class="img-responsive" src="{{ image(partner.getLogoWeb()).scaleResize(300) }}"></a>
+                                            {% else %}
+                                                <span class="leeg"><img class="img-responsive" src="{{ image(partner.getLogoWeb()).scaleResize(300) }}"></span>
+                                            {% endif %}
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
                             </div>
-                            <div class="col-sm-4">
-                                <a href="https://www.facebook.com/coldkitchentornooi">Facebook</a>
+                            <br/><br/>
+                            <div class="row">
+                                {% for partner in partners %}
+                                    {% if partner.zichtbaar %}
+                                        <div class="clearfix partnerfoto col-md-2 col-sm-3 col-xs-4">
+                                            {% if partner.website|length > 1 %}
+                                                <a target=_new href="{{ partner.website }}"><img class="img-responsive" src="{{ image(partner.getLogoWeb()).scaleResize(200) }}"></a>
+                                            {% else %}
+                                            <span class="leeg"><img class="img-responsive" src="{{ image(partner.getLogoWeb()).scaleResize(200) }}"></span>
+                                            {% endif %}
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-3">
-                        <img class="img-responsive hidden-xs" src="{{ image("@ColdkitchenBundle/Resources/public/images/logoladies.png") }}">
-                        <img class="img-responsive visible-xs hidden-sm" src="{{ image("@ColdkitchenBundle/Resources/public/images/logoladiesklein.png") }}">
+                    <div class="row">
+                        <a class="button partners" href="{{ path('partners') }}">Partner worden</a>    
+                    </div>
+                    <div class="onderaan">
+                        <a class="nextslide" href="#section-programma"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlwit.png") }}"></a>    
+                    </div>
+                </div> 
+            </div>
+            <div id="section-programma" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
+                <div class="container">
+                    <div class="row row-same-height">
+                        <div class="col-md-6 col-sm-4 col-xs-height">
+                            <h1>Programma</h1>
+                            <br/>
+                            <h3>
+                                De wedstrijden gaan van start vanaf 9 uur.<br/><br/>
+                                De finale wordt omstreeks 18u15 gespeeld.
+                            </h3>
+                            <a class="button inschrijvingen" href="{{ path('reglement') }}">TORNOOIREGLEMENT</a>
+                        </div>
+                        <div class="pouletabel col-md-6 col-sm-8 col-xs-height">
+                            <div class="cont">
+                                <img src="{{ image("@ColdkitchenBundle/Resources/public/images/tornooitabel.png") }}">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row copyright">
-                    <a class="powered" href="http://www.magict.be">Powered by MagicT</a>
+                <div class="onderaan">
+                    <div class="container">
+                        <a class="nextslide" href="#section-contact"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlgrijs.png") }}"></a>    
+                    </div>
+                </div> 
+            </div>
+            <div id="section-contact" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
+                <div class="container">
+                    <div class="row contact">
+                        <h1>Contacteer het Cold Kitchen Team</h1>
+                    </div>
+                    <div class="row tekst">
+                        <div class="col-sm-5 col-sm-offset-1">
+                            <p>Hebt u vragen rondom het tornooi?<br/>
+                            Neem dan gerust contact op met ons via deze weg.</p>
+
+                        </div>
+                        <div class="col-sm-5 ">
+                            <p>Wilt u meer weten over hoe onze organisatie ontstaan is? <br/>Klik dan hieronder </p>
+                            
+                        </div>
+                    </div>
+                    <div class="row knoppen">
+                        <div class="col-sm-5 col-sm-offset-1">
+                            <a class="button contact" href="{{ path('contact') }}">Contacteer Ons</a>    
+                        </div>
+                        <div class="col-sm-5">
+                            <a class="button contact" href="{{ path('contact') }}">Meer over ons</a>    
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div id="section-footer" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
+                <div id="map-canvas"></div>
+                <div class="container">
+                    <div class="row footer">
+                        <div class="col-xs-3">
+                            <img class="img-responsive hidden-xs" src="{{ image("@ColdkitchenBundle/Resources/public/images/logo.png") }}">
+                            <img class="img-responsive visible-xs hidden-sm" src="{{ image("@ColdkitchenBundle/Resources/public/images/logoklein.png") }}">
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <a href="{{ path("reglement") }}">Tornooireglement</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="{{ path("ploeg_edit_kort") }}">Ploegbeheer</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="https://www.facebook.com/coldkitchentornooi">Facebook</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <img class="img-responsive hidden-xs" src="{{ image("@ColdkitchenBundle/Resources/public/images/logoladies.png") }}">
+                            <img class="img-responsive visible-xs hidden-sm" src="{{ image("@ColdkitchenBundle/Resources/public/images/logoladiesklein.png") }}">
+                        </div>
+                    </div>
+                    <div class="row copyright">
+                        <a class="powered" href="http://www.magict.be">Powered by MagicT</a>
+                    </div>
+                </div>
+            </div>
         
-    </div>
+        </div>
            
         <script>
             $(document).ready(function(){
+
+                $( ".knop" ).each(function( index ) {
+                    $breedte = $(this).innerWidth();
+                    console.log($breedte);
+                    $(this).innerHeight($breedte);
+                });
+                
                 {% block backstretch %}
+                function BackStretchen(){
                 	$.backstretch([
                         {% for foto in fotos|shuffle %}
                         {% set url = 'uploads/achtergrondfotos/' ~ foto.filename %}
                         
-                          "{{ image(url).grayscale().colorize(83,93,0) }}"
+                          "{{ image(url).grayscale().colorize(83,93,0).fill(89,91,15) }}"
+                          //"{{ image(url).grayscale().colorize(83,93,0).fill(143,117,15) }}"
+                          //"{{ image(url).grayscale().colorize(30,100,30) }}"
                           {{ loop.last ? '' : ',' }}
                         {% endfor %}
                     ], {duration: 7000, fade: 450});
+                    }
                 {% endblock %}
 
                     
                 $('.nextslide').click(function(){
                     $.fn.fullpage.moveSectionDown();
                 });
-
-                $( '#section-home' ).width( $( window ).width() );
-                $( '#section-home' ).height( $( window ).height() );
-
-                /*{% if not is_mobile() %}
-
-                $('#fullpage').fullpage({
-                        responsive: 600,
-                        autoScrolling: true,
-                        scrollOverflow: true,
-                        fitToSection: true,
-
-                        
-                        
-                });
-                 
-
-                {% else %}*/
-
-                    /*$('#section-home').fullpage({
-                        autoScrolling: false    
-                    });*/
+                function ZetGoeieGrootte(){
                     $( '#section-home' ).width( $( window ).width() );
                     $( '#section-home' ).height( $( window ).height() );
+                    //$( '#section-footer' ).width( $( window ).width() );
+                    //$( '#section-footer' ).height( $( window ).height() );
+
+                    BackStretchen();
+
+                    $hoogte = $('#logocoldkitchen').innerHeight();
+                    $breedte = $('#logocoldkitchen').innerWidth();
+
+                    //$('#logoladies').innerHeight($hoogte);
+                    $('#logoladies').innerWidth($breedte);
+                    $('#logofacebook').innerHeight($hoogte);
+                    $('#logoergo').innerHeight($hoogte);
 
 
-                /*{% endif %}*/
+                }
+
+                $(document).ready(function(){
+                    ZetGoeieGrootte();
+                })
+                $(window).resize(function(){
+                    ZetGoeieGrootte();
+                })
+                
             });
             
             

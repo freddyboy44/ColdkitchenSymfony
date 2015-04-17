@@ -1,0 +1,127 @@
+.paginacontact {
+	p {
+	  font-family: 'MyriadProRegular';
+	  font-size: 18px;
+	}
+
+}
+
+.contactformulier {
+	max-width: 450px;
+	display: block;
+	margin: auto;
+
+	form {
+
+
+		.titel {
+			@include labelform();
+		}
+
+		.invoerveld {
+			width: 100%;
+			text-align: left;
+			color: black; 
+			@include border-radius(4px);
+			input, textarea, select#coldkitchenbundle_ploeg_competitie {
+				width: 100%;
+				color: black; 
+				@include border-radius(5px);
+				min-height: 32px;
+				border:0;
+				padding:3px;
+				height: 22px;
+			}
+
+			@include placeholder {
+			    font-family: 'MyriadProLight';
+			 	font-size: 16px;
+			}
+		    
+
+			textarea {
+				min-height: 120px;
+
+			}
+		}
+		.captcha {
+			background-color: $grijzeachtergrond;
+			overflow: hidden;
+			height: 70px;
+			@include border-radius(5px);
+
+			input[type='submit'] {
+				background-color: $groenpartners;
+				color: white;
+				font-family: 'MyriadProBoldItalic';
+				width: 100%;
+				height: 70%;
+				min-height: 18px;
+				text-transform: uppercase;
+				@include border-radius(5px);
+				border: 0px;
+				@include vertical-align();
+				@include breakpoint(tablet) {
+					font-size: 18px;
+				}
+			}
+
+			div {
+				padding: 2px;
+				height: 100%;
+			}
+
+			div:nth-child(2){
+				//Tekst
+				padding-top:7px;
+			}
+			div:nth-child(3){
+				padding: 5px 10px;
+			}
+
+			h5 {
+				font-family: 'MyriadProBold';
+				font-size: 16px;
+				color: black;
+				text-align: left;
+				margin: 0;
+				margin-bottom: 3px;
+			}
+
+			input {
+				//height: 28px;
+				margin-bottom: 6px;
+				border: 0;
+				@include border-radius(6px);
+			}
+
+			img {
+				padding: 5px;
+				//height: 100%;
+				min-height: 65px;
+				width: 100%;
+				@include border-radius(10px);
+				//@include vertical-alignabsolute();
+			}
+			
+			.captchaantwoord, .captchaimage, .captchaverzenden {
+				//padding: 3px;
+			}
+		}
+	}	
+
+	
+}
+footer {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: $groenpartners;
+	color: white;
+
+	h2 {
+		color: white;
+	}
+	p {
+		text-align: center;
+	}
+}

@@ -5,13 +5,13 @@
 	<div class="paginainschrijven">
 		<h1>Bedankt voor je inschrijving</h1>
 		<br/>
-		<h2>
-			De inschrijving werd goed ontvangen.<br/>
-			Een mail met daarin alle gegevens werd verstuurd naar {{ email }}.
-		</h2>
 		<p>
-			Volg de instructies in de email om je ploeg te beheren.<br/>
-			Klik <a href="{{ path('bewerkploeg') }}">hier</a> om naar de inlog-pagina te gaan.
+			Check de mailbox van {{ email }}. <br/><br/>
+			Daar vind je de bevestiging van je inschrijving. <br/>
+			Je kan je ploeg vanaf nu beheren door je login en paswoord in te geven
 		</p>
-
+		<a class="button ploegbeheer" href="{{ path('ploeg_edit_kort') }}">Ploegbeheer</a> 
+		<footer>
+			<a class="terugfooter" href="{{ path('home') }}">terug naar de site</a>
+		</footer>
 {% endblock %}

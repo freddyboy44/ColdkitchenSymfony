@@ -1,9 +1,37 @@
 #section-programma {
 	position: relative;
 	background-color: white;
-	color: $groencontact;
+	color: $partnerskleur;
+	height: 100%;
 	
-	h2 {
-		color: $groencontact;
+	h1 {
+		color: $partnerskleur;
 	}
+
+	h3 {
+		color: $programmagroen;
+	}
+
+	a.button {
+		@include breakpoint(tablet) {
+			margin-top: 60px;
+			margin-bottom: 60xp;	
+		}
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.pouletabel {
+		height: 100%;
+		position: relative;
+		.cont	{
+			@include vertical-alignabsolute();
+			img {
+				display: block;
+				margin:auto;
+			
+			}	
+		}
+		
+	}
+	
 }

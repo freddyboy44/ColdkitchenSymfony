@@ -1,6 +1,8 @@
 header {
 	padding-top: 15px;
-	
+	@include breakpoint(tablet) {
+			height: 10%;
+	}	
 
 	.terug {
 		

@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"bac",
+				"background-color"
+			],
+			[
+				"dat",
+				"datumVerstuurd"
+			],
+			[
+				"a",
+				"aaae01"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
+				"Myriad",
+				"MyriadProSemiBold"
+			],
+			[
+				"Coldki",
+				"ColdkitchenBundle:Ploeg:email"
+			],
+			[
+				"in",
+				"innerWidth〔function〕"
+			],
+			[
+				"ma",
+				"margestartpagina"
+			],
+			[
+				"parse",
+				"parseInt〔function〕"
+			],
+			[
+				"huidi",
+				"huidigefoto"
+			],
+			[
+				"hui",
+				"huidigefoto"
+			],
+			[
+				"for",
+				"for	Twig : For"
+			],
+			[
+				"proper",
+				"property_exists"
+			],
+			[
 				"padding",
 				"padding-bottom"
 			],
@@ -124,20 +176,12 @@
 				"list-style-position"
 			],
 			[
-				"ma",
-				"margin-bottom"
-			],
-			[
 				"fot",
 				"font-family"
 			],
 			[
 				"if",
 				"if	Twig : If"
-			],
-			[
-				"for",
-				"for	Twig : For"
 			],
 			[
 				"query",
@@ -320,10 +364,6 @@
 				"font-family"
 			],
 			[
-				"bac",
-				"background-repeat"
-			],
-			[
 				"bor",
 				"border-bottom"
 			],
@@ -336,26 +376,42 @@
 	"buffers":
 	[
 		{
-			"file": "web/bundles/coldkitchen/scss/Coldkitchen.scss",
+			"file": "web/bundles/coldkitchen/scss/_homepage.scss",
 			"settings":
 			{
-				"buffer_size": 3339,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "web/bundles/coldkitchen/scss/_section-contact.scss",
-			"settings":
-			{
-				"buffer_size": 1155,
+				"buffer_size": 2768,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "web/bundles/coldkitchen/scss/_mixins.scss",
+			"file": "web/bundles/coldkitchen/scss/_reglement.scss",
 			"settings":
 			{
-				"buffer_size": 1090,
+				"buffer_size": 744,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/ColdkitchenBundle/Resources/views/Default/login.html.twig",
+			"settings":
+			{
+				"buffer_size": 1620,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/ColdkitchenBundle/Resources/public/scss/_login.scss",
+			"settings":
+			{
+				"buffer_size": 345,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/ColdkitchenBundle/Form/PloegType.php",
+			"settings":
+			{
+				"buffer_size": 2649,
 				"line_ending": "Unix"
 			}
 		},
@@ -363,31 +419,15 @@
 			"file": "src/ColdkitchenBundle/Resources/views/Default/index.html.twig",
 			"settings":
 			{
-				"buffer_size": 19786,
+				"buffer_size": 23669,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/ColdkitchenBundle/Resources/public/scss/Coldkitchen.scss",
+			"file": "web/bundles/coldkitchen/scss/_partners.scss",
 			"settings":
 			{
-				"buffer_size": 3299,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/ColdkitchenBundle/Resources/public/css/Coldkitchen.css",
-			"settings":
-			{
-				"buffer_size": 40628,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/ColdkitchenBundle/Resources/public/scss/_homepage.scss",
-			"settings":
-			{
-				"buffer_size": 2615,
+				"buffer_size": 1476,
 				"line_ending": "Windows"
 			}
 		},
@@ -395,56 +435,56 @@
 			"file": "web/bundles/coldkitchen/scss/_section-partners.scss",
 			"settings":
 			{
-				"buffer_size": 325,
+				"buffer_size": 749,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "web/bundles/coldkitchen/scss/_section-programma.scss",
+			"file": "src/ColdkitchenBundle/Resources/views/Default/reglement.html.twig",
 			"settings":
 			{
-				"buffer_size": 130,
+				"buffer_size": 1447,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "web/bundles/coldkitchen/scss/_section-inschrijvingen.scss",
+			"file": "web/bundles/coldkitchen/scss/_contact.scss",
 			"settings":
 			{
-				"buffer_size": 495,
+				"buffer_size": 1990,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "web/bundles/coldkitchen/scss/_button.scss",
+			"file": "src/ColdkitchenBundle/Resources/public/scss/Coldkitchen.scss",
 			"settings":
 			{
-				"buffer_size": 1119,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/Resources/views/_header.twig",
-			"settings":
-			{
-				"buffer_size": 838,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "web/bundles/coldkitchen/scss/_homepage.scss",
-			"settings":
-			{
-				"buffer_size": 2688,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/ColdkitchenBundle/Controller/DefaultController.php",
-			"settings":
-			{
-				"buffer_size": 3399,
+				"buffer_size": 4421,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "web/bundles/coldkitchen/scss/_mixins.scss",
+			"settings":
+			{
+				"buffer_size": 1479,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "web/bundles/coldkitchen/scss/_inschrijven.scss",
+			"settings":
+			{
+				"buffer_size": 5745,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/ColdkitchenBundle/Resources/views/Default/contact.html.twig",
+			"settings":
+			{
+				"buffer_size": 3636,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -475,10 +515,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 219.0,
-		"last_filter": "install",
+		"height": 35.0,
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"package: r",
+				"Package Control: Remove Package"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -554,74 +598,103 @@
 	[
 		"/X/ColdkitchenSymfony",
 		"/X/ColdkitchenSymfony/app",
-		"/X/ColdkitchenSymfony/app/Resources",
-		"/X/ColdkitchenSymfony/app/Resources/views",
+		"/X/ColdkitchenSymfony/app/cache/dev",
+		"/X/ColdkitchenSymfony/app/config",
 		"/X/ColdkitchenSymfony/app/Resources/views/default",
 		"/X/ColdkitchenSymfony/src",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle",
-		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Controller",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Entity",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/css",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views",
-		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Default",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Ploeg",
-		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Speler",
-		"/X/ColdkitchenSymfony/web",
-		"/X/ColdkitchenSymfony/web/bundles",
-		"/X/ColdkitchenSymfony/web/bundles/coldkitchen",
-		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss"
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Vraag",
+		"/X/ColdkitchenSymfony/web/bundles"
 	],
 	"file_history":
 	[
+		"/X/ColdkitchenSymfony/app/Resources/views/default/index.html.twig",
+		"/X/ColdkitchenSymfony/app/Resources/views/_header.twig",
+		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_header.scss",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Default/index.html.twig",
+		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_contact.scss",
+		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_iconen.scss",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Entity/PartnerTypeRepository.php",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Entity/PartnerRepository.php",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Controller/PartnerController.php",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Controller/DefaultController.php",
+		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_section-partners.scss",
+		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_partners.scss",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Entity/Vraag.php",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Controller/VraagController.php",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Ploeg/ingeschreven.html.twig",
+		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_inschrijven.scss",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Controller/PloegController.php",
+		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/Coldkitchen.scss",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_test.scss",
+		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_colors.scss",
+		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_mixins.scss",
+		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_button.scss",
+		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_section-contact.scss",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_contact.scss",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Vraag/verstuurd.html.twig",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Default/contact.html.twig",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Ploeg/email.html.twig",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Vraag/vraagwebsite.html.twig",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Form/VraagType.php",
+		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_homepage.scss",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Default/reglement.html.twig",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Default/facebook.html.twig",
+		"/X/ColdkitchenSymfony/app/Resources/views/base.html.twig",
+		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_fonts.scss",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/Coldkitchen.scss",
+		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_section-ladies.scss",
+		"/X/ColdkitchenSymfony/vendor/dimsemenov/magnific-popup/README.md",
+		"/X/ColdkitchenSymfony/composer.json",
+		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_section-programma.scss",
+		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_variables.scss",
+		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_section-inschrijvingen.scss",
+		"/X/ColdkitchenSymfony/app/config/config.yml",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_homepage.scss",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_button.scss",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_section-fotos.scss",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_mixins.scss",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_section-inschrijvingen.scss",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_variables.scss",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_fotos.scss",
+		"/X/ColdkitchenSymfony/app/config/config_dev.yml",
+		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/config.rb",
+		"/C/Users/Gebruiker/AppData/Roaming/Sublime Text 3/Packages/SublimeOnSaveBuild/SublimeOnSaveBuild.sublime-settings",
+		"/X/ColdkitchenSymfony/app/Resources/views/default/indexfullpage.html.twig",
 		"/X/ColdkitchenSymfony/.gitignore",
 		"/X/ColdkitchenSymfony/ColdkitchenSymfony/.gitignore",
 		"/C/Users/Gebruiker/AppData/Roaming/Sublime Text 3/Packages/User/mobileonly.sublime-snippet",
-		"/X/ColdkitchenSymfony/app/Resources/views/default/index.html.twig",
-		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Default/index.html.twig",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Ploeg/edit.html.twig",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Entity/SpelerRepository.php",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Form/WachtwoordType.php",
-		"/X/ColdkitchenSymfony/composer.json",
 		"/X/Coldkitchen/theme/coldkitchen/js/galleria-1.4.2.min.js",
-		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_iconen.scss",
-		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_homepage.scss",
-		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Ploeg/ingeschreven.html.twig",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Ploeg/spelers.html.twig",
-		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_header.scss",
 		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_reglement.scss",
-		"/X/ColdkitchenSymfony/app/Resources/views/_header.twig",
-		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Default/reglement.html.twig",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Controller/FotoController.php",
-		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/Coldkitchen.scss",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Controller/SpelerController.php",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Default/login.html.twig",
-		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_inschrijven.scss",
-		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_button.scss",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Ploeg/dateselect.html.twig",
-		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_section-ladies.scss",
-		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Ploeg/email.html.twig",
 		"/C/Users/Gebruiker/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
 		"/C/Users/Gebruiker/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
 		"/C/Users/Gebruiker/AppData/Roaming/Sublime Text 3/Packages/User/entity manager.sublime-snippet",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Entity/Speler.php",
-		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_mixins.scss",
 		"/X/ColdkitchenSymfony/vendor/twbs/bootstrap/less/mixins.less",
-		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_colors.scss",
 		"/X/ColdkitchenSymfony/prjColdkitchenSymfony.sublime-project",
 		"/X/ColdkitchenSymfony/app/Resources/views/reglement.html.twig",
 		"/X/ColdkitchenSymfony/app/Resources/views/partners.html.twig",
-		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Controller/PloegController.php",
-		"/X/ColdkitchenSymfony/app/Resources/views/base.html.twig",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Controller/SecurityController.php",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Form/SpelerType.php",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Entity/Ploeg.php",
 		"/X/ColdkitchenSymfony/app/config/security.yml",
 		"/X/ColdkitchenSymfony/app/AppKernel.php",
 		"/X/ColdkitchenSymfony/bin/security-checker",
-		"/X/ColdkitchenSymfony/app/config/config.yml",
 		"/X/ColdkitchenSymfony/app/config/routing.yml",
 		"/X/ColdkitchenSymfony/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig",
 		"/X/ColdkitchenSymfony/app/Resources/FOSUserBundle/views/Registration/register.html.twig",
@@ -635,25 +708,16 @@
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Ploeg/bevestiging.html.twig",
 		"/C/Users/Gebruiker/AppData/Local/Temp/Rar$DIa0.260/font-awesome.css",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Ploeg/inschrijven.html.twig",
-		"/X/ColdkitchenSymfony/web/bundles/coldkitchen/scss/_fonts.scss",
-		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/Coldkitchen.scss",
 		"/C/Users/Gebruiker/AppData/Roaming/Sublime Text 3/Packages/User/borderradius.sublime-snippet",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_reglement.scss",
-		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Controller/DefaultController.php",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Entity/PartnerType.php",
-		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_homepage.scss",
 		"/X/ColdkitchenSymfony/app/Resources/views/inschrijven.html.twig",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Entity/Competitie.php",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Default/indexstatic.html.twig",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_section-contact.scss",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_partners.scss",
-		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Entity/PartnerTypeRepository.php",
-		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Entity/PartnerRepository.php",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_header.scss",
-		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_mixins.scss",
-		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_button.scss",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_section-programma.scss",
-		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_section-inschrijvingen.scss",
 		"/X/Padelbolt/Padelbolt/theme/padel/_map.twig",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_section-partners.scss",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_iconen.scss",
@@ -663,11 +727,9 @@
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Entity/AchtergrondFoto.php",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Controller/AchtergrondFotoController.php",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Form/PartnerType.php",
-		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Controller/PartnerController.php",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Form/Extension/ImageTypeExtension.php",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/views/Partner/edit.html.twig",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Form/AchtergrondFotoType.php",
-		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_section-fotos.scss",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_section-ladies.scss",
 		"/X/ColdkitchenSymfony/src/ColdkitchenBundle/Resources/public/scss/_fonts.scss",
 		"/X/Coldkitchen/theme/coldkitchen/scss/_colors.scss",
@@ -680,34 +742,11 @@
 		"/Z/Coldkitchen/theme/coldkitchen/partners.twig",
 		"/Z/Coldkitchen/extensions/local/magict/Ploeg/Extension.php",
 		"/Z/Coldkitchen/app/config/menu.yml",
-		"/Z/Coldkitchen/app/config/routing.yml",
-		"/Z/Coldkitchen/extensions/local/magict/Ploeg/twig/toonploeg.twig",
-		"/Z/Coldkitchen/theme/coldkitchen/scss/coldkitchen.scss",
-		"/Z/Coldkitchen/extensions/vendor/bolt/bb/src/Form/TopicType.php",
-		"/C/Users/Gebruiker/Downloads/coldkitchen (3).sql",
-		"/C/Users/Gebruiker/Downloads/coldkitchen (2).sql",
-		"/Z/Coldkitchen/theme/coldkitchen/scss/_inschrijving.scss",
-		"/Z/Coldkitchen/theme/coldkitchen/_header.twig",
-		"/C/Users/Gebruiker/Downloads/padel_bolt.sql",
-		"//webserver/websites/symfony/index.php",
-		"/Z/Coldkitchen/theme/coldkitchen/css/coldkitchen.css",
-		"/Z/Coldkitchen/theme/coldkitchen/inschrijven.twig",
-		"/Z/Coldkitchen/app/cache/composer_log",
-		"/Z/Coldkitchen/app/config/contenttypes.yml",
-		"/Z/Coldkitchen/bolt-public/view/lib/jquery-ui-1.10.3/jquery-ui.custom.min.css",
-		"/Z/Coldkitchen/bolt-public/view/lib/modernizr-2.8.3/modernizr.custom.min.js",
-		"/Z/Coldkitchen/vendor/silex/silex/tests/Silex/Tests/Provider/ValidatorServiceProviderTest/Constraint/Custom.php",
-		"/Z/Coldkitchen/vendor/composer/composer/doc/articles/custom-installers.md",
-		"/Z/Coldkitchen/vendor/symfony/var-dumper/Symfony/Component/VarDumper/Caster/CutStub.php",
-		"/Z/Coldkitchen/vendor/doctrine/common/lib/Doctrine/Common/Util/ClassUtils.php",
-		"/Z/Coldkitchen/prepros.cfg",
-		"/Z/Coldkitchen/extensions/local/magict/Ploeg/src/views/toonploeg.twig",
-		"/Z/Coldkitchen/extensions/local/magict/Ploeg/src/Controller/PloegController.php",
-		"/Z/Coldkitchen/extensions/vendor/bolt/bb/src/Controller/BoltBBController.php"
+		"/Z/Coldkitchen/app/config/routing.yml"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -723,6 +762,66 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"part",
+			"groen",
+			"40",
+			"placeho",
+			"max-wi",
+			"150",
+			"250",
+			"partners",
+			"groot",
+			"test",
+			"30",
+			") }}",
+			"{{",
+			"contact",
+			"name=\"contact",
+			"col-xs-height",
+			"textar",
+			"createcre.",
+			"vraag_create",
+			"new",
+			"img-responsive",
+			"<span",
+			"ladies",
+			"test",
+			"rgba(0,0,0,0)",
+			"0,0,0,0",
+			"0,0,0",
+			"ergo",
+			"myriadpro-semibold-webfont",
+			"15",
+			"MYRIADPRO-REGULAR-webfont",
+			"MYRIADPRO-SEMIBOLDIT-webfont",
+			".",
+			",true",
+			"@ColdkitchenBundle/Resources/public",
+			", true",
+			"@ColdkitchenBundle/Resources/public",
+			"goeieurl",
+			"fotos",
+			"home",
+			"2",
+			"MYRIADPRO-BOLD-webfont",
+			"10px",
+			"margin-top",
+			"margin",
+			"sect",
+			"fotos",
+			"href=\"sectio",
+			"inschrijven",
+			"0.3",
+			"hover",
+			"gradi",
+			"onderaa",
+			"volgende",
+			"eerste",
+			"tweedefoto",
+			"eerste",
+			"$('",
+			"7deg",
+			"translateY",
 			"section",
 			"sm",
 			"2",
@@ -790,67 +889,7 @@
 			"gSM",
 			"GSM",
 			"gSM",
-			"GSM",
-			"gSM",
-			"GSM",
-			"gSM",
-			"GSM",
-			"gSM",
-			"_set",
-			"username",
-			"passwo",
-			"rand",
-			"enco",
-			"contain",
-			"GSM",
-			"gSM",
-			"GSM",
-			"gSM",
-			"(),\n",
-			"getK",
-			"twig",
-			"inschrijven",
-			"class",
-			"nopadding",
-			";\n",
-			"MYRIADPRO-SEMIBOLDIT-webfont",
-			"naam",
-			"inschrijven",
-			"protected",
-			"$.",
-			"section1",
-			"• ",
-			"4",
-			"tran",
-			"';\n",
-			"h4",
-			"pro",
-			"col-sm-3",
-			"25",
-			"245",
-			"25",
-			"private",
-			"partnertype",
-			"Partnertype",
-			"partnertype",
-			"Partnertype",
-			"partnertype",
-			"Partnertype",
-			"partnertype",
-			"Partnertype",
-			"partnertype",
-			"Filename",
-			"path",
-			"string",
-			"MyriadProLight",
-			"blauwekleur",
-			"groene",
-			"SQL",
-			"naam",
-			"ploeggegevens",
-			"/",
-			"createform",
-			"createfo"
+			"GSM"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -858,6 +897,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"contact",
 			"",
 			"is_mobile() ? 'sectionmobile'",
 			"is_mobile() ? '': 'section'",
@@ -890,24 +930,24 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 7,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "web/bundles/coldkitchen/scss/Coldkitchen.scss",
+					"file": "web/bundles/coldkitchen/scss/_homepage.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3339,
+						"buffer_size": 2768,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1063,
-								1063
+								1349,
+								1349
 							]
 						],
 						"settings":
@@ -915,30 +955,32 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 798.0,
+						"translation.y": 540.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "web/bundles/coldkitchen/scss/_section-contact.scss",
+					"file": "web/bundles/coldkitchen/scss/_reglement.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1155,
+						"buffer_size": 744,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								861,
-								861
+								72,
+								72
 							]
 						],
 						"settings":
@@ -948,39 +990,6 @@
 							"synced": false,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 570.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "web/bundles/coldkitchen/scss/_mixins.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1090,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								624,
-								634
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -990,222 +999,30 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "src/ColdkitchenBundle/Resources/views/Default/index.html.twig",
+					"buffer": 2,
+					"file": "src/ColdkitchenBundle/Resources/views/Default/login.html.twig",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19786,
+						"buffer_size": 1620,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								17011,
-								17011
+								1385,
+								1385
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
 							"incomplete_sync": null,
+							"is_xml": false,
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5885.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/ColdkitchenBundle/Resources/public/scss/Coldkitchen.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3299,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1264,
-								1264
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 684.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/ColdkitchenBundle/Resources/public/css/Coldkitchen.css",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 40628,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								38342,
-								38342
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 26444.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "src/ColdkitchenBundle/Resources/public/scss/_homepage.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2615,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2282,
-								2282
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1026.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "web/bundles/coldkitchen/scss/_section-partners.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 325,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								325,
-								325
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "web/bundles/coldkitchen/scss/_section-programma.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 130,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								22,
-								22
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "web/bundles/coldkitchen/scss/_section-inschrijvingen.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 495,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								71,
-								71
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -1216,117 +1033,52 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "web/bundles/coldkitchen/scss/_button.scss",
+					"buffer": 3,
+					"file": "src/ColdkitchenBundle/Resources/public/scss/_login.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1119,
+						"buffer_size": 345,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								229,
-								229
+								259,
+								259
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
+							"open_with_edit": true,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "app/Resources/views/_header.twig",
+					"buffer": 4,
+					"file": "src/ColdkitchenBundle/Form/PloegType.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 838,
+						"buffer_size": 2649,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								220,
-								240
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "web/bundles/coldkitchen/scss/_homepage.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2688,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2356,
-								2356
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 684.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "src/ColdkitchenBundle/Controller/DefaultController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3399,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2308,
-								2308
+								1137,
+								1137
 							]
 						],
 						"settings":
@@ -1341,10 +1093,304 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 645.0,
+						"translation.y": 507.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/ColdkitchenBundle/Resources/views/Default/index.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23669,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12536,
+								12536
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3204.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "web/bundles/coldkitchen/scss/_partners.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1476,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "web/bundles/coldkitchen/scss/_section-partners.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								624,
+								624
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/ColdkitchenBundle/Resources/views/Default/reglement.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1447,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1276,
+								1421
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"incomplete_sync": null,
+							"is_xml": false,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "web/bundles/coldkitchen/scss/_contact.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1990,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								77
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/ColdkitchenBundle/Resources/public/scss/Coldkitchen.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4421,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								755,
+								755
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "web/bundles/coldkitchen/scss/_mixins.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1479,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								878,
+								878
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "web/bundles/coldkitchen/scss/_inschrijven.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5745,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5478,
+								5478
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5832.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "src/ColdkitchenBundle/Resources/views/Default/contact.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3636,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1156,
+								1156
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"incomplete_sync": null,
+							"is_xml": false,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 432.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
 					"type": "text"
 				}
 			]
@@ -1401,7 +1447,7 @@
 	"project": "prjColdkitchenSymfony.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1411,6 +1457,274 @@
 		"selected_items":
 		[
 			[
+				"_section-par",
+				"web\\bundles\\coldkitchen\\scss\\_section-partners.scss"
+			],
+			[
+				"_partn",
+				"web\\bundles\\coldkitchen\\scss\\_partners.scss"
+			],
+			[
+				"indextwig",
+				"src\\ColdkitchenBundle\\Resources\\views\\Default\\index.html.twig"
+			],
+			[
+				"index",
+				"app\\Resources\\views\\default\\index.html.twig"
+			],
+			[
+				"ploege",
+				"src\\ColdkitchenBundle\\Form\\PloegType.php"
+			],
+			[
+				"_ins",
+				"web\\bundles\\coldkitchen\\scss\\_inschrijven.scss"
+			],
+			[
+				"login",
+				"src\\ColdkitchenBundle\\Resources\\views\\Default\\login.html.twig"
+			],
+			[
+				"_head",
+				"web\\bundles\\coldkitchen\\scss\\_header.scss"
+			],
+			[
+				"_hea",
+				"app\\Resources\\views\\_header.twig"
+			],
+			[
+				"_regl",
+				"web\\bundles\\coldkitchen\\scss\\_reglement.scss"
+			],
+			[
+				"_conta",
+				"web\\bundles\\coldkitchen\\scss\\_contact.scss"
+			],
+			[
+				"_re",
+				"web\\bundles\\coldkitchen\\scss\\_reglement.scss"
+			],
+			[
+				"regl",
+				"src\\ColdkitchenBundle\\Resources\\views\\Default\\reglement.html.twig"
+			],
+			[
+				"mixin",
+				"web\\bundles\\coldkitchen\\scss\\_mixins.scss"
+			],
+			[
+				"cold",
+				"src\\ColdkitchenBundle\\Resources\\public\\scss\\Coldkitchen.scss"
+			],
+			[
+				"inde",
+				"src\\ColdkitchenBundle\\Resources\\views\\Default\\index.html.twig"
+			],
+			[
+				"conta",
+				"src\\ColdkitchenBundle\\Resources\\views\\Default\\contact.html.twig"
+			],
+			[
+				"_inschrij",
+				"web\\bundles\\coldkitchen\\scss\\_inschrijven.scss"
+			],
+			[
+				"_contact",
+				"web\\bundles\\coldkitchen\\scss\\_contact.scss"
+			],
+			[
+				"_secpar",
+				"web\\bundles\\coldkitchen\\scss\\_section-partners.scss"
+			],
+			[
+				"partncontr",
+				"src\\ColdkitchenBundle\\Controller\\PartnerController.php"
+			],
+			[
+				"defacont",
+				"src\\ColdkitchenBundle\\Controller\\DefaultController.php"
+			],
+			[
+				"_homepa",
+				"web\\bundles\\coldkitchen\\scss\\_homepage.scss"
+			],
+			[
+				"_icon",
+				"web\\bundles\\coldkitchen\\scss\\_iconen.scss"
+			],
+			[
+				"_colo",
+				"web\\bundles\\coldkitchen\\scss\\_colors.scss"
+			],
+			[
+				"default",
+				"src\\ColdkitchenBundle\\Controller\\DefaultController.php"
+			],
+			[
+				"coldscss",
+				"web\\bundles\\coldkitchen\\scss\\Coldkitchen.scss"
+			],
+			[
+				"inschrij",
+				"web\\bundles\\coldkitchen\\scss\\_inschrijven.scss"
+			],
+			[
+				"_butt",
+				"web\\bundles\\coldkitchen\\scss\\_button.scss"
+			],
+			[
+				"ploegcon",
+				"src\\ColdkitchenBundle\\Controller\\PloegController.php"
+			],
+			[
+				"_iconen",
+				"web\\bundles\\coldkitchen\\scss\\_iconen.scss"
+			],
+			[
+				"_contact.",
+				"web\\bundles\\coldkitchen\\scss\\_contact.scss"
+			],
+			[
+				"inges",
+				"src\\ColdkitchenBundle\\Resources\\views\\Ploeg\\ingeschreven.html.twig"
+			],
+			[
+				"indetwi",
+				"src\\ColdkitchenBundle\\Resources\\views\\Default\\index.html.twig"
+			],
+			[
+				"ploegcontrol",
+				"src\\ColdkitchenBundle\\Controller\\PloegController.php"
+			],
+			[
+				"parncont",
+				"src\\ColdkitchenBundle\\Controller\\PartnerController.php"
+			],
+			[
+				"reglt",
+				"src\\ColdkitchenBundle\\Resources\\views\\Default\\reglement.html.twig"
+			],
+			[
+				"_sla",
+				"web\\bundles\\coldkitchen\\scss\\_section-ladies.scss"
+			],
+			[
+				"ploegc",
+				"src\\ColdkitchenBundle\\Controller\\PloegController.php"
+			],
+			[
+				"defau",
+				"src\\ColdkitchenBundle\\Controller\\DefaultController.php"
+			],
+			[
+				"_fon",
+				"web\\bundles\\coldkitchen\\scss\\_fonts.scss"
+			],
+			[
+				"_ico",
+				"web\\bundles\\coldkitchen\\scss\\_iconen.scss"
+			],
+			[
+				"_home",
+				"web\\bundles\\coldkitchen\\scss\\_homepage.scss"
+			],
+			[
+				"base",
+				"app\\Resources\\views\\base.html.twig"
+			],
+			[
+				"facebootwig",
+				"src\\ColdkitchenBundle\\Resources\\views\\Default\\facebook.html.twig"
+			],
+			[
+				"compos",
+				"composer.json"
+			],
+			[
+				"facetwig",
+				"src\\ColdkitchenBundle\\Resources\\views\\Default\\facebook.html.twig"
+			],
+			[
+				"_sec",
+				"web\\bundles\\coldkitchen\\scss\\_section-contact.scss"
+			],
+			[
+				"defaul",
+				"src\\ColdkitchenBundle\\Controller\\DefaultController.php"
+			],
+			[
+				"_sect",
+				"web\\bundles\\coldkitchen\\scss\\_section-partners.scss"
+			],
+			[
+				"_seclad",
+				"web\\bundles\\coldkitchen\\scss\\_section-ladies.scss"
+			],
+			[
+				"fonts",
+				"web\\bundles\\coldkitchen\\scss\\_fonts.scss"
+			],
+			[
+				"_seins",
+				"web\\bundles\\coldkitchen\\scss\\_section-inschrijvingen.scss"
+			],
+			[
+				"homepa",
+				"web\\bundles\\coldkitchen\\scss\\_homepage.scss"
+			],
+			[
+				"_section-la",
+				"web\\bundles\\coldkitchen\\scss\\_section-ladies.scss"
+			],
+			[
+				"homep",
+				"web\\bundles\\coldkitchen\\scss\\_homepage.scss"
+			],
+			[
+				"_color",
+				"web\\bundles\\coldkitchen\\scss\\_colors.scss"
+			],
+			[
+				"_var",
+				"web\\bundles\\coldkitchen\\scss\\_variables.scss"
+			],
+			[
+				"_mix",
+				"web\\bundles\\coldkitchen\\scss\\_mixins.scss"
+			],
+			[
+				"_but",
+				"web\\bundles\\coldkitchen\\scss\\_button.scss"
+			],
+			[
+				"home",
+				"web\\bundles\\coldkitchen\\scss\\_homepage.scss"
+			],
+			[
+				"colscss",
+				"web\\bundles\\coldkitchen\\scss\\Coldkitchen.scss"
+			],
+			[
+				"_b",
+				"web\\bundles\\coldkitchen\\scss\\_button.scss"
+			],
+			[
+				"indtwig",
+				"src\\ColdkitchenBundle\\Resources\\views\\Default\\index.html.twig"
+			],
+			[
+				"compo",
+				"composer.json"
+			],
+			[
+				"conf",
+				"app\\config\\config.yml"
+			],
+			[
+				"defa",
+				"src\\ColdkitchenBundle\\Controller\\DefaultController.php"
+			],
+			[
 				"secins",
 				"web\\bundles\\coldkitchen\\scss\\_section-inschrijvingen.scss"
 			],
@@ -1419,24 +1733,12 @@
 				"app\\Resources\\views\\_header.twig"
 			],
 			[
-				"indextwig",
-				"src\\ColdkitchenBundle\\Resources\\views\\Default\\index.html.twig"
-			],
-			[
 				"indextwi",
 				"app\\Resources\\views\\default\\index.html.twig"
 			],
 			[
-				"compo",
-				"composer.json"
-			],
-			[
 				"iconen",
 				"web\\bundles\\coldkitchen\\scss\\_iconen.scss"
-			],
-			[
-				"coldscss",
-				"web\\bundles\\coldkitchen\\scss\\Coldkitchen.scss"
 			],
 			[
 				"homescss",
@@ -1455,24 +1757,12 @@
 				"app\\Resources\\views\\partners.html.twig"
 			],
 			[
-				"regl",
-				"app\\Resources\\views\\reglement.html.twig"
-			],
-			[
 				"color",
 				"web\\bundles\\coldkitchen\\scss\\_colors.scss"
 			],
 			[
-				"mixin",
-				"web\\bundles\\coldkitchen\\scss\\_mixins.scss"
-			],
-			[
 				"mixi",
 				"vendor\\twbs\\bootstrap\\less\\mixins.less"
-			],
-			[
-				"login",
-				"src\\ColdkitchenBundle\\Resources\\views\\Default\\login.html.twig"
 			],
 			[
 				"coldkcscss",
@@ -1523,10 +1813,6 @@
 				"web\\bundles\\coldkitchen\\scss\\Coldkitchen.scss"
 			],
 			[
-				"fonts",
-				"web\\bundles\\coldkitchen\\scss\\_fonts.scss"
-			],
-			[
 				"rout",
 				"app\\config\\routing.yml"
 			],
@@ -1535,16 +1821,8 @@
 				"app\\config\\config.yml"
 			],
 			[
-				"cold",
-				"src\\ColdkitchenBundle\\Resources\\public\\scss\\Coldkitchen.scss"
-			],
-			[
 				"inschrijven",
 				"app\\Resources\\views\\inschrijven.html.twig"
-			],
-			[
-				"defaul",
-				"src\\ColdkitchenBundle\\Controller\\DefaultController.php"
 			],
 			[
 				"serv",
@@ -1561,10 +1839,6 @@
 			[
 				"partner",
 				"Z\\Coldkitchen\\theme\\coldkitchen\\partners.twig"
-			],
-			[
-				"_hea",
-				"theme\\base-2014\\_header.twig"
 			],
 			[
 				"contentty",
@@ -1732,7 +2006,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 410.0,
+	"side_bar_width": 327.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

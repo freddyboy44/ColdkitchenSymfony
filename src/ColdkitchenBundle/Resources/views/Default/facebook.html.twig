@@ -1,17 +1,4 @@
-{% extends 'base.html.twig' %}
 
-{% block stylesheets %}
-	{{ parent() }}
-	<link rel="stylsheet" href="{{ asset("bundles/coldkitchen/css/owl.carousel.css") }}">
-{% endblock %}
-
-{% block javascripts %}
-    {{ parent() }}
-    <script src="{{ asset("bundles/coldkitchen/js/owl.carousel.min.js") }}">
-    </script>
-{% endblock %}
-
-{% block body %}
 
 	<div class="container fotos">
 		<h1>Foto's</h1>
@@ -28,7 +15,7 @@
 					{% for foto in data %}
 							<div id="foto{{loop.index}}" class=" {{ loop.first ? 'eerstefoto' }} {{ loop.index==2 ? 'tweedefoto' }}{{ loop.index==3 ? 'derdefoto' }} {{ loop.index > 3 ? 'niettonen' }}">
 								<div class="overlay">
-									<img src="{{ foto.source }}">
+									<a href="{{ foto.source }}"><img id="actualfoto{{ loop.index }}" src="{{ loop.index < 7 ? foto.source : '' }}" class="{{ loop.index < 6 ? 'geladen' : '' }}" data-volledigeurl="{{ loop.index > 5 ? foto.source : "" }}"></a>
 								</div>
 							</div>
 					{% endfor %}
@@ -42,6 +29,16 @@
 		<br/>
 		<a class="button fotos " href="{{ path('fotos') }}">Meer foto's</a>
 	</div>
+	<script>
+		$('.fotolijn').magnificPopup({
+		  delegate: 'a', // child items selector, by clicking on it popup will open
+		  type: 'image',
+		  gallery: {
+		      enabled: true
+		  },
+		  // other options
+		});
+	</script>
 	<script>
 		$('.volgendefoto').click(function(){
 			$huidigefoto = $('#huidige').html();
@@ -78,6 +75,22 @@
 				if($('.vorigefoto').hasClass('onzichtbaar')){
 					$('.vorigefoto').removeClass('onzichtbaar');
 				}	*/
+
+				$zes = parseInt($drie) + 3;
+				console.log("Foto zes is : #foto" + $zes);
+				$fotozes = $('#foto' + $zes);
+				if(!(($fotozes).hasClass('geladen'))){
+					$totaan = parseInt($zes)+4;
+					for($teller=parseInt($zes);$teller<$totaan;$teller++){
+						$element = $('#actualfoto' + $teller);
+						//console.log($element);
+						$goeieurl = $element.data('volledigeurl');
+						//console.log($goeieurl);
+						$element.attr('src',$goeieurl);
+						$('foto' + $teller).addClass('geladen');
+					}
+
+				}
 			}
 		})
 
@@ -138,4 +151,3 @@
 			}
 		})*/
 	</script>
-{% endblock %}

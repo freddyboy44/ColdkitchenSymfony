@@ -1,181 +1,106 @@
+
+
+.row.midden {
+	width: 100%;
+}
+
 .iconen {
-	a {
-		overflow:hidden;
-		display: block;
-		width:95%;
-		height:95%;
-	}
-	top: 20px;
-	@include breakpoint(tablet) {
-		top: 50%;
-		padding-top: 60px;
-	}
-	//position: absolute;
 	width:100%;
 	height:100%;
-
+	
 	div {
-		padding: 8px;
-		position: relative;
-		height: 130px;
-
 		@include breakpoint(tablet) {
-			height: 160px;
+			height: 100%;	
+		}
+		
+	}
+	.knop:hover {
+		-webkit-box-shadow: 0px 0px 14px 12px rgba(64, 70, 4, 0.75);
+		-moz-box-shadow:    0px 0px 14px 12px rgba(64, 70, 4, 0.75);
+		box-shadow:         0px 0px 14px 12px rgba(64, 70, 4, 0.75);
+	}
+	.knop {
+		display: block;
+		width: 100%;
+		@include breakpoint(tablet) {
+			width: 80%;	
+			top: 50%;
+			left: 50%;
+			position: relative;
+			@include transform(skew(-12deg, 0deg) translate(-50%,-50%));
+		}
+		
+		background-color: white;
+		@include transform(skew(-12deg, 0deg));
+		@include border-radius(6px);
+		//padding: 20px 15px;
+		@include breakpoint(tablet) {
+
 		}
 
-		.background {
-			background-color: white;
+		.inhoudicoon {
+			@include vertical-alignabsolute();
+			height: auto;
 		}
 
-		.dummy {
-			z-index: 2;
-			@include box-shadow(rgba($donkergroenekleur, 0.4) 0 0 25px, rgba(black, 0.2) 0 0 3px 1px inset);
-		}
-		.background, .dummy {
-			display: block;
-			@include transform(skew(-12deg, 0deg) translate(-50%));
-			@include border-radius(5px);
-			position:absolute;
-			top:0;
-			left:50%;
-			width:100%;
-
+		.titel {
 			@include breakpoint(tablet) {
-				max-width: 180px;
-				max-height: 120px;	
+				font-size: 26px;	
 			}
-			max-width: 110px;
-			max-height: 100px;
+			font-size: 16px;
+			clear:both;
+			display: block;
+			margin:auto;
+			text-align: center;
+			width: 97%;
+			margin-top: 5px;
 			
-			height: 100%;
-			
-			overflow:hidden;
+			font-family: 'MyriadProBoldItalic';
+			color: $partnerskleur;
 
-			
+			@include breakpoint(tablet) {
+				top: 70px;	
+			}
+			@include transform(skew(12deg,0deg));
 		}
 
-		.dummy:hover {
-			//@include box-shadow(rgba($donkergroenekleur, 0.6) 0 0 25px, rgba(black, 0.2) 0 0 3px 1px inset);	
-			-webkit-box-shadow: 0px 0px 14px 12px rgba(64, 70, 4, 0.75);
-			-moz-box-shadow:    0px 0px 14px 12px rgba(64, 70, 4, 0.75);
-			box-shadow:         0px 0px 14px 12px rgba(64, 70, 4, 0.75);
-			cursor: pointer;
-			
+		img {
+			display: block;
+			margin: auto;
+			@include transform(skew(12deg,0deg));
+			max-width:inherit;
 		}
+	}
 
-		.background.groot, .dummy.groot {
-			margin-bottom: 8px;
-			margin-top: 8px;
+	.knop.klein {
+		//min-width: 100%;
+		img {
+			max-height: 80px;
 			@include breakpoint(tablet) {
-				margin-bottom: 0px;
-				margin-top: 0px;
-			}	
-			max-width: 150px;
-			max-height: 105px;
-			height: 100%;
-			width: 100%;
-			@include breakpoint(tablet) {
-				max-width: 240px;
 				max-height: 160px;	
 			}
 			
+			//width: auto; 
+
 		}
 
-		.content {
-			//padding: 10px;
-			display: block;
-			width: 100%;
-			height: 100%;
-			left: -8px;
-			color: $donkergroenekleur;
-			font-family: 'MyriadProBoldItalic';
+	}
+
+	.knop.groot {
+		@include transform(skew(-12deg, 0deg));
+		@include breakpoint(tablet) {
+			min-width: 100%;
+			@include transform(skew(-12deg, 0deg) translate(-52%,-50%));
+
+		}
+		img {
+			max-height: 100px;
+			@include breakpoint(tablet) {
+				max-height: 220px;	
+			}
 			
-
-			img {
-				display: block;
-				//margin-left: 37%;
-				position: absolute;
-				left: 50%;
-				@include transform(translate(-38%,0%));
-
-				max-height: 40px;
-				@include breakpoint(tablet) {
-					max-height: 50px;	
-				}
-				
-			}
-			.titel {
-				@include breakpoint(tablet) {
-					font-size: 26px;	
-				}
-				font-size: 16px;
-				clear:both;
-				display: block;
-				margin:auto;
-				text-align: center;
-				width: 97%;
-				position: absolute;
-				top: 45px;
-				@include breakpoint(tablet) {
-					top: 70px;	
-				}
-				
-			}
-
-			.klein {
-				//height: 45px;
-				
-				img {
-					max-height: 20px;
-					@include breakpoint(tablet) {
-						max-height: 30px;	
-					}
-					
-				}
-			}
-
-			.groot {
-				//height: 60px;
-				img {
-					max-height: 30px;
-					@include breakpoint(tablet) {
-						max-height: 45px;	
-					}
-				}
-			}
+			/* height: 140px;
+			width: auto; */
 		}
 	}
-
-	.groot {
-		height: 40%;
-		@include breakpoint(tablet) {
-			height: 190px;
-		}
-		@include breakpoint(laptop) {
-			top: -20px;	
-		}
-		.content {
-			img {
-				max-height: 60px;
-				@include breakpoint(tablet) {
-				 	max-height: 90px;
-				 } 
-			}
-			.titel {
-				@include breakpoint(tablet) {
-					top: 110px;	
-				}
-				top: 75px;
-			}
-		}
-	}
-
-	.klein {
-		height: 30%;
-		@include breakpoint(tablet) {
-			height: auto;
-			height: 100%;
-		}
-	}
-	
 }

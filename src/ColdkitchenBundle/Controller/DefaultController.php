@@ -14,6 +14,18 @@ use GuzzleHttp\Client;
 
 class DefaultController extends Controller
 {
+
+     /**
+     * @Route("/testinschrijven", name="watemail")
+     * @Template()
+     */
+    public function testinschrijvenAction(){
+      
+      return $this->render('ColdkitchenBundle:Ploeg:ingeschreven.html.twig', array(
+                                                        'email' => 'boifrederik@telenet.be'
+));
+    }
+
     /**
      * @Route("/", name="fixed")
      * @Template()
@@ -23,7 +35,10 @@ class DefaultController extends Controller
     	$em = $this->getDoctrine()->getManager();
 
         $fotoentities = $em->getRepository('ColdkitchenBundle:AchtergrondFoto')->findAll();
-        $partners = $em->getRepository('ColdkitchenBundle:Partner')->findAll();
+        
+        $fieldpartners = $em->getRepository('ColdkitchenBundle:PartnerType')->findFieldpartners()->getPartners();
+        $suppliers = $em->getRepository('ColdkitchenBundle:PartnerType')->findSuppliers()->getPartners();
+        $partners = $em->getRepository('ColdkitchenBundle:PartnerType')->findPartners()->getPartners();
  
 
         FacebookSession::setDefaultApplication('767174366685015', 'bb8deb1a28923c26de9fe9427a2a8915');
@@ -63,6 +78,8 @@ class DefaultController extends Controller
 
         return array(
             'fotos' => $fotoentities,
+            'fieldpartners' => $fieldpartners,
+            'suppliers' => $suppliers,
             'partners' => $partners,
             'data' => $data
 
@@ -229,14 +246,7 @@ class DefaultController extends Controller
         return $this->render('ColdkitchenBundle:Default:reglement.html.twig');
     }
 
-    /**
-     * @Route("/contact", name="contact")
-     * @Template()
-     */
-    public function contactAction()
-    {
-        return $this->render('ColdkitchenBundle:Default:reglement.html.twig');
-    }
+
 
 
     

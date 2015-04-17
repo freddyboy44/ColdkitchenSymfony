@@ -6,18 +6,47 @@
 		height: 100%;
 		position: relative;
 	}
-	.row {
-		
-	}
-	.partnerfoto {
-		
-		position: relative;
 	
+	.fieldpartnerfoto, .supplierfoto, .partnerfoto {
+		a, span.leeg {
+			display: block;
+			@include vertical-align();
+		}
+		position: relative;
 		img {
-			//@include vertical-align();
-			max-height: 130px;
+			width: auto;
 			display: block;
 			margin:auto;
+		}
+	}
+
+	.fieldpartnerfoto {
+		padding: 10px;
+		@include breakpoint(tablet) {
+			padding: 30px;
+		}
+		height: 200px;
+		
+		img {
+			//@include vertical-align();
+			max-height: 170px;
+		}
+	}
+	.supplierfoto {
+		padding: 15px;
+		height: 150px;
+		@include breakpoint(tablet) {
+			padding: 30px;
+		}
+		img {
+			max-height: 130px;
+		}
+	}
+	div.partners{
+		padding: 20px;
+		height: 110px;
+		img {
+			max-height: 90px;
 		}
 	}
 }

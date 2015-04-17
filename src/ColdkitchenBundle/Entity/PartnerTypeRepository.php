@@ -18,4 +18,23 @@ class PartnerTypeRepository extends EntityRepository
 
 		return $this->find($id);
 	}
+
+	public function findSuppliers(){
+		
+		$id = 2;
+
+		return $this->find($id);
+	}
+	public function findPartners(){
+		
+		$id = 3;
+
+		return $this->find($id);
+	}
+	public function findSponsors(){
+		
+		$id = 4;
+
+		return $this->find($id);
+	}
 }

@@ -1,34 +1,42 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-	{% include '_header.twig' %}
-	<div class="paginareglement">
-		<div class="container partner">
-			<h1>Tornooireglement</h1>
-		</div>
-		<footer>
-			<div class="container">
-				<div class="col-xs-12 col-sm-offset-2 col-sm-10">
-					<ul>
-						<li>Iedere speler wordt verondersteld het reglement te kennen</li>
-
-						<li>Het is ten strengste verboden om met ijzeren noppen te spelen</li>
-
-						<li>Beslissingen van de scheidsrechters en de organisatie zijn onherroepelijk</li>
-
-						<li>Elke fout in het strafschopgebied wordt bestraft met een penalty (shoot-out)</li>
-
-						<li>Slydings zijn verboden</li>
-
-						<li>Bij een gele kaart moet de speler vervangen worden.<br/>
-	Bij een rode kaart wordt de speler uitgesloten voor het tornooi en gaat de waarborg van de ploeg verloren</li>
-
-	<li>Als 5 minuten na het voorziene aanvangsuur geen 4 spelers van eenzelfde ploeg op het veld staan, verliest deze ploeg met 7-0.<br/> Elke afwezigheid heeft een afhouding van € 10 van de waarborg tot gevolg</li>
-
-	<li>Kort voor het tornooi krijgen de ploegverantwoordelijken het volledige reglement doorgestuurd</li>
-					</ul>
-				</div>
+	<div class="fullpage">
+		{% include '_header.twig' %}
+		<div class="paginareglement">
+			<div class="container partner">
+				<h1>Tornooireglement</h1>
 			</div>
-		</footer>
+			<footer>
+				<div class="container">
+					<div class="col-xs-12 col-sm-offset-2 col-sm-10">
+						<ul>
+							<li>Iedere speler wordt verondersteld het reglement te kennen</li>
+
+							<li>Het is ten strengste verboden om met ijzeren noppen te spelen</li>
+
+							<li>Beslissingen van de scheidsrechters en de organisatie zijn onherroepelijk</li>
+
+							<li>Elke fout in het strafschopgebied wordt bestraft met een penalty (shoot-out)</li>
+
+							<li>Slydings zijn verboden</li>
+
+							<li>Bij een gele kaart moet de speler vervangen worden.<br/>
+		Bij een rode kaart wordt de speler uitgesloten voor het tornooi en gaat de waarborg van de ploeg verloren</li>
+
+		<li>Als 5 minuten na het voorziene aanvangsuur geen 4 spelers van eenzelfde ploeg op het veld staan, verliest deze ploeg met 7-0.<br/> Elke afwezigheid heeft een afhouding van € 10 van de waarborg tot gevolg</li>
+
+		<li>Kort voor het tornooi krijgen de ploegverantwoordelijken het volledige reglement doorgestuurd</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</div>
 	</div>
+	<script>
+		$(document).ready(function(){
+			$( '.fullpage' ).width( $( window ).width() );
+            $( '.fullpage' ).height( $( window ).height() );
+		})
+	</script>
 {% endblock %}

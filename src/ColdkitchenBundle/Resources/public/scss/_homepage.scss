@@ -1,78 +1,84 @@
 
 .data {
+    .row.legerij {
+        height: 15%;
+        display: block;
+    }
     .row.ladies {
-        //margin-bottom: $margestartpagina;
-        min-height: 5%;
+    
+        padding-bottom: $margestartpagina*2;
         @include breakpoint(tablet) {
-            min-height: 10%;    
+            height: 15%;
+            //position: absolute;
+            /* left: 50%;
+            @include transform(translateX(-50%)); */
         }
-        
+        .container {
+            height: 100%;
+        }
     }
     .row.logos {
-        margin-top: $margestartpagina;
-        min-height: 5%;
+        padding-top: $margestartpagina;
         @include breakpoint(tablet) {
-            min-height: 10%;    
+            height: 15%;
         }
     }
     .row.logos, .row.ladies {
         
-        // Logo coldkitchen en facebook
         .logo-coldkitchen, .logo-coldkitchen, .logo-coldkitchenladies, .logo-ergo {
             img {
-                max-height:32px;
-                width: auto;
-                @include breakpoint(tablet) {
-                    max-height: 60px;
-                }
-                @include breakpoint(laptop) {
-                    max-height: 80px;
-                }
-                @include breakpoint(desktop) {
-                    max-height: 100px;
-                }
+                
             }
-            text-align:left;
         }
         .logo-coldkitchen, .logo-coldkitchenladies {
             img {
-                float:left;    
+                float:left;
+                max-height: 110px; 
             }
-            
-        }
-    
-        .logo-ergo {
-            margin-top: $margestartpagina;
         }
 
-        .logo-facebook, .logo-ergo {
+        .logo-coldkitchenladies, .logo-ergo {
+            height: 100%;
             img {
-                float:right; 
-                max-height: 35px;
-                @include breakpoint(tablet) {
-                    max-height: initial;
-                }
+                display: block;
+                position: absolute;
+                bottom: 0px;
             }
-            
+        }
+    
+        .logo-ergo, .logo-facebook {
+            img {
+                display: block;
+                position: absolute;
+                right:0px; 
+                max-height: 85px; 
+            }
         }
     }
 
     .row.datum{
         //datum
         //
-        min-height: 10%;
         @include breakpoint(tablet) {
-            min-height: 20%;    
+            height: 20%;    
         }
         font-family: 'MyriadProBoldItalic';
         width: 100%;
         text-align: center;
         color: white;
         font-size: 36px;
+        position: relative;
+
         @include breakpoint(desktop){
             font-size: 72px;
         }
         @include text-shadow(rgba($donkergroenekleur, 0.2) 1px 1px 0, rgba($donkergroenekleur, 0.2) 2px 2px 0, rgba($donkergroenekleur, 0.2) 3px 3px 0);
+        .container {
+            height: 100%;
+            .datumtekst {
+                @include vertical-align();
+            }
+        }
         
     }
     .row.midden{
@@ -80,7 +86,7 @@
         height: 66%;
         padding: 0 2%;
         @include breakpoint(tablet) {
-            height: 40%;
+            height: 35%;
             min-height: 30%;    
         }
         
@@ -114,6 +120,13 @@ a.nextslide {
         //left:0px;
         //height: 120px;
         width: 100%;    
+    }
+    
+}
+.onderaan.eerstepagina {
+    @include breakpoint(tablet) {
+        position: relative;  
+        bottom : 110px;  
     }
     
 }

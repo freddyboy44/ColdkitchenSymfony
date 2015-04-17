@@ -1,0 +1,96 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme form _self %}
+
+
+{% block form_row %}
+	{% spaceless %}
+	    <div>
+	        <div class="titel">
+	        	{{ form_label(form) }}
+	        </div>
+	        {{ form_errors(form) }}
+	        <div class="invoerveld">
+	        	{{ form_widget(form) }}
+	        </div>
+
+	    </div>
+	{% endspaceless %}
+{% endblock form_row %}
+
+{% block form_widget_simple %}
+    {% set type = type|default('text') %}
+    <input type="{{ type }}" {{ block('widget_attributes') }} {% if value is not empty %}value="{{ value }}" {% endif %}/>
+{% endblock form_widget_simple %}
+
+{% block genemu_captcha_widget %}
+	<div class="captcha">
+		<div class="col-xs-4 col-sm-3">
+			<img class="img-responsive" id="{{ id }}_image" src="{{ src }}"  title="{{ name|trans }}" />	
+		</div>
+		<div class="col-xs-8 col-sm-4 ">
+			<h5>Typ de tekst na</h5>
+			<input type="textbox" class="captchaantwoord" {{ block('widget_attributes') }}/>		
+		</div>
+		<div class="col-sm-5 ">
+			<input type="submit" value="Verzenden">
+		</div>
+	</div>
+    
+{% endblock %}
+
+{% block body %}
+	{% include '_header.twig' %}
+	<div class="paginacontact">
+		<div class="container">
+			<h1>Meer over ons</h1>
+			<div class="row">
+				<div class="col-sm-6">
+					<h3>
+						Onze geschiedenis
+					</h3>
+					<p>
+						In mei 2005 organiseerden Daniel Sengelov en Wouter De Jonckheere voor het eerst het Cold Kitchen Tornooi op de velden van de Koude Keuken in Brugge.<br/>
+						Het tornooi wordt gespeeld na de voetbalcompetities en is de ideale gelegenheid waarop heel wat vrienden uit het zaalvoetbal-, minivoetbal- en voetbalmilieu elkaar terug vinden.
+					</p>
+				</div>
+				<div class="col-sm-6">
+					<h3>Het Tornooi</h3>
+					<p>
+						Op het Cold Kitchen Tornooi spelen ploegen van 5 personen tegen elkaar op velden van 40m bij 20m. Dit gebeurt op zaalvoetbaldoelen.<br/> Ondertussen is het tornooi uitgegroeid tot een gerenommeerd sportevenement in Brugge. Getuige daarvan de uitstekende relaties met de diensten van de stad Brugge.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<h3>Service</h3>
+					<p>
+						We slaagden erin om jaar na jaar een stap vooruit te zetten. Service is voor ons absoluut de belangrijkste parameter. We zijn er trots op dat 75% van de ploegen jaar na jaar terug keert. Ook voor onze partners vinden we dat een belangrijk signaal.<br/><br/>
+
+						Sinds een paar jaar kunnen we rekenen op zo'n 1250 passanten, waarvan ruim 450 sportieve deelnemers. Communicatie verloop via programmaboekjes, flyers, affiches, website, Facebookpagina, persoonlijke uitnodigingen enz. Daarnaast krijgen we vaak aandacht in de geschreven pers, zowel online als in de kranten.
+					</p>
+					<h3>ERGO Retro Derby</h3>
+					<p>
+						inds 2014 wordt de Retro Derby georganiseerd, een gezapige wedstrijd tussen ex-spelers van Club en Cercle Brugge. Het eerste jaar waren onder andere Jürgen Belpaire, Günther Vanaudenaerde, Joeri Pardo, Yves Feys, Alain De Nil, Jerko Tipuric en Bert Lamaire van de partij.<br/>
+						De Retro Derby wordt mee mogelijk gemaakt door onze partner ERGO.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="onderaan">
+            <a class="nextslide" href="#section-contactformulier"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlgrijs.png") }}"></a>
+        </div> 
+        <br/>
+		<footer>
+			<div class="container" id="section-contactformulier">
+				<div class="col-xs-12">
+					<div class="contactformulier">
+						{{ form_start(form) }}
+
+						{{ form_end(form) }}
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+{% endblock %}
