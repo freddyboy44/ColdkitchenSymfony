@@ -29,6 +29,7 @@ a.button,a.button:hover,a.button:active {
 
 .button.ploegbeheer {
 	background-color: $grijzeachtergrond;
+	
 	color: white;
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -36,6 +37,21 @@ a.button,a.button:hover,a.button:active {
 		margin-top: 60px;
 		margin-bottom: 60px;
 	}
+}
+
+.button:hover{
+	cursor: pointer;
+} 
+
+.button.opslaan {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.button.opslaan:hover {
+	@include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
+}
+.button.opslaan.disabled:hover {
+	@include box-shadow(none);
 }
 
 .button.fotos {

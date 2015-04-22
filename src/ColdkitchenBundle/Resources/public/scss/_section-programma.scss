@@ -2,7 +2,7 @@
 	position: relative;
 	background-color: white;
 	color: $partnerskleur;
-	height: 100%;
+	
 	
 	h1 {
 		color: $partnerskleur;
@@ -22,13 +22,16 @@
 	}
 	.pouletabel {
 		height: 100%;
+		min-height: 250px;
 		position: relative;
 		.cont	{
-			@include vertical-alignabsolute();
+			@include breakpoint(tablet) {
+				@include vertical-alignabsolute();	
+			}
+			
 			img {
 				display: block;
 				margin:auto;
-			
 			}	
 		}
 		

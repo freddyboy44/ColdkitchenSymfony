@@ -57,16 +57,31 @@
 		@include breakpoint(desktop) {
 			padding: 60px;	
 		}
-		height: 200px;
+		height: 100px;
+		@include breakpoint(tablet) {
+			height: 150px;	
+		}
+		@include breakpoint(desktop) {
+			height: 200px;
+		}
+		
 		img {
 			max-height: 200px;
 		}
 	}
 	.suppliers {
 		@include breakpoint(desktop) {
-			padding: 35px;	
+			padding: 55px;	
 		}
-		height:170px;
+
+		height: 120px;
+		@include breakpoint(tablet) {
+			height: 120px;
+		}
+		@include breakpoint(desktop) {
+			height:170px;	
+		}
+		
 		img {
 			max-height: 150px;
 		}

@@ -3,6 +3,7 @@
 namespace ColdkitchenBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
+use Doctrine\ORM\Query\Expr\Join;
 
 /**
  * PartnerTypeRepository
@@ -13,28 +14,39 @@ use Doctrine\ORM\EntityRepository;
 class PartnerTypeRepository extends EntityRepository
 {
 	public function findFieldpartners(){
-		
 		$id = 1;
-
-		return $this->find($id);
+		return $this->filterOpType($id);
 	}
 
 	public function findSuppliers(){
-		
 		$id = 2;
 
-		return $this->find($id);
+		return $this->filterOpType($id);
 	}
 	public function findPartners(){
-		
 		$id = 3;
-
-		return $this->find($id);
+		return $this->filterOpType($id);
 	}
 	public function findSponsors(){
 		
 		$id = 4;
 
-		return $this->find($id);
+		return $this->filterOpType($id);
 	}
+
+	public function filterOpType($id){
+		$query = $this->getEntityManager()
+        	->createQuery("SELECT p FROM ColdkitchenBundle:Partner p WHERE p.typepartner = :id AND p.zichtbaar = 1")
+        	->setParameter('id', $id);
+
+        try {
+	        return $query->getResult();;
+	    } catch (\Doctrine\ORM\NoResultException $e) {
+	        return null;
+	    }
+
+		return $qb->getQuery()->getResult();
+	}
+
+	
 }

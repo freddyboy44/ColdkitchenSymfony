@@ -16,6 +16,10 @@
 		text-align: center;
 		font-family: 'MyriadProRegular';
 		font-size: 18px;
+		@include breakpoint(mobileonly) {
+			padding: 10px;	
+		}
+		
 	}
 
 	.formulier {
@@ -41,19 +45,27 @@
 
 
 		#tabs {
+			.terug.inschrijven {
+				color: $groenekleur;
+			}
 			ul {
+
 				padding-top: 15px;
 				width: 100%;
-				max-width: 600px;
-				text-align: left;
+				//max-width: 600px;
+				text-align: center;
 				display: block;
 				//margin:auto;
 				li {
 					font-size : 23px;
 					font-family: 'MyriadProBold';
 					display: inline-block;
-					padding: 10px;
-					color: white;
+					padding: 10px 30px;
+					background-color: white;
+					color: $groenekleur;
+					@include transform(skew(-12deg, 0deg));
+					@include border-radius(6px);
+					margin-right: 25px;
 					//@include box-shadow(rgba(white, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
 				}
 			}
@@ -84,6 +96,11 @@
 		h2 {
 			margin-bottom: 35px;
 			margin-top: 35px;
+
+			@include breakpoint(mobileonly) {
+				font-size: 22px;
+			}
+			
 		}
 
 		p {
@@ -153,6 +170,8 @@
 				  margin-right: 5px;
 			}
 
+			
+
 			select {
 				text-align: left;
 			}
@@ -175,6 +194,93 @@
 		}
 
 		.captcha {
+			background-color: $grijzeachtergrond;
+			overflow: hidden;
+			height: 120px;
+			@include breakpoint(tablet) {
+				height: 70px;	
+			}
+			
+			@include border-radius(5px);
+			margin-top: 15px;
+
+			input[type='submit'] {
+				background-color: $groenpartners;
+				color: white;
+				font-family: 'MyriadProBoldItalic';
+				width: 100%;
+				
+				min-height: 18px;
+				text-transform: uppercase;
+				@include border-radius(5px);
+				border: 0px;
+				top: 0px;
+				@include breakpoint(tablet) {
+					height: 90%;
+					@include vertical-align();
+					font-size: 18px;
+
+				}
+			}
+
+			div {
+				padding: 2px;
+				@include breakpoint(tablet) {
+					height: 100%;	
+				}
+				
+			}
+
+			div:nth-child(2){
+				//Tekst
+				padding-top:7px;
+			}
+			div:nth-child(3){
+				padding: 5px 10px;
+			}
+
+			h5 {
+				font-family: 'MyriadProBold';
+				font-size: 16px;
+				color: black;
+				text-align: left;
+				margin: 0;
+				margin-bottom: 3px;
+			}
+
+			input {
+				//height: 28px;
+				margin-bottom: 6px;
+				color: black;
+				border: 0;
+				width: 100%;
+				margin: auto;
+				@include border-radius(6px);
+				position: relative;
+				top: 12px;
+				@include breakpoint(mobileonly) {
+					
+					width: 90%;
+					margin-right: 6px;
+				}
+			}
+
+			img {
+				padding: 5px;
+				padding-left :  7px;
+				//height: 100%;
+				min-height: 65px;
+				width: 100%;
+				@include border-radius(14px);
+				//@include vertical-alignabsolute();
+			}
+			
+			.captchaantwoord, .captchaimage, .captchaverzenden {
+				//padding: 3px;
+			}
+		}
+
+		.captchaold {
 			margin-top: 20px;
 			@include border-radius(5px);
 
@@ -213,6 +319,7 @@
 							height: 28px;
 							border: 0;
 							@include border-radius(6px);
+							color: black;
 						}
 						padding-right: 5px;
 					}
@@ -239,8 +346,8 @@
 		.volgende {
 			float:left;
 		}
-		#spelernaam {
-			font-size: 20px;
+		#titelspelernaam {
+			font-size: 26px;
 		}
 	}
 

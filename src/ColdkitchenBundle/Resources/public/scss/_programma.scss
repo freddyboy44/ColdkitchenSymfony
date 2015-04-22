@@ -1,0 +1,19 @@
+.paginaprogramma {
+	height: 90%;
+
+	.programmatitel {
+		height: 15%;
+	}
+
+	footer {
+		min-height: 85%;
+
+		p {
+			font-family: 'MyriadProRegular';
+			@include breakpoint(desktop) {
+				font-size: 22px;	
+			}
+			font-size: 18px;
+		}
+	}
+}

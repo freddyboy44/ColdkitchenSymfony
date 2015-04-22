@@ -7,7 +7,7 @@
 			<span id="huidige">2</span>
 			<span id="aantalfotos">{{ data|length }}</span>
 			<div class="col-xs-1">
-				<i class="vorigefoto fa fa-chevron-left fa-3x"></i>
+				<i class="vorigefoto {{ not is_mobile() ? 'onzichtbaar' }} fa fa-chevron-left fa-3x"></i>
 			</div>
 			<div class="col-xs-10">
 				<div class="fotolijn">
@@ -44,6 +44,13 @@
 			$huidigefoto = $('#huidige').html();
 			$aantalfotos = $('#aantalfotos').html();
 			console.log("Huidige foto : " + $huidigefoto + " Aantal Fotos: " + $aantalfotos);
+
+			if($('.eerstefoto').css('display')=='none'){
+				$mobiel = true;
+			}else{
+				$mobiel = false;
+			}
+
 			if($huidigefoto < ($aantalfotos-1)){
 				$een = parseInt($huidigefoto) - 1;
 				$huidigeeerstefoto = $('#foto' + $een);
@@ -68,6 +75,10 @@
 				$foto3.addClass('derdefoto');
 				$foto3.removeClass('niettonen');
 				$('#huidige').html($twee);	
+
+				if($('.vorigefoto').hasClass('onzichtbaar')){
+					$('.vorigefoto').removeClass('onzichtbaar');
+				}
 
 				/*if(($twee+1)<parseInt($aantalfotos)){
 					$('.volgendefoto').addClass('onzichtbaar');
@@ -95,59 +106,84 @@
 		})
 
 		$('.vorigefoto').click(function(){
+			if($('.eerstefoto').css('display')=='none'){
+				$mobiel = true;
+			}else{
+				$mobiel = false;
+			}
+
+
+
+
 			$huidigefoto = $('#huidige').html();
 			$aantalfotos = $('#aantalfotos').html();
 			console.log("Huidige foto : " + $huidigefoto + " Aantal Fotos: " + $aantalfotos);
-			if($huidigefoto > 2){
-				$een = parseInt($huidigefoto) - 1;
-				$drie = parseInt($huidigefoto) + 1;
-				$huidigeeerstefoto = $('#foto' + $een);
-				$huidigetweedefoto = $('#foto' + $huidigefoto);
-				$huidigederdefoto = $('#foto' + $drie);
 
-				$huidigeeerstefoto.removeClass('eerstefoto');
-				$huidigeeerstefoto.addClass('tweedefoto');
-				$huidigetweedefoto.removeClass('tweedefoto');
-				$huidigetweedefoto.addClass('derdefoto');
-				$huidigederdefoto.removeClass('derdefoto');
-				$huidigederdefoto.addClass('niettonen');
+			if($mobiel){
+				if($huidigefoto > 1){
+					$een = parseInt($huidigefoto) - 1;
+					$drie = parseInt($huidigefoto) + 1;
+					$huidigeeerstefoto = $('#foto' + $een);
+					$huidigetweedefoto = $('#foto' + $huidigefoto);
+					$huidigederdefoto = $('#foto' + $drie);
 
-				$nieuwe = $een - 1;
-				$nieuwefoto = $('#foto' + $nieuwe);
-				$nieuwefoto.removeClass('niettonen');
-				$nieuwefoto.addClass('eerstefoto');
+					$huidigeeerstefoto.removeClass('eerstefoto');
+					$huidigeeerstefoto.addClass('tweedefoto');
+					$huidigetweedefoto.removeClass('tweedefoto');
+					$huidigetweedefoto.addClass('derdefoto');
+					$huidigederdefoto.removeClass('derdefoto');
+					$huidigederdefoto.addClass('niettonen');
 
-				$huidigefoto = $('#huidige').html($een);		
-				/*
-				if($huidigefoto<3){
-					$('.vorigefoto').addClass('onzichtbaar');
+					if($een>1){
+						$nieuwe = $een - 1;
+						$nieuwefoto = $('#foto' + $nieuwe);
+						$nieuwefoto.removeClass('niettonen');
+						$nieuwefoto.addClass('eerstefoto');
+					}else{
+						$('.vorigefoto').addClass('onzichtbaar');
+					}
+
+					if(!$mobiel){
+
+					}
+
+					$huidigefoto = $('#huidige').html($een);		
 				}
-				if($('.volgendefoto').hasClass('onzichtbaar')){
-					$('.volgendefoto').removeClass('onzichtbaar');
-				}*/
+			}else{
+				if($huidigefoto > 2){
+					$een = parseInt($huidigefoto) - 1;
+					$drie = parseInt($huidigefoto) + 1;
+					$huidigeeerstefoto = $('#foto' + $een);
+					$huidigetweedefoto = $('#foto' + $huidigefoto);
+					$huidigederdefoto = $('#foto' + $drie);
+
+					$huidigeeerstefoto.removeClass('eerstefoto');
+					$huidigeeerstefoto.addClass('tweedefoto');
+					$huidigetweedefoto.removeClass('tweedefoto');
+					$huidigetweedefoto.addClass('derdefoto');
+					$huidigederdefoto.removeClass('derdefoto');
+					$huidigederdefoto.addClass('niettonen');
+
+					$nieuwe = $een - 1;
+					$nieuwefoto = $('#foto' + $nieuwe);
+					$nieuwefoto.removeClass('niettonen');
+					$nieuwefoto.addClass('eerstefoto');
+
+					$huidigefoto = $('#huidige').html($een);
+					
+					if($nieuwe===1){
+						$('.vorigefoto').addClass('onzichtbaar');
+					}		
+					/*
+					if($huidigefoto<3){
+						$('.vorigefoto').addClass('onzichtbaar');
+					}
+					if($('.volgendefoto').hasClass('onzichtbaar')){
+						$('.volgendefoto').removeClass('onzichtbaar');
+					}*/
+				}
 			}
 		})
 
-		/*$('.volgendefoto').click(function(){
-			$huidige = $('#huidige').html();
-			$aantalfotos = $('#aantalfotos').html();
-			if($huidigefoto < ($aantalfotos-1)){
-				$huidigeeerstefoto = $('foto' + ($huidigefoto -1));
-
-				$huidigeeerstefoto.addClass('niettonen');
-				$huidigeeerstefoto.removeClass('eerstefoto');
-
-				$foto1 = $('foto' + $huidigefoto);
-				$foto1.addClass('eerstefoto');
-				$huidigeeerstefoto.removeClass('niettonen');
-
-				$foto2 = $('foto' + ($huidigefoto+1));
-				$foto2.addClass('tweedefoto');
-				$foto2.removeClass('derdefoto');
-
-				$foto3 = $('foto' + ($huidigefoto+2));
-				$foto3.addClass('derdefoto');
-				$foto3.removeClass('niettonen');				
-			}
-		})*/
+		
 	</script>

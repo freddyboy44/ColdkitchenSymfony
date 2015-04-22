@@ -1,3 +1,6 @@
+#section-home, #fullpage{
+    height: 100%;
+}
 
 .data {
     .row.legerij {
@@ -5,7 +8,8 @@
         display: block;
     }
     .row.ladies {
-    
+        width: 100%;
+        padding-left: 5px;padding-right: 5px;
         padding-bottom: $margestartpagina*2;
         @include breakpoint(tablet) {
             height: 15%;
@@ -18,22 +22,38 @@
         }
     }
     .row.logos {
+        padding-left: 5px;padding-right: 5px;
         padding-top: $margestartpagina;
+        width: 100%;
         @include breakpoint(tablet) {
             height: 15%;
         }
     }
     .row.logos, .row.ladies {
         
+        margin-left: 0px;
+        margin-right:0px;
+
         .logo-coldkitchen, .logo-coldkitchen, .logo-coldkitchenladies, .logo-ergo {
             img {
-                
+                @include breakpoint(mobileonly) {
+                    max-height: 30px;
+                }
             }
         }
         .logo-coldkitchen, .logo-coldkitchenladies {
             img {
                 float:left;
                 max-height: 110px; 
+                @include breakpoint(mobileonly) {
+                    max-height: 30px;
+                }
+            }
+        }
+
+        .logo-coldkitchenladies {
+            img {
+                left: 0px;
             }
         }
 
@@ -51,7 +71,13 @@
                 display: block;
                 position: absolute;
                 right:0px; 
-                max-height: 85px; 
+                @include breakpoint(mobileonly) {
+                    max-height: 30px;
+                }
+                @include breakpoint(tablet) {
+                    max-height: 85px;     
+                }
+                
             }
         }
     }
@@ -59,6 +85,9 @@
     .row.datum{
         //datum
         //
+        height: 10%;
+        margin-left:0px;
+        margin-right: 0px;
         @include breakpoint(tablet) {
             height: 20%;    
         }
@@ -85,6 +114,8 @@
         //iconen
         height: 66%;
         padding: 0 2%;
+        margin-left: 0px;
+        margin-right: 0px;
         @include breakpoint(tablet) {
             height: 35%;
             min-height: 30%;    
@@ -112,13 +143,9 @@ a.nextslide {
 
 .onderaan {
     margin-top: 20px;
+    //margin-bottom: 20px;
     //display: none;
     @include breakpoint(tablet) {
-        //display: none;
-        //position: absolute;
-        //bottom: 0px;
-        //left:0px;
-        //height: 120px;
         width: 100%;    
     }
     
@@ -128,5 +155,4 @@ a.nextslide {
         position: relative;  
         bottom : 110px;  
     }
-    
 }

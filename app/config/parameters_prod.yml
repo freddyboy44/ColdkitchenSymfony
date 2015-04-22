@@ -1,0 +1,16 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: coldkitch_symfo
+    database_user: coldkitch_symfo
+    database_password: HawP7dts
+    mailer_transport: smtp
+    mailer_host: uit.telenet.be
+    mailer_user: ~
+    mailer_password: ~
+    locale: nl
+    secret: 941bf4a3379c5416dc6f956bb3e9d7c6fe1290a6
+    assetic.filter.compass.images_dir: %kernel.root_dir%/../web/bundles/coldkitchen/images
+    assetic.filter.compass.http_path:  /images

@@ -32,6 +32,8 @@ and open the template in the editor.
 @import 'test';
 @import 'contact';
 @import 'login';
+@import 'programma';
+
 
 html, body {
     width: 100%;
@@ -74,9 +76,8 @@ h5 {
 
 .section {
 	overflow:hidden;
-	padding: 20px 0px;	
 	@include breakpoint(tablet) {
-		//padding-top: 30px;
+		padding: 20px 0px;		
 	}
 }
 .section.eerstepagina {
@@ -102,7 +103,13 @@ h5 {
 			
 	  }
 }
+
+.backstretch {
+	mix-blend-mode: multiply;
+}
+
 .test {
+	background-color: #758008 !important;
     position: fixed;
     top: 0;
     left:0;
@@ -117,7 +124,10 @@ h5 {
 			bottom: 0;
 			left: 0;
 			//@include background(linear-gradient(to bottom right, rgba(0,0,0,0.3),rgba(0,0,0,0.3)) );
-			@include background(radial-gradient(100% 100%, rgba(0,0,0,0), rgba(0,0,0,0.9)) );
+			//@include background(radial-gradient(100% 100%, rgba(#758008,0), rgba(#758008,0.6)) );
+			@include background(radial-gradient(35% 35%, rgba(white,0.4), rgba(white,0.0)) );
+			background-position: center center;
+
 			
 			/* background: -moz-radial-gradient(center, ellipse cover,  rgba(183,193,10,0.24) 0%, rgba(183,193,10,0.24) 1%, rgba(183,193,15,0.6) 100%); FF3.6+
 			background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(183,193,10,0.24)), color-stop(1%,rgba(183,193,10,0.24)), color-stop(100%,rgba(183,193,15,0.6))); Chrome,Safari4+

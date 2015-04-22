@@ -1,5 +1,12 @@
 {% extends 'base.html.twig' %}
-
+{% block title %}
+    Home
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset("bundles/coldkitchen/js/jquery.blendmode.js") }}">
+    </script>
+{% endblock %}
 
 {% block body %}
     
@@ -15,59 +22,51 @@
                 <div class="data">
                     <div class="row logos">
                         
-                            <div class="logo-coldkitchen col-xs-8 col-sm-offset-1 col-sm-5">
-                                <img id="logocoldkitchen" class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/logo.png") }}">
+                            <div class="logo-coldkitchen nopadding col-xs-8 col-sm-offset-1 col-sm-5">
+                                {% image '@ColdkitchenBundle/Resources/public/images/logo.png' output='images/logo.png' %}
+                                    <img id="logocoldkitchen" class="img-responsive" src="{{ asset_url }}" alt="Logo Coldkitchen"/>
+                                {% endimage %}
+                                
                             </div>
-                            <div class="logo-facebook col-xs-4 col-sm-5">
-                                <a href="https://www.facebook.com/coldkitchentornooi"><img id="logofacebook" src="{{ image("@ColdkitchenBundle/Resources/public/images/facebook.png") }}"></a>
+                            <div class="logo-facebook nopadding col-xs-4 col-sm-5">
+                                <a href="https://www.facebook.com/coldkitchentornooi">
+                                    {% image '@ColdkitchenBundle/Resources/public/images/facebook.png' output='images/facebook.png' %}
+                                    <img id="logofacebook" class="img-responsive" src="{{ asset_url }}" alt="Logo Coldkitchen"/>
+                                {% endimage %}
+                                </a>
                             </div>
                         
                     </div>  
                     <div class="row datum">
-                        <div class="container">
+                        
                             <div class="col-xs-12 datumtekst">23 mei 2015</div>
-                        </div>
+                        
                     </div>
                     <div class="row midden">
                         <div class="iconen">
-                            <div class="col-xs-6 col-sm-2 col-sm-offset-1">
+                            <div class="col-xs-6 col-sm-2 col-lg-2">
                                 <a class="knop klein" href="{{ path('partners') }}">
-                                    <div class="inhoudicoon">
-                                        <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/partners.png") }}">
-                                        <!-- class="titel">Partners</span>    -->
-                                    </div>
+                                    <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/partners.png").ScaleResize(225,163) }}">
                                 </a>
                             </div>
-                            <div class="col-xs-6 col-sm-2">                    
+                            <div class="col-xs-6 col-sm-2 col-lg-2">                    
                                 <a class="knop klein" href="{{ path('programma') }}">
-                                    <div class="inhoudicoon">
-                                        <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/programma.png") }}">
-                                        <!-- class="titel">Programma</span>    -->
-                                    </div>
+                                    <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/programma.png").ScaleResize(225,163) }}">
                                 </a>
                             </div>
-                            <div class="col-xs-12 col-sm-2">
+                            <div class="col-xs-12 col-sm-4 col-lg-4">
                                 <a class="knop groot" href="{{ path('ploeg_create') }}">
-                                    <div class="inhoudicoon">
-                                        <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/inschrijven.png") }}">
-                                        <!-- class="titel">Inschrijven</span>    -->
-                                    </div>
+                                    <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/inschrijven.png").ScaleResize(442,320) }}">
                                 </a>
                             </div>
-                            <div class="col-xs-6 col-sm-2">
+                            <div class="col-xs-6 col-sm-2 col-lg-2">
                                  <a class="knop klein" href="{{ path('fotos') }}">
-                                    <div class="inhoudicoon">
-                                        <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/fotos.png") }}">
-                                        <!-- class="titel">Foto's</span>    -->
-                                    </div>
+                                    <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/fotos.png").ScaleResize(225,163) }}">
                                 </a>
                             </div>
-                            <div class="col-xs-6 col-sm-2">
+                            <div class="col-xs-6 col-sm-2 col-lg-2">
                                 <a class="knop klein" href="{{ path('contact') }}">
-                                    <div class="inhoudicoon">
-                                        <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/contact.png") }}">
-                                        <!-- class="titel">Contact</span>    -->
-                                    </div>
+                                    <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/contact.png").ScaleResize(225,163) }}">
                                 </a>
                             </div>
                         </div>
@@ -144,6 +143,7 @@
                 </div>
                 <div class="onderaan">
                     <a class="nextslide" href="#section-ladies"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlgrijs.png") }}"></a>
+                    <br/>
                 </div> 
             </div>
             <div id="section-ladies" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
@@ -167,6 +167,7 @@
                     </div>
                     <div class="onderaan">
                         <a class="nextslide" href="#section-fotos"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlwit.png") }}"></a>    
+                        <br/>
                     </div>  
                 </div>
                  
@@ -186,6 +187,7 @@
                 {% include 'ColdkitchenBundle:Default:facebook.html.twig' %}
                 <div class="onderaan">
                         <a class="nextslide" href="#section-partners"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlwit.png") }}"></a>    
+                        <br/>
                     </div> 
             </div>
             <div id="section-partners" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
@@ -236,17 +238,20 @@
                         </div>
                     </div>
                     <div class="row">
-                        <a class="button partners" href="{{ path('partners') }}">Partner worden</a>    
+                        <div class="container">
+                            <a class="button partners" href="{{ path('partners') }}">Partner worden</a>    
+                        </div>
                     </div>
                     <div class="onderaan">
                         <a class="nextslide" href="#section-programma"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlwit.png") }}"></a>    
+                        <br/>
                     </div>
                 </div> 
             </div>
             <div id="section-programma" class="{{ is_mobile() ? 'sectionmobile': 'section' }}">
                 <div class="container">
-                    <div class="row row-same-height">
-                        <div class="col-md-6 col-sm-4 col-xs-height">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-4">
                             <h1>Programma</h1>
                             <br/>
                             <h3>
@@ -255,9 +260,9 @@
                             </h3>
                             <a class="button inschrijvingen" href="{{ path('reglement') }}">TORNOOIREGLEMENT</a>
                         </div>
-                        <div class="pouletabel col-md-6 col-sm-8 col-xs-height">
+                        <div class="pouletabel col-md-6 col-sm-8">
                             <div class="cont">
-                                <img src="{{ image("@ColdkitchenBundle/Resources/public/images/tornooitabel.png") }}">
+                                <img class="img-responsive" src="{{ image("@ColdkitchenBundle/Resources/public/images/tornooitabel.png") }}">
                             </div>
                         </div>
                     </div>
@@ -265,6 +270,7 @@
                 <div class="onderaan">
                     <div class="container">
                         <a class="nextslide" href="#section-contact"><img src="{{ image("@ColdkitchenBundle/Resources/public/images/pijlgrijs.png") }}"></a>    
+                        <br/>
                     </div>
                 </div> 
             </div>
@@ -329,60 +335,80 @@
         </div>
            
         <script>
-            $(document).ready(function(){
+            function ZetGoeieGrootte(){
+                    //$( '#section-home' ).innerWidth( $( window ).innerWidth() );
+                //$( '#section-home' ).innerHeight( $( window ).innerHeight() );
+                //$( '#section-footer' ).width( $( window ).width() );
+                //$( '#section-footer' ).height( $( window ).height() );
 
-                $( ".knop" ).each(function( index ) {
-                    $breedte = $(this).innerWidth();
-                    console.log($breedte);
-                    $(this).innerHeight($breedte);
-                });
-                
-                {% block backstretch %}
+                /*$hoogte = $('#logocoldkitchen').innerHeight();
+                $breedte = $('#logocoldkitchen').innerWidth();
+
+                //$('#logoladies').innerHeight($hoogte);
+                $('#logoladies').innerWidth($breedte);
+                $('#logofacebook').innerHeight($hoogte);
+                $('#logoergo').innerHeight($hoogte);*/
+
+
+            }
+            ZetGoeieGrootte();
+            {% block backstretch %}
                 function BackStretchen(){
-                	$.backstretch([
+                    $('.test').backstretch([
                         {% for foto in fotos|shuffle %}
                         {% set url = 'uploads/achtergrondfotos/' ~ foto.filename %}
-                        
-                          "{{ image(url).grayscale().colorize(83,93,0).fill(89,91,15) }}"
-                          //"{{ image(url).grayscale().colorize(83,93,0).fill(143,117,15) }}"
-                          //"{{ image(url).grayscale().colorize(30,100,30) }}"
-                          {{ loop.last ? '' : ',' }}
+                            "{{ image(url).grayscale().brightness(50).contrast(-10).CropResize(1350,900, 'transparent') }}"
+                            {{ loop.last ? '' : ',' }}
                         {% endfor %}
                     ], {duration: 7000, fade: 450});
-                    }
+                }
+                function BackStretchenMobile(){
+                    $('.test').backstretch([
+                        {% for foto in fotos|shuffle %}
+                            {% set url = 'uploads/achtergrondfotos/' ~ foto.filename %}
+                            "{{ image(url).grayscale().brightness(50).contrast(-10).CropResize(600,400, 'transparent') }}"
+                            {{ loop.last ? '' : ',' }}
+                        {% endfor %}
+                    ], {duration: 7000, fade: 450});
+                }
+                function BackStretchenTablet(){
+                    $('.test').backstretch([
+                        {% for foto in fotos|shuffle %}
+                            {% set url = 'uploads/achtergrondfotos/' ~ foto.filename %}
+                            "{{ image(url).grayscale().brightness(50).contrast(-10).CropResize(900,600, 'transparent') }}"
+                            {{ loop.last ? '' : ',' }}
+                        {% endfor %}
+                    ], {duration: 7000, fade: 450});
+                }
+                    
                 {% endblock %}
 
-                    
-                $('.nextslide').click(function(){
-                    $.fn.fullpage.moveSectionDown();
-                });
-                function ZetGoeieGrootte(){
-                    $( '#section-home' ).width( $( window ).width() );
-                    $( '#section-home' ).height( $( window ).height() );
-                    //$( '#section-footer' ).width( $( window ).width() );
-                    //$( '#section-footer' ).height( $( window ).height() );
-
-                    BackStretchen();
-
-                    $hoogte = $('#logocoldkitchen').innerHeight();
-                    $breedte = $('#logocoldkitchen').innerWidth();
-
-                    //$('#logoladies').innerHeight($hoogte);
-                    $('#logoladies').innerWidth($breedte);
-                    $('#logofacebook').innerHeight($hoogte);
-                    $('#logoergo').innerHeight($hoogte);
-
-
-                }
+           
 
                 $(document).ready(function(){
                     ZetGoeieGrootte();
+                    if($(window).innerWidth()<500){
+                        BackStretchenMobile();
+                    }else{
+                        if($(window).innerWidth()<900){
+                            BackStretchenTablet();    
+                        }else{
+                            BackStretchen();
+                        }
+                    }
+                    
+                    $('.nextslide').click(function(){
+                    $.fn.fullpage.moveSectionDown();
+                });
                 })
                 $(window).resize(function(){
                     ZetGoeieGrootte();
+                    if($(window).innerWidth()<500){
+                        BackStretchenMobile();
+                    }else{
+                        BackStretchen();    
+                    }
                 })
-                
-            });
             
             
 

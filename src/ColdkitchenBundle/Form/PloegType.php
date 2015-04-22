@@ -7,6 +7,8 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 
+
+
 class PloegType extends AbstractType
 {
     /**
@@ -15,30 +17,32 @@ class PloegType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+        //$em = $this->getDoctrine()->getManager();
+      
         $builder
             ->add('ploegnaam','text', array(
                     'label' => 'Ploegnaam'
                 ))
             ->add('kapiteinNaam','text', array(
-                    'label' => 'Naam:',
+                    'label' => 'Naam (*): ',
                     'required' => true,
                 ))
             ->add('kapiteinVoornaam','text', array(
-                    'label' => 'Voornaam:',
+                    'label' => 'Voornaam (*):',
                     'required' => true,
                 ))
             ->add('geboortedatum', 'date', array(
-                    'label' => 'Geboortedatum (dd/mm/jjjj)',
+                    'label' => 'Geboortedatum (dd/mm/jjjj) (*)',
                     'widget' => 'choice',
                     'years'  => range(1930,2000)
 
                 ))
             ->add('straat','text', array(
-                    'label'=>'Straat',
+                    'label'=>'Straat (*)',
                     'required'=>true 
                 ))
             ->add('huisnr','text', array(
-                    'label'=>'Huisnr',
+                    'label'=>'Huisnr (*)',
                     'required'=>true 
                 ))
             ->add('bus','text', array(
@@ -46,11 +50,11 @@ class PloegType extends AbstractType
                     'required'=>false 
                 ))
             ->add('postcode','text', array(
-                    'label'=>'Postcode',
+                    'label'=>'Postcode (*)',
                     'required'=>true 
                 ))
             ->add('woonplaats','text', array(
-                    'label'=>'Woonplaats',
+                    'label'=>'Woonplaats (*)',
                     'required'=>true 
                 ))
             ->add('telefoon','text', array(
@@ -58,14 +62,19 @@ class PloegType extends AbstractType
                     'required'=>false 
                 ))
             ->add('gsm','text', array(
-                    'label'=>'GSM',
+                    'label'=>'GSM (*)',
                     'required'=>true 
                 ))
             ->add('emailadres','email', array(
-                    'label'=>'Email',
+                    'label'=>'Email (*)',
                     'required'=>true 
                 ))
-            ->add('competitie')
+            ->add('competitie', 'entity', array(
+                    'class' => 'ColdkitchenBundle:Competitie',
+                    
+                    'label' => 'Competitie (*)',
+                    'required' => true
+                ))
             ->add('submit','button');
         ;
     }

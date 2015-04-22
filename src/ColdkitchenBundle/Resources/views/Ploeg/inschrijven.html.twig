@@ -1,5 +1,7 @@
 {% extends 'base.html.twig' %}
-
+{% block title %}
+	Inschrijven
+{% endblock %}
 {% form_theme form _self %}
 
 
@@ -23,22 +25,18 @@
     <input type="{{ type }}" {{ block('widget_attributes') }} {% if value is not empty %}value="{{ value }}" {% endif %}/>
 {% endblock form_widget_simple %}
 
-{% block genemu_captcha_widget %}
-	<div class="row nopadding">
-		<div class="col-xs-6 col-sm-3 image">
-			<img id="{{ id }}_image" src="{{ src }}" width="{{ width }}" height="{{ height }}" title="{{ name|trans }}" />	
+
+{% block genemu_captcha_row %}
+	<div class="captcha">
+		<div class="col-xs-4 col-sm-3">
+			<img class="img-responsive" id="{{ id }}_image" src="{{ src }}"  title="{{ name|trans }}" />	
 		</div>
-		<div class="col-xs-6 col-sm-9 antwoord">
+		<div class="col-xs-8 col-sm-4 ">
 			<h5>Typ de tekst na</h5>
-			<div class="row nopadding">
-				<div class="col-xs-7 ">
-					<input type="textbox" class="captchaantwoord" {{ block('widget_attributes') }}/>		
-				</div>	
-				<div class="col-xs-5 ">
-					<input type="submit" value="Inschrijven">
-				</div>
-			</div>
-			
+			<input type="textbox" class="captchaantwoord" {{ block('widget_attributes') }}/>		
+		</div>
+		<div class="col-sm-5 ">
+			<input type="submit" value="Verzenden">
 		</div>
 	</div>
     
@@ -107,14 +105,15 @@
 				<h3>Ploeginformatie</h3>
 				{{ form_row(form.ploegnaam) }}
 				{{ form_row(form.competitie) }}
+				<br/>
+				
+				{{ form_row(form.captcha) }}
 
-				<div class="captcha">
-					{{ form_row(form.captcha) }}
-
-				</div>
 				{{ form_widget(form._token) }}
 				{{ form_end(form, {'render_rest': false}) }}
 			</div>
+			<br/>
+			(*)  verplicht in te vullen 
 		</div>
 	</div>
 	

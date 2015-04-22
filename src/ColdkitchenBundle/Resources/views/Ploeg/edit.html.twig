@@ -1,5 +1,7 @@
 {% extends 'ColdkitchenBundle:Ploeg:inschrijven.html.twig' %}
-
+{% block title %}
+	Ploeg beheren
+{% endblock %}
 {% block stylesheets %}
     {{ parent() }}    
     <link rel="stylsheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -47,9 +49,8 @@
 
 				<div id="tabs">
 					<ul>
-						<li><a href="#spelers">Spelers</a></li>
-					    <li><a href="#teaminfo">Teaminfo</a></li>
-					    
+						<li><a class="inschrijven terug" href="#spelers">Spelers</a></li>
+					    <li><a class="inschrijven terug" href="#teaminfo">Teaminfo</a></li>
 					</ul>
 					<div id="spelers">
 					    {% include 'ColdkitchenBundle:Ploeg:spelers.html.twig' %}

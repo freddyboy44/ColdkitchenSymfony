@@ -24,21 +24,21 @@ class Speler
     /**
      * @var string
      *
-     * @ORM\Column(name="Naam", type="string", length=255)
+     * @ORM\Column(name="Naam", type="string", length=255, nullable=true)
      */
     private $naam;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="Voornaam", type="string", length=255)
+     * @ORM\Column(name="Voornaam", type="string", length=255, nullable=true)
      */
     private $voornaam;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="Geboortedatum", type="date")
+     * @ORM\Column(name="Geboortedatum", type="date", nullable=true)
      */
     private $geboortedatum;
 

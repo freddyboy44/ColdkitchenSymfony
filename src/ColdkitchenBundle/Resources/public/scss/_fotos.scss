@@ -10,7 +10,16 @@
 		display: block;
 		float: left;
 		position: relative;
-		height: 350px;
+		height: 60%;
+		@include breakpoint(tablet) {
+			height: 350px;	
+		}
+
+		a {
+			width: 100%;
+			display: block;
+		}
+		
 		.overlay, .foto {
 			margin: auto;
 			display: block;
@@ -19,16 +28,20 @@
 		.overlay {
 			overflow: hidden;
 			position: relative;
+
 			 
 			/*@include translateY(-50%); */
 			z-index: 2;
 			background:transparent;
 			border: solid 5px white;
-			@include border-radius(5px);
+			@include border-radius(20px);
 			
 			top: 50%;
-
-			@include transform(translateY(-50%) skewX(-$skewfotos));
+			@include transform(skewX(-$skewfotos));
+			@include breakpoint(tablet) {
+				@include transform(translateY(-50%) skewX(-$skewfotos));	
+			}
+			
 
 			img {
 				/* min-width: 120%;
@@ -48,9 +61,16 @@
 		}
 	}
 	.eerstefoto, .derdefoto {
+		@include breakpoint(mobileonly) {
+			display: none;
+		}
 		.overlay {
-			width: 200px;
-			height: 200px;
+			width: 80%;
+			@include breakpoint(tablet) {
+				width: 200px;
+				height: 200px;	
+			}
+			
 			//top: 50px;
 			img {
 				width: 300px;
@@ -62,28 +82,70 @@
 	}
 	.tweedefoto {
 		.overlay {
-			width: 300px;
-			height: 300px;
+			width: 80%;
+			@include breakpoint(tablet) {
+				width: 300px;
+				height: 300px;	
+			}
+			
 			img {
 				width: 450px;
 				height: auto;
 				left: -70px;
 			}
 		}
-		width: 50%;
+		@include breakpoint(tablet) {
+			width: 50%;	
+		}
+		width: 100%;
+		
+	}
+}
+
+.paginafotos {
+	height: 90%;
+	.fotos {
+		min-height: 13%;
+	}
+	footer {
+		
+		@include breakpoint(tablet) {
+			padding-bottom: 20px;
+			padding-top: 20px;	
+		}
+		
+		min-height: 87%;
+		@include breakpoint(desktop) {
+			min-height: 87%;
+		}
 	}
 }
 
 .fotos {
+	
+	@include breakpoint(mobileonly) {
+		width: 100%;	
+		padding: 0px;
+	}
+	
 	i {
 		@include vertical-align();
 		color: white;
 		cursor: pointer;
 	}
 	.row {
+		margin-left: 0px; margin-right: 0px;
+		padding: 0px;
+		width: 100%;
 		height: 350px;
 		.col-xs-1 {
 			height: 100%;
+			@include breakpoint(mobileonly) {
+				padding: 0px;
+			}
+		}
+		.col-xs-10 {
+			padding: 0px;
 		}
 	}
 }
@@ -97,4 +159,140 @@
 }
 .volgendefoto.onzichtbaar, .vorigefoto.onzichtbaar {
 	display: none;
+}
+
+.albums {
+	margin-bottom: 20px;
+	text-align: center;
+	a, a:hover, a:focus {
+		color:white;
+	}
+
+	span {
+		color: white;
+		font-family: 'MyriadProRegular';
+		@include breakpoint(desktop) {
+			font-size: 22px;	
+		}
+		font-size: 18px;
+		display: inline-block;
+		@include breakpoint(desktop) {
+			//margin-right: 20px;	
+		}	
+		.tekst {
+			margin-left: 20px;
+			margin-right: 20px;
+			position: relative;
+			top: -6px;
+		}
+	}
+	
+	
+}
+
+.round {
+    border-corner-shape: scoop;
+}
+
+.fotooverzicht {
+	overflow: hidden;
+	.fotocontainer {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 15px;
+		@include breakpoint(tablet) {
+			width: (100% / 5);	
+		}
+		width: (100% / 2);
+		float:left;
+	}
+	.foto {
+		padding: 10px;
+		border: solid 5px white;	
+		@include breakpoint(laptop) {
+			border: solid 8px white;	
+		}
+		
+		@include border-radius(20px);
+		@include transform(skew(-12deg));
+		width: 100%;
+
+		max-width: 165px;
+		@include breakpoint(tablet) {
+			max-width: none;
+		}
+		display: block;
+		float: left;
+		overflow: hidden;
+		//height: 100px;
+		@include breakpoint(tablet) {
+			//max-height: 140px;	
+		}
+		
+		position: relative;
+
+		img {
+			@include transform(skew(12deg));
+			max-width: 300%;
+			height: 150%;
+			position: absolute;
+			left: -30px;
+			top: 0px;
+		}
+		img.portrait {
+			width: 150%;
+			height:auto;
+			left:0px;
+			top: -50px;
+			@include breakpoint(mobileonly) {
+				left: -30px;
+				//top: 0px;
+			}
+			
+		}
+
+		a{
+			display: block;
+			min-height: 100px;
+			@include breakpoint(tablet) {
+				min-height: 120px;
+			}
+		}
+	}
+
+}
+.paginering {
+	text-align:center;
+	a.verborgen {
+		visibility: hidden;
+	}
+	a.pagina {
+		font-family: 'MyriadProBoldItalic';
+		color:white;
+		font-size: 25px;
+		display: inline-block;
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+
+	a.pagina.actief {
+		padding: 0px 8px;
+		background-color: #575f04;
+		@include transform(skew(-12deg));
+		@include border-radius(5px);
+		span.tekst {
+			@include transform(skew(12deg));
+		}
+	}
+
+	a {
+		color: white;
+	}
+	a.icoontje {
+		position: relative;
+		top: -6px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	color: white;
 }

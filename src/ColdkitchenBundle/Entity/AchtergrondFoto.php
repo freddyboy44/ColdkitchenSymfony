@@ -37,6 +37,13 @@ class AchtergrondFoto
      */
     private $zichtbaar;
 
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="portrait", type="boolean")
+     */
+    private $portrait;
+
 
     /**
      * Get id
@@ -188,5 +195,28 @@ class AchtergrondFoto
 
         $this->setFile();
 
+    }
+
+    /**
+     * Set portrait
+     *
+     * @param boolean $portrait
+     * @return AchtergrondFoto
+     */
+    public function setPortrait($portrait)
+    {
+        $this->portrait = $portrait;
+
+        return $this;
+    }
+
+    /**
+     * Get portrait
+     *
+     * @return boolean 
+     */
+    public function getPortrait()
+    {
+        return $this->portrait;
     }
 }

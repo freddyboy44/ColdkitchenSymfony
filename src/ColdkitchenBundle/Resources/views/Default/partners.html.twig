@@ -1,5 +1,7 @@
 {% extends 'base.html.twig' %}
-
+{% block title %}
+	Partners
+{% endblock %}
 {% block body %}
 	{% include '_header.twig' %}
 	<div class="paginapartner">
@@ -17,12 +19,12 @@
 		</div>
 		
 		<div class="row">
-			<div class="container">
+			<div class="container nopadding">
 				<div class="galerij fieldpartners">
 					<div class="row">
 					{% for partner in fieldpartners  %}
-						{% if partner.zichtbaar %}
-							<div class="fieldpartner col-sm-4 col-xs-6 {{ ((loop.index-1) is divisible by(3) and loop.last) ? 'col-sm-offset-4' :'niets' }}">
+						
+							<div class="fieldpartner {{ loop.last and (loop.index-1) is divisible by(2) ? 'col-xs-offset-3 col-sm-offset-0' }} {{ loop.last and (loop.index-1) is divisible by(3) ? 'col-sm-offset-4' }} col-sm-4 col-xs-6 ">
 								{% if partner.website|length == 0 %}
 									<img class="vertical img-responsive" src="{{ image(partner.getLogoWeb()) }}">
 								{% else %}
@@ -30,14 +32,14 @@
 								{% endif %}
 								
 							</div>
-						{% endif %}
+						
 					{% endfor %}
 					
 				</div>
 				<div class="galerij suppliers">
 					{% for partner in suppliers %}
 						{% if partner.zichtbaar %}
-							<div class="suppliers col-sm-3 col-xs-4 ">
+							<div class="suppliers col-sm-3 col-xs-4 {{ loop.last  ? 'col-xs-offset-4 col-sm-offset-0' }}">
 								{% if partner.website|length == 0 %}
 									<img class="vertical img-responsive" src="{{ image(partner.getLogoWeb()) }}">
 								{% else %}
@@ -55,10 +57,9 @@
 				<p>
 					De organisatie van een evenement staat en valt met de ondersteuning van partners en sponsors.<br/>
 					Dat geldt ook voor het Cold Kitchentornooi.
-				</p>
-				<h5>
+					<br/>
 					We zijn al onze partners en sponsors dan ook erg dankbaar.
-				</h5>
+				</p>
 				<br/>
 				<h3>
 					Indien u met uw bedrijf partner wenst te worden van het Cold Kitchen Tornooi kunt u contact opnemen met Wouter De Jonckheere via mail <a href="mailto:dejonckheerewouter@gmail.com">dejonckheerewouter@gmail.com</a> of gsm 0473/82.45.85

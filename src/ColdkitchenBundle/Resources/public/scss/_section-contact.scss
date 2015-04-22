@@ -14,18 +14,14 @@
 		//height: 33%;
 	}
 
-	h1 {
-		@include breakpoint(mobileonly) {
-			@include vertical-align();	
-		}
-		
-	}
+	
 	p {
 		
 		font-size: 16px;
-		font-family: 'MyriadProRegular';
+		font-family: 'MyriadProLight';
+
 		@include breakpoint(tablet) {
-			font-size: 26px;
+			font-size: 18px;
 			margin-top: 50px;
 			margin-bottom: 50px;
 		}
@@ -35,6 +31,12 @@
 }
 
 #section-footer {
+	h1 {
+		@include breakpoint(mobileonly) {
+			@include vertical-align();	
+		}
+		
+	}
 	.container {
 		//height: 100%;
 	}
@@ -59,7 +61,10 @@
 		//height: 5%;
 	}
 	a, a:hover, a:focus {
-		font-size: 24px;
+		@include breakpoint(tablet) {
+			font-size: 24px;	
+		}
+		font-size: 16px;
 		color: white;
 		text-decoration: none;
 		font-family: 'MyriadProSemiBoldItalic';

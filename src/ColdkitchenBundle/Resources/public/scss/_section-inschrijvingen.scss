@@ -28,7 +28,19 @@
 		font-size: 16px;
 		text-align:center;
 		display: block;
-		width: 60%;
+		@include breakpoint(mobileonly) {
+			width: 96%;
+		}
+		@include breakpoint(tablet) {
+			width: 80%;
+		}
+		@include breakpoint(desktop) {
+			width: 60%;	
+		}
+		@include breakpoint(mobileonly) {
+			margin-bottom: 35px;
+		}
+		
 		margin: auto;
 	}
 

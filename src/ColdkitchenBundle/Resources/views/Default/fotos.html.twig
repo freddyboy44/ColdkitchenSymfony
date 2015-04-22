@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+	Foto's
+{% endblock %}
+{% block body %}
+	{% include '_header.twig' %}
+	<div class="paginafotos">
+		<div class="container fotos">
+			<h1>Foto's</h1>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="albums">
+					<span>
+					{% if huidigalbum.volgorde > 1 %}
+						<a href="{{ path('fotos',{'albumid' : (huidigalbum.volgorde-1) } ) }}"><i class="fa fa-2x fa-caret-left"></i></a>
+					{% endif %}
+					<span class="tekst">{{ huidigalbum.naam }}</span>
+					{% if huidigalbum.volgorde < albums|length %}
+						<a href="{{ path('fotos',{'albumid' : (huidigalbum.volgorde+1) } ) }}"><i class="fa fa-2x fa-caret-right"></i></a>
+					{% endif %}
+					</span>
+				</div>
+				<div class="fotooverzicht">
+					{% for foto in fotos %}
+						<div class="fotocontainer">
+						    <div class="foto">
+						    	<a href="{{ foto.source }}"><img  class="round img-responsive {{ foto.height > foto.width ? 'portrait' }}" src="{{ foto.source }}" alt="Foto Coldkitchen"></a>
+						    </div>
+					    </div>
+					{% endfor %}
+				</div>
+				<div class="paginering">
+					
+						<a class="icoontje {{ paginanummer < 2  ? 'verborgen' : '' }}" href="{{ path('fotos',{'albumid' : huidigalbum.volgorde, 'paginanummer': (paginanummer-1), 'aantalpaginas': aantalpaginas} ) }}"><i class="fa fa-2x fa-caret-left"></i></a>
+						{% for i in 1..aantalpaginas %}
+							<a class="pagina {{ i == paginanummer ? 'actief' }}" href="{{ path('fotos',{'albumid' : huidigalbum.volgorde, 'paginanummer': i, 'aantalpaginas': aantalpaginas} ) }}"><span class="tekst">{{ i }}</span></a>
+						{% endfor %}
+						<a class="icoontje {{ paginanummer == aantalpaginas ? 'verborgen' }}" href="{{ path('fotos',{'albumid' : huidigalbum.volgorde, 'paginanummer': (paginanummer+1), 'aantalpaginas': aantalpaginas} ) }}"><i class="fa fa-2x fa-caret-right"></i></a>
+					
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script>
+		$('body').innerHeight($(window).innerHeight());
+		$('.fotooverzicht').magnificPopup({
+		  delegate: 'a', // child items selector, by clicking on it popup will open
+		  type: 'image',
+		  gallery: {
+		      enabled: true
+		  },
+		  // other options
+		});
+	</script>
+{% endblock %}

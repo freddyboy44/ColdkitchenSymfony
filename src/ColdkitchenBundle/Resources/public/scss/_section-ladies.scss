@@ -6,6 +6,10 @@
 	background-color: $rozekleur;
 	color: white;
 	text-align: center;
+
+	@include breakpoint(mobileonly) {
+		//padding-top: 25px;
+	}
 	h2, h3, h4, h5 {
 		font-family: 'MyriadProSemiBoldItalic';
 		font-size: 22px;
@@ -56,6 +60,7 @@
 	}
 
 	.logo-coldkitchenladies {
+		margin-top: 30px;
 		@include breakpoint(tablet) {
 			margin-top: 50px;
 		}

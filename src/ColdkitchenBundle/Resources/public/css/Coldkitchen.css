@@ -83,7 +83,7 @@ and open the template in the editor.
     Author     : Gebruiker
 */
 /* line 3, ../scss/_iconen.scss */
-.row.midden {
+.midden {
   width: 100%;
 }
 
@@ -91,138 +91,67 @@ and open the template in the editor.
 .iconen {
   width: 100%;
   height: 100%;
+  max-width: 1350px;
+  margin: auto;
+}
+/* line 13, ../scss/_iconen.scss */
+.iconen .col-xs-6 {
+  padding: 0px;
+}
+@media (max-width: 420px) {
+  /* line 13, ../scss/_iconen.scss */
+  .iconen .col-xs-6 {
+    height: 25%;
+  }
+}
+@media (max-width: 420px) {
+  /* line 19, ../scss/_iconen.scss */
+  .iconen .col-xs-12 {
+    height: 50%;
+  }
 }
 @media (min-width: 600px) {
-  /* line 11, ../scss/_iconen.scss */
+  /* line 24, ../scss/_iconen.scss */
   .iconen div {
     height: 100%;
   }
 }
-/* line 17, ../scss/_iconen.scss */
-.iconen .knop:hover {
-  -webkit-box-shadow: 0px 0px 14px 12px rgba(64, 70, 4, 0.75);
-  -moz-box-shadow: 0px 0px 14px 12px rgba(64, 70, 4, 0.75);
-  box-shadow: 0px 0px 14px 12px rgba(64, 70, 4, 0.75);
-}
-/* line 22, ../scss/_iconen.scss */
+/* line 31, ../scss/_iconen.scss */
 .iconen .knop {
   display: block;
   width: 100%;
-  background-color: white;
-  -webkit-transform: skew(-12deg, 0deg);
-  -moz-transform: skew(-12deg, 0deg);
-  -ms-transform: skew(-12deg, 0deg);
-  -o-transform: skew(-12deg, 0deg);
-  transform: skew(-12deg, 0deg);
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-  border-radius: 6px;
-}
-@media (min-width: 600px) {
-  /* line 22, ../scss/_iconen.scss */
-  .iconen .knop {
-    width: 80%;
-    top: 50%;
-    left: 50%;
-    position: relative;
-    -webkit-transform: skew(-12deg, 0deg) translate(-50%, -50%);
-    -moz-transform: skew(-12deg, 0deg) translate(-50%, -50%);
-    -ms-transform: skew(-12deg, 0deg) translate(-50%, -50%);
-    -o-transform: skew(-12deg, 0deg) translate(-50%, -50%);
-    transform: skew(-12deg, 0deg) translate(-50%, -50%);
-  }
-}
-/* line 41, ../scss/_iconen.scss */
-.iconen .knop .inhoudicoon {
+  padding: 0px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  height: auto;
 }
-/* line 46, ../scss/_iconen.scss */
-.iconen .knop .titel {
-  font-size: 16px;
-  clear: both;
-  display: block;
-  margin: auto;
-  text-align: center;
-  width: 97%;
-  margin-top: 5px;
-  font-family: 'MyriadProBoldItalic';
-  color: #b7c712;
-  -webkit-transform: skew(12deg, 0deg);
-  -moz-transform: skew(12deg, 0deg);
-  -ms-transform: skew(12deg, 0deg);
-  -o-transform: skew(12deg, 0deg);
-  transform: skew(12deg, 0deg);
-}
-@media (min-width: 600px) {
-  /* line 46, ../scss/_iconen.scss */
-  .iconen .knop .titel {
-    font-size: 26px;
-  }
-}
-@media (min-width: 600px) {
-  /* line 46, ../scss/_iconen.scss */
-  .iconen .knop .titel {
-    top: 70px;
-  }
-}
-/* line 67, ../scss/_iconen.scss */
+/* line 39, ../scss/_iconen.scss */
 .iconen .knop img {
   display: block;
   margin: auto;
-  -webkit-transform: skew(12deg, 0deg);
-  -moz-transform: skew(12deg, 0deg);
-  -ms-transform: skew(12deg, 0deg);
-  -o-transform: skew(12deg, 0deg);
-  transform: skew(12deg, 0deg);
   max-width: inherit;
 }
-/* line 77, ../scss/_iconen.scss */
+/* line 48, ../scss/_iconen.scss */
 .iconen .knop.klein img {
-  max-height: 80px;
+  width: 100%;
 }
-@media (min-width: 600px) {
-  /* line 77, ../scss/_iconen.scss */
+@media (max-width: 420px) {
+  /* line 48, ../scss/_iconen.scss */
   .iconen .knop.klein img {
-    max-height: 160px;
+    width: 80%;
   }
 }
-/* line 89, ../scss/_iconen.scss */
-.iconen .knop.groot {
-  -webkit-transform: skew(-12deg, 0deg);
-  -moz-transform: skew(-12deg, 0deg);
-  -ms-transform: skew(-12deg, 0deg);
-  -o-transform: skew(-12deg, 0deg);
-  transform: skew(-12deg, 0deg);
-}
-@media (min-width: 600px) {
-  /* line 89, ../scss/_iconen.scss */
-  .iconen .knop.groot {
-    min-width: 100%;
-    -webkit-transform: skew(-12deg, 0deg) translate(-52%, -50%);
-    -moz-transform: skew(-12deg, 0deg) translate(-52%, -50%);
-    -ms-transform: skew(-12deg, 0deg) translate(-52%, -50%);
-    -o-transform: skew(-12deg, 0deg) translate(-52%, -50%);
-    transform: skew(-12deg, 0deg) translate(-52%, -50%);
-  }
-}
-/* line 96, ../scss/_iconen.scss */
+/* line 61, ../scss/_iconen.scss */
 .iconen .knop.groot img {
-  max-height: 100px;
-  /* height: 140px;
-  width: auto; */
+  width: 100%;
 }
-@media (min-width: 600px) {
-  /* line 96, ../scss/_iconen.scss */
+@media (max-width: 420px) {
+  /* line 61, ../scss/_iconen.scss */
   .iconen .knop.groot img {
-    max-height: 220px;
+    width: 60%;
   }
 }
 
@@ -259,10 +188,33 @@ and open the template in the editor.
   font-size: 16px;
   text-align: center;
   display: block;
-  width: 60%;
   margin: auto;
 }
-/* line 35, ../scss/_section-inschrijvingen.scss */
+@media (max-width: 420px) {
+  /* line 26, ../scss/_section-inschrijvingen.scss */
+  #section-inschrijven .uitleg {
+    width: 96%;
+  }
+}
+@media (min-width: 600px) {
+  /* line 26, ../scss/_section-inschrijvingen.scss */
+  #section-inschrijven .uitleg {
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 26, ../scss/_section-inschrijvingen.scss */
+  #section-inschrijven .uitleg {
+    width: 60%;
+  }
+}
+@media (max-width: 420px) {
+  /* line 26, ../scss/_section-inschrijvingen.scss */
+  #section-inschrijven .uitleg {
+    margin-bottom: 35px;
+  }
+}
+/* line 47, ../scss/_section-inschrijvingen.scss */
 #section-inschrijven .extra {
   font-family: 'MyriadProLight';
   font-size: 22px;
@@ -282,78 +234,82 @@ and open the template in the editor.
 #section-ladies .container {
   height: 100%;
 }
-/* line 9, ../scss/_section-ladies.scss */
+/* line 13, ../scss/_section-ladies.scss */
 #section-ladies h2, #section-ladies h3, #section-ladies h4, #section-ladies h5 {
   font-family: 'MyriadProSemiBoldItalic';
   font-size: 22px;
   color: white;
 }
 @media (min-width: 600px) {
-  /* line 9, ../scss/_section-ladies.scss */
+  /* line 13, ../scss/_section-ladies.scss */
   #section-ladies h2, #section-ladies h3, #section-ladies h4, #section-ladies h5 {
     font-size: 36px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 9, ../scss/_section-ladies.scss */
+  /* line 13, ../scss/_section-ladies.scss */
   #section-ladies h2, #section-ladies h3, #section-ladies h4, #section-ladies h5 {
     font-size: 56px;
   }
 }
-/* line 23, ../scss/_section-ladies.scss */
+/* line 27, ../scss/_section-ladies.scss */
 #section-ladies h2 {
   margin-top: 15px;
   margin-bottom: 15px;
 }
 @media (min-width: 600px) {
-  /* line 23, ../scss/_section-ladies.scss */
+  /* line 27, ../scss/_section-ladies.scss */
   #section-ladies h2 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
-/* line 32, ../scss/_section-ladies.scss */
+/* line 36, ../scss/_section-ladies.scss */
 #section-ladies p {
   font-family: 'MyriadProRegular';
   font-size: 16px;
 }
 @media (min-width: 1200px) {
-  /* line 32, ../scss/_section-ladies.scss */
+  /* line 36, ../scss/_section-ladies.scss */
   #section-ladies p {
     font-size: 24px;
   }
 }
 @media (min-width: 600px) {
-  /* line 32, ../scss/_section-ladies.scss */
+  /* line 36, ../scss/_section-ladies.scss */
   #section-ladies p {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
-/* line 44, ../scss/_section-ladies.scss */
+/* line 48, ../scss/_section-ladies.scss */
 #section-ladies a.button {
   display: block;
   margin-bottom: 20px;
   margin-top: 20px;
 }
 @media (min-width: 600px) {
-  /* line 44, ../scss/_section-ladies.scss */
+  /* line 48, ../scss/_section-ladies.scss */
   #section-ladies a.button {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
-/* line 54, ../scss/_section-ladies.scss */
+/* line 58, ../scss/_section-ladies.scss */
 #section-ladies a.nextslide {
   color: #f9a0b3;
 }
+/* line 62, ../scss/_section-ladies.scss */
+#section-ladies .logo-coldkitchenladies {
+  margin-top: 30px;
+}
 @media (min-width: 600px) {
-  /* line 58, ../scss/_section-ladies.scss */
+  /* line 62, ../scss/_section-ladies.scss */
   #section-ladies .logo-coldkitchenladies {
     margin-top: 50px;
   }
 }
-/* line 62, ../scss/_section-ladies.scss */
+/* line 67, ../scss/_section-ladies.scss */
 #section-ladies .logo-coldkitchenladies img {
   max-width: 500px;
   width: 100%;
@@ -362,7 +318,7 @@ and open the template in the editor.
   margin: auto;
 }
 
-/* line 76, ../scss/_section-ladies.scss */
+/* line 81, ../scss/_section-ladies.scss */
 .rij {
   min-height: 20%;
 }
@@ -370,11 +326,9 @@ and open the template in the editor.
 /* line 1, ../scss/_section-partners.scss */
 #section-partners {
   background-color: #b7c712;
-  height: 100%;
 }
 /* line 5, ../scss/_section-partners.scss */
 #section-partners .container {
-  height: 100%;
   position: relative;
 }
 /* line 10, ../scss/_section-partners.scss */
@@ -399,7 +353,7 @@ and open the template in the editor.
 /* line 23, ../scss/_section-partners.scss */
 #section-partners .fieldpartnerfoto {
   padding: 10px;
-  height: 200px;
+  height: 100px;
 }
 @media (min-width: 600px) {
   /* line 23, ../scss/_section-partners.scss */
@@ -407,31 +361,56 @@ and open the template in the editor.
     padding: 30px;
   }
 }
-/* line 30, ../scss/_section-partners.scss */
+@media (min-width: 600px) {
+  /* line 23, ../scss/_section-partners.scss */
+  #section-partners .fieldpartnerfoto {
+    height: 200px;
+  }
+}
+/* line 34, ../scss/_section-partners.scss */
 #section-partners .fieldpartnerfoto img {
   max-height: 170px;
 }
-/* line 35, ../scss/_section-partners.scss */
-#section-partners .supplierfoto {
-  padding: 15px;
-  height: 150px;
-}
-@media (min-width: 600px) {
-  /* line 35, ../scss/_section-partners.scss */
-  #section-partners .supplierfoto {
-    padding: 30px;
+@media (max-width: 420px) {
+  /* line 34, ../scss/_section-partners.scss */
+  #section-partners .fieldpartnerfoto img {
+    max-height: 110px;
   }
 }
-/* line 41, ../scss/_section-partners.scss */
+/* line 42, ../scss/_section-partners.scss */
+#section-partners .supplierfoto {
+  padding: 15px;
+  height: 75px;
+}
+@media (min-width: 600px) {
+  /* line 42, ../scss/_section-partners.scss */
+  #section-partners .supplierfoto {
+    padding: 30px;
+    height: 150px;
+  }
+}
+@media (max-width: 420px) {
+  /* line 50, ../scss/_section-partners.scss */
+  #section-partners .supplierfoto a, #section-partners .supplierfoto span.leeg {
+    margin: 3px;
+  }
+}
+/* line 56, ../scss/_section-partners.scss */
 #section-partners .supplierfoto img {
   max-height: 130px;
 }
-/* line 45, ../scss/_section-partners.scss */
+/* line 60, ../scss/_section-partners.scss */
 #section-partners div.partners {
   padding: 20px;
-  height: 110px;
+  height: 50px;
 }
-/* line 48, ../scss/_section-partners.scss */
+@media (min-width: 600px) {
+  /* line 60, ../scss/_section-partners.scss */
+  #section-partners div.partners {
+    height: 100px;
+  }
+}
+/* line 66, ../scss/_section-partners.scss */
 #section-partners div.partners img {
   max-height: 90px;
 }
@@ -450,7 +429,6 @@ and open the template in the editor.
   position: relative;
   background-color: white;
   color: #b7c712;
-  height: 100%;
 }
 /* line 7, ../scss/_section-programma.scss */
 #section-programma h1 {
@@ -475,18 +453,21 @@ and open the template in the editor.
 /* line 23, ../scss/_section-programma.scss */
 #section-programma .pouletabel {
   height: 100%;
+  min-height: 250px;
   position: relative;
 }
-/* line 26, ../scss/_section-programma.scss */
-#section-programma .pouletabel .cont {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+@media (min-width: 600px) {
+  /* line 27, ../scss/_section-programma.scss */
+  #section-programma .pouletabel .cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 }
-/* line 28, ../scss/_section-programma.scss */
+/* line 32, ../scss/_section-programma.scss */
 #section-programma .pouletabel .cont img {
   display: block;
   margin: auto;
@@ -503,9 +484,25 @@ and open the template in the editor.
 #section-contact h1, #section-contact h2, #section-contact h3, #section-contact h4, #section-contact h5, #section-footer h1, #section-footer h2, #section-footer h3, #section-footer h4, #section-footer h5 {
   color: white;
 }
+/* line 18, ../scss/_section-contact.scss */
+#section-contact p, #section-footer p {
+  font-size: 16px;
+  font-family: 'MyriadProLight';
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media (min-width: 600px) {
+  /* line 18, ../scss/_section-contact.scss */
+  #section-contact p, #section-footer p {
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
 @media (max-width: 420px) {
-  /* line 17, ../scss/_section-contact.scss */
-  #section-contact h1, #section-footer h1 {
+  /* line 34, ../scss/_section-contact.scss */
+  #section-footer h1 {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -513,52 +510,42 @@ and open the template in the editor.
     transform: translateY(-50%);
   }
 }
-/* line 23, ../scss/_section-contact.scss */
-#section-contact p, #section-footer p {
-  font-size: 16px;
-  font-family: 'MyriadProRegular';
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-@media (min-width: 600px) {
-  /* line 23, ../scss/_section-contact.scss */
-  #section-contact p, #section-footer p {
-    font-size: 26px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-}
-
-/* line 41, ../scss/_section-contact.scss */
+/* line 43, ../scss/_section-contact.scss */
 #section-footer #map-canvas {
   margin-top: 5px;
   height: 250px;
   width: 100%;
 }
 @media (min-width: 600px) {
-  /* line 41, ../scss/_section-contact.scss */
+  /* line 43, ../scss/_section-contact.scss */
   #section-footer #map-canvas {
     height: 400px;
   }
 }
-/* line 50, ../scss/_section-contact.scss */
+/* line 52, ../scss/_section-contact.scss */
 #section-footer .row.footer {
   margin-top: 30px;
 }
 @media (min-width: 600px) {
-  /* line 50, ../scss/_section-contact.scss */
+  /* line 52, ../scss/_section-contact.scss */
   #section-footer .row.footer {
     position: relative;
   }
 }
-/* line 61, ../scss/_section-contact.scss */
+/* line 63, ../scss/_section-contact.scss */
 #section-footer a, #section-footer a:hover, #section-footer a:focus {
-  font-size: 24px;
+  font-size: 16px;
   color: white;
   text-decoration: none;
   font-family: 'MyriadProSemiBoldItalic';
 }
-/* line 67, ../scss/_section-contact.scss */
+@media (min-width: 600px) {
+  /* line 63, ../scss/_section-contact.scss */
+  #section-footer a, #section-footer a:hover, #section-footer a:focus {
+    font-size: 24px;
+  }
+}
+/* line 72, ../scss/_section-contact.scss */
 #section-footer a.powered {
   font-size: 14px;
 }
@@ -615,30 +602,55 @@ a.button, a.button:hover, a.button:active {
   }
 }
 
-/* line 41, ../scss/_button.scss */
+/* line 42, ../scss/_button.scss */
+.button:hover {
+  cursor: pointer;
+}
+
+/* line 46, ../scss/_button.scss */
+.button.opslaan {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* line 50, ../scss/_button.scss */
+.button.opslaan:hover {
+  -webkit-box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
+  -moz-box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
+  box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
+}
+
+/* line 53, ../scss/_button.scss */
+.button.opslaan.disabled:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 57, ../scss/_button.scss */
 .button.fotos {
   color: #4c4c06;
   background-color: white;
 }
 
-/* line 46, ../scss/_button.scss */
+/* line 62, ../scss/_button.scss */
 .button.fotos:hover {
   color: #4c4c06;
 }
 
-/* line 51, ../scss/_button.scss */
+/* line 67, ../scss/_button.scss */
 .button.partners, .button.partners:hover, .button.partners:focus {
   background-color: white;
   color: #d3d800;
 }
 
-/* line 56, ../scss/_button.scss */
+/* line 72, ../scss/_button.scss */
 .button.contact, .button.contact:hover, .button.contact:focus {
   color: #808429;
   background-color: white;
 }
 
-/* line 62, ../scss/_button.scss */
+/* line 78, ../scss/_button.scss */
 a.nextslide, a.nextslide:hover, a.nextslide:focus {
   /* width: 75px;
   height: 75px;
@@ -654,7 +666,7 @@ a.nextslide, a.nextslide:hover, a.nextslide:focus {
   margin: auto;
 }
 
-/* line 77, ../scss/_button.scss */
+/* line 93, ../scss/_button.scss */
 .button.disabled {
   cursor: default;
   -webkit-filter: opacity(0.4);
@@ -662,61 +674,107 @@ a.nextslide, a.nextslide:hover, a.nextslide:focus {
   filter: opacity(0.4);
 }
 
-/* line 3, ../scss/_homepage.scss */
+/* line 1, ../scss/_homepage.scss */
+#section-home, #fullpage {
+  height: 100%;
+}
+
+/* line 6, ../scss/_homepage.scss */
 .data .row.legerij {
   height: 15%;
   display: block;
 }
-/* line 7, ../scss/_homepage.scss */
+/* line 10, ../scss/_homepage.scss */
 .data .row.ladies {
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
   padding-bottom: 4%;
 }
 @media (min-width: 600px) {
-  /* line 7, ../scss/_homepage.scss */
+  /* line 10, ../scss/_homepage.scss */
   .data .row.ladies {
     height: 15%;
     /* left: 50%;
     @include transform(translateX(-50%)); */
   }
 }
-/* line 16, ../scss/_homepage.scss */
+/* line 20, ../scss/_homepage.scss */
 .data .row.ladies .container {
   height: 100%;
 }
-/* line 20, ../scss/_homepage.scss */
+/* line 24, ../scss/_homepage.scss */
 .data .row.logos {
+  padding-left: 5px;
+  padding-right: 5px;
   padding-top: 2%;
+  width: 100%;
 }
 @media (min-width: 600px) {
-  /* line 20, ../scss/_homepage.scss */
+  /* line 24, ../scss/_homepage.scss */
   .data .row.logos {
     height: 15%;
   }
 }
-/* line 34, ../scss/_homepage.scss */
+/* line 32, ../scss/_homepage.scss */
+.data .row.logos, .data .row.ladies {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+@media (max-width: 420px) {
+  /* line 38, ../scss/_homepage.scss */
+  .data .row.logos .logo-coldkitchen img, .data .row.logos .logo-coldkitchen img, .data .row.logos .logo-coldkitchenladies img, .data .row.logos .logo-ergo img, .data .row.ladies .logo-coldkitchen img, .data .row.ladies .logo-coldkitchen img, .data .row.ladies .logo-coldkitchenladies img, .data .row.ladies .logo-ergo img {
+    max-height: 30px;
+  }
+}
+/* line 45, ../scss/_homepage.scss */
 .data .row.logos .logo-coldkitchen img, .data .row.logos .logo-coldkitchenladies img, .data .row.ladies .logo-coldkitchen img, .data .row.ladies .logo-coldkitchenladies img {
   float: left;
   max-height: 110px;
 }
-/* line 40, ../scss/_homepage.scss */
+@media (max-width: 420px) {
+  /* line 45, ../scss/_homepage.scss */
+  .data .row.logos .logo-coldkitchen img, .data .row.logos .logo-coldkitchenladies img, .data .row.ladies .logo-coldkitchen img, .data .row.ladies .logo-coldkitchenladies img {
+    max-height: 30px;
+  }
+}
+/* line 55, ../scss/_homepage.scss */
+.data .row.logos .logo-coldkitchenladies img, .data .row.ladies .logo-coldkitchenladies img {
+  left: 0px;
+}
+/* line 60, ../scss/_homepage.scss */
 .data .row.logos .logo-coldkitchenladies, .data .row.logos .logo-ergo, .data .row.ladies .logo-coldkitchenladies, .data .row.ladies .logo-ergo {
   height: 100%;
 }
-/* line 42, ../scss/_homepage.scss */
+/* line 62, ../scss/_homepage.scss */
 .data .row.logos .logo-coldkitchenladies img, .data .row.logos .logo-ergo img, .data .row.ladies .logo-coldkitchenladies img, .data .row.ladies .logo-ergo img {
   display: block;
   position: absolute;
   bottom: 0px;
 }
-/* line 50, ../scss/_homepage.scss */
+/* line 70, ../scss/_homepage.scss */
 .data .row.logos .logo-ergo img, .data .row.logos .logo-facebook img, .data .row.ladies .logo-ergo img, .data .row.ladies .logo-facebook img {
   display: block;
   position: absolute;
   right: 0px;
-  max-height: 85px;
 }
-/* line 59, ../scss/_homepage.scss */
+@media (max-width: 420px) {
+  /* line 70, ../scss/_homepage.scss */
+  .data .row.logos .logo-ergo img, .data .row.logos .logo-facebook img, .data .row.ladies .logo-ergo img, .data .row.ladies .logo-facebook img {
+    max-height: 30px;
+  }
+}
+@media (min-width: 600px) {
+  /* line 70, ../scss/_homepage.scss */
+  .data .row.logos .logo-ergo img, .data .row.logos .logo-facebook img, .data .row.ladies .logo-ergo img, .data .row.ladies .logo-facebook img {
+    max-height: 85px;
+  }
+}
+/* line 85, ../scss/_homepage.scss */
 .data .row.datum {
+  height: 10%;
+  margin-left: 0px;
+  margin-right: 0px;
   font-family: 'MyriadProBoldItalic';
   width: 100%;
   text-align: center;
@@ -726,22 +784,22 @@ a.nextslide, a.nextslide:hover, a.nextslide:focus {
   text-shadow: rgba(64, 70, 4, 0.2) 1px 1px 0, rgba(64, 70, 4, 0.2) 2px 2px 0, rgba(64, 70, 4, 0.2) 3px 3px 0;
 }
 @media (min-width: 600px) {
-  /* line 59, ../scss/_homepage.scss */
+  /* line 85, ../scss/_homepage.scss */
   .data .row.datum {
     height: 20%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 59, ../scss/_homepage.scss */
+  /* line 85, ../scss/_homepage.scss */
   .data .row.datum {
     font-size: 72px;
   }
 }
-/* line 76, ../scss/_homepage.scss */
+/* line 105, ../scss/_homepage.scss */
 .data .row.datum .container {
   height: 100%;
 }
-/* line 78, ../scss/_homepage.scss */
+/* line 107, ../scss/_homepage.scss */
 .data .row.datum .container .datumtekst {
   position: relative;
   top: 50%;
@@ -749,30 +807,32 @@ a.nextslide, a.nextslide:hover, a.nextslide:focus {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 84, ../scss/_homepage.scss */
+/* line 113, ../scss/_homepage.scss */
 .data .row.midden {
   height: 66%;
   padding: 0 2%;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 @media (min-width: 600px) {
-  /* line 84, ../scss/_homepage.scss */
+  /* line 113, ../scss/_homepage.scss */
   .data .row.midden {
     height: 35%;
     min-height: 30%;
   }
 }
 
-/* line 97, ../scss/_homepage.scss */
+/* line 128, ../scss/_homepage.scss */
 .data {
   height: 100%;
 }
 
-/* line 101, ../scss/_homepage.scss */
+/* line 132, ../scss/_homepage.scss */
 a.nextslide {
   height: 100%;
   width: 100%;
 }
-/* line 105, ../scss/_homepage.scss */
+/* line 136, ../scss/_homepage.scss */
 a.nextslide img {
   width: 75px;
   height: 75px;
@@ -780,19 +840,19 @@ a.nextslide img {
   margin: auto;
 }
 
-/* line 113, ../scss/_homepage.scss */
+/* line 144, ../scss/_homepage.scss */
 .onderaan {
   margin-top: 20px;
 }
 @media (min-width: 600px) {
-  /* line 113, ../scss/_homepage.scss */
+  /* line 144, ../scss/_homepage.scss */
   .onderaan {
     width: 100%;
   }
 }
 
 @media (min-width: 600px) {
-  /* line 126, ../scss/_homepage.scss */
+  /* line 153, ../scss/_homepage.scss */
   .onderaan.eerstepagina {
     position: relative;
     bottom: 110px;
@@ -873,7 +933,7 @@ a.nextslide img {
 }
 /* line 56, ../scss/_partners.scss */
 .paginapartner .fieldpartner {
-  height: 200px;
+  height: 100px;
 }
 @media (min-width: 1200px) {
   /* line 56, ../scss/_partners.scss */
@@ -881,25 +941,49 @@ a.nextslide img {
     padding: 60px;
   }
 }
-/* line 61, ../scss/_partners.scss */
+@media (min-width: 600px) {
+  /* line 56, ../scss/_partners.scss */
+  .paginapartner .fieldpartner {
+    height: 150px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 56, ../scss/_partners.scss */
+  .paginapartner .fieldpartner {
+    height: 200px;
+  }
+}
+/* line 68, ../scss/_partners.scss */
 .paginapartner .fieldpartner img {
   max-height: 200px;
 }
-/* line 65, ../scss/_partners.scss */
+/* line 72, ../scss/_partners.scss */
 .paginapartner .suppliers {
-  height: 170px;
+  height: 120px;
 }
 @media (min-width: 1200px) {
-  /* line 65, ../scss/_partners.scss */
+  /* line 72, ../scss/_partners.scss */
   .paginapartner .suppliers {
-    padding: 35px;
+    padding: 55px;
   }
 }
-/* line 70, ../scss/_partners.scss */
+@media (min-width: 600px) {
+  /* line 72, ../scss/_partners.scss */
+  .paginapartner .suppliers {
+    height: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 72, ../scss/_partners.scss */
+  .paginapartner .suppliers {
+    height: 170px;
+  }
+}
+/* line 85, ../scss/_partners.scss */
 .paginapartner .suppliers img {
   max-height: 150px;
 }
-/* line 75, ../scss/_partners.scss */
+/* line 90, ../scss/_partners.scss */
 .paginapartner footer {
   width: 100%;
   background-color: #aaae01;
@@ -907,35 +991,35 @@ a.nextslide img {
   color: white;
   padding-bottom: 20px;
 }
-/* line 80, ../scss/_partners.scss */
+/* line 95, ../scss/_partners.scss */
 .paginapartner footer h1, .paginapartner footer h2, .paginapartner footer h3, .paginapartner footer h4, .paginapartner footer h5 {
   color: white;
 }
-/* line 84, ../scss/_partners.scss */
+/* line 99, ../scss/_partners.scss */
 .paginapartner footer h1 {
   margin-bottom: 25px;
   margin-top: 15px;
 }
-/* line 89, ../scss/_partners.scss */
+/* line 104, ../scss/_partners.scss */
 .paginapartner footer p {
   font-size: 22px;
 }
 @media (min-width: 600px) {
-  /* line 75, ../scss/_partners.scss */
+  /* line 90, ../scss/_partners.scss */
   .paginapartner footer {
     padding-bottom: 40px;
   }
 }
-/* line 97, ../scss/_partners.scss */
+/* line 112, ../scss/_partners.scss */
 .paginapartner footer ul {
   list-style: none;
   padding: 0px;
 }
-/* line 100, ../scss/_partners.scss */
+/* line 115, ../scss/_partners.scss */
 .paginapartner footer ul li {
   list-style: none;
 }
-/* line 105, ../scss/_partners.scss */
+/* line 120, ../scss/_partners.scss */
 .paginapartner footer a, .paginapartner footer a:hover, .paginapartner footer a:focus {
   color: white;
 }
@@ -965,12 +1049,12 @@ header .terug a, header .terug a:hover, header .terug a:focus {
   font-family: 'MyriadProBoldItalic';
   font-size: 23px;
 }
-/* line 23, ../scss/_header.scss */
+/* line 24, ../scss/_header.scss */
 header .box {
   display: block;
   margin: auto;
 }
-/* line 26, ../scss/_header.scss */
+/* line 27, ../scss/_header.scss */
 header .box .dummy, header .box .terug {
   position: absolute;
   width: 80px;
@@ -984,12 +1068,12 @@ header .box .dummy, header .box .terug {
   margin-top: 4px;
 }
 @media (min-width: 600px) {
-  /* line 26, ../scss/_header.scss */
+  /* line 27, ../scss/_header.scss */
   header .box .dummy, header .box .terug {
     margin-top: 0px;
   }
 }
-/* line 38, ../scss/_header.scss */
+/* line 39, ../scss/_header.scss */
 header .box .dummy {
   background-color: #cccccc;
   -webkit-transform: skew(-12deg, 0deg) translate(-50%, 0%);
@@ -999,7 +1083,7 @@ header .box .dummy {
   transform: skew(-12deg, 0deg) translate(-50%, 0%);
   border-radius: 4px;
 }
-/* line 43, ../scss/_header.scss */
+/* line 44, ../scss/_header.scss */
 header .box .terug, header .box .terug:hover, header .box .terug:active {
   font-family: 'MyriadProBoldItalic';
   color: white;
@@ -1008,12 +1092,12 @@ header .box .terug, header .box .terug:hover, header .box .terug:active {
   margin-top: 11px;
 }
 @media (min-width: 600px) {
-  /* line 43, ../scss/_header.scss */
+  /* line 44, ../scss/_header.scss */
   header .box .terug, header .box .terug:hover, header .box .terug:active {
     margin-top: 7px;
   }
 }
-/* line 56, ../scss/_header.scss */
+/* line 57, ../scss/_header.scss */
 header img {
   display: block;
   margin: auto;
@@ -1104,7 +1188,13 @@ header img {
   font-family: 'MyriadProRegular';
   font-size: 18px;
 }
-/* line 21, ../scss/_inschrijven.scss */
+@media (max-width: 420px) {
+  /* line 15, ../scss/_inschrijven.scss */
+  .paginainschrijven p {
+    padding: 10px;
+  }
+}
+/* line 25, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier {
   width: 100%;
   background-color: #aaae01;
@@ -1112,11 +1202,11 @@ header img {
   color: white;
   padding-bottom: 20px;
 }
-/* line 22, ../scss/_inschrijven.scss */
+/* line 26, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier #coldkitchenbundle_speler_geboortedatumold {
   display: none;
 }
-/* line 25, ../scss/_inschrijven.scss */
+/* line 29, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier .alert {
   max-width: 600px;
   -webkit-border-radius: 4px;
@@ -1129,28 +1219,43 @@ header img {
   font-family: 'MyriadProBold';
   margin: auto;
 }
-/* line 37, ../scss/_inschrijven.scss */
+/* line 41, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier .alert.fout {
   font: white;
   background-color: red;
 }
-/* line 44, ../scss/_inschrijven.scss */
+/* line 48, ../scss/_inschrijven.scss */
+.paginainschrijven .formulier #tabs .terug.inschrijven {
+  color: #d3d800;
+}
+/* line 51, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier #tabs ul {
   padding-top: 15px;
   width: 100%;
-  max-width: 600px;
-  text-align: left;
+  text-align: center;
   display: block;
 }
-/* line 51, ../scss/_inschrijven.scss */
+/* line 59, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier #tabs ul li {
   font-size: 23px;
   font-family: 'MyriadProBold';
   display: inline-block;
-  padding: 10px;
-  color: white;
+  padding: 10px 30px;
+  background-color: white;
+  color: #d3d800;
+  -webkit-transform: skew(-12deg, 0deg);
+  -moz-transform: skew(-12deg, 0deg);
+  -ms-transform: skew(-12deg, 0deg);
+  -o-transform: skew(-12deg, 0deg);
+  transform: skew(-12deg, 0deg);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  margin-right: 25px;
 }
-/* line 63, ../scss/_inschrijven.scss */
+/* line 75, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier input[type='submit'] {
   background-color: white;
   color: #aaae01;
@@ -1165,59 +1270,65 @@ header img {
   border: 0px;
 }
 @media (min-width: 600px) {
-  /* line 21, ../scss/_inschrijven.scss */
+  /* line 25, ../scss/_inschrijven.scss */
   .paginainschrijven .formulier {
     margin-top: 35px;
   }
 }
-/* line 80, ../scss/_inschrijven.scss */
+/* line 92, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier h1, .paginainschrijven .formulier h2, .paginainschrijven .formulier h3, .paginainschrijven .formulier h4, .paginainschrijven .formulier h5 {
   color: white;
 }
-/* line 84, ../scss/_inschrijven.scss */
+/* line 96, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier h2 {
   margin-bottom: 35px;
   margin-top: 35px;
 }
-/* line 89, ../scss/_inschrijven.scss */
+@media (max-width: 420px) {
+  /* line 96, ../scss/_inschrijven.scss */
+  .paginainschrijven .formulier h2 {
+    font-size: 22px;
+  }
+}
+/* line 106, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier p {
   font-family: 'MyriadProRegular';
   font-size: 18px;
 }
 @media (min-width: 600px) {
-  /* line 21, ../scss/_inschrijven.scss */
+  /* line 25, ../scss/_inschrijven.scss */
   .paginainschrijven .formulier {
     padding-bottom: 40px;
   }
 }
-/* line 98, ../scss/_inschrijven.scss */
+/* line 115, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier ul {
   list-style: none;
   padding: 0px;
 }
-/* line 101, ../scss/_inschrijven.scss */
+/* line 118, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier ul li {
   list-style: none;
 }
-/* line 106, ../scss/_inschrijven.scss */
+/* line 123, ../scss/_inschrijven.scss */
 .paginainschrijven .formulier a, .paginainschrijven .formulier a:hover, .paginainschrijven .formulier a:focus {
   color: white;
 }
-/* line 111, ../scss/_inschrijven.scss */
+/* line 128, ../scss/_inschrijven.scss */
 .paginainschrijven form.spelers {
   max-width: 100%;
 }
-/* line 114, ../scss/_inschrijven.scss */
+/* line 131, ../scss/_inschrijven.scss */
 .paginainschrijven form.spelers .invoerveld label {
   font-size: 16px;
 }
-/* line 120, ../scss/_inschrijven.scss */
+/* line 137, ../scss/_inschrijven.scss */
 .paginainschrijven form {
   max-width: 600px;
   display: block;
   margin: auto;
 }
-/* line 126, ../scss/_inschrijven.scss */
+/* line 143, ../scss/_inschrijven.scss */
 .paginainschrijven form .titel {
   width: 100%;
   display: block;
@@ -1225,11 +1336,17 @@ header img {
   text-align: left;
   font-family: 'MyriadProLight';
   font-weight: 100;
-  font-size: 22px;
+  font-size: 12px;
   padding-left: 3px;
   margin-top: 7px;
 }
-/* line 130, ../scss/_inschrijven.scss */
+@media (min-width: 600px) {
+  /* line 143, ../scss/_inschrijven.scss */
+  .paginainschrijven form .titel {
+    font-size: 22px;
+  }
+}
+/* line 147, ../scss/_inschrijven.scss */
 .paginainschrijven form .invoerveld {
   width: 100%;
   text-align: left;
@@ -1240,7 +1357,7 @@ header img {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 135, ../scss/_inschrijven.scss */
+/* line 152, ../scss/_inschrijven.scss */
 .paginainschrijven form .invoerveld input, .paginainschrijven form .invoerveld select#coldkitchenbundle_ploeg_competitie {
   width: 100%;
   color: black;
@@ -1273,18 +1390,18 @@ header img {
   font-family: 'MyriadProLight';
   font-size: 16px;
 }
-/* line 149, ../scss/_inschrijven.scss */
+/* line 166, ../scss/_inschrijven.scss */
 .paginainschrijven form .invoerveld select[id^='coldkitchenbundle_ploeg_geboortedatum'], .paginainschrijven form .invoerveld select[id^='coldkitchenbundle_speler_geboortedatum'] {
   border-radius: 7px;
   min-height: 32px;
   padding: 5px;
   margin-right: 5px;
 }
-/* line 156, ../scss/_inschrijven.scss */
+/* line 175, ../scss/_inschrijven.scss */
 .paginainschrijven form .invoerveld select {
   text-align: left;
 }
-/* line 160, ../scss/_inschrijven.scss */
+/* line 179, ../scss/_inschrijven.scss */
 .paginainschrijven form .invoerveld label {
   width: 100%;
   display: block;
@@ -1292,22 +1409,135 @@ header img {
   text-align: left;
   font-family: 'MyriadProLight';
   font-weight: 100;
-  font-size: 22px;
+  font-size: 12px;
   padding-left: 3px;
   margin-top: 7px;
 }
-/* line 166, ../scss/_inschrijven.scss */
+@media (min-width: 600px) {
+  /* line 179, ../scss/_inschrijven.scss */
+  .paginainschrijven form .invoerveld label {
+    font-size: 22px;
+  }
+}
+/* line 185, ../scss/_inschrijven.scss */
 .paginainschrijven form .adres .nopaddingright {
   padding-right: 0px;
   padding-left: 7px;
 }
-/* line 171, ../scss/_inschrijven.scss */
+/* line 190, ../scss/_inschrijven.scss */
 .paginainschrijven form .adres .nopaddingleft {
   padding-left: 0px;
   padding-right: 7px;
 }
-/* line 177, ../scss/_inschrijven.scss */
+/* line 196, ../scss/_inschrijven.scss */
 .paginainschrijven form .captcha {
+  background-color: #cccccc;
+  overflow: hidden;
+  height: 120px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+@media (min-width: 600px) {
+  /* line 196, ../scss/_inschrijven.scss */
+  .paginainschrijven form .captcha {
+    height: 70px;
+  }
+}
+/* line 207, ../scss/_inschrijven.scss */
+.paginainschrijven form .captcha input[type='submit'] {
+  background-color: #aaae01;
+  color: white;
+  font-family: 'MyriadProBoldItalic';
+  width: 100%;
+  min-height: 18px;
+  text-transform: uppercase;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 0px;
+  top: 0px;
+}
+@media (min-width: 600px) {
+  /* line 207, ../scss/_inschrijven.scss */
+  .paginainschrijven form .captcha input[type='submit'] {
+    height: 90%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 18px;
+  }
+}
+/* line 226, ../scss/_inschrijven.scss */
+.paginainschrijven form .captcha div {
+  padding: 2px;
+}
+@media (min-width: 600px) {
+  /* line 226, ../scss/_inschrijven.scss */
+  .paginainschrijven form .captcha div {
+    height: 100%;
+  }
+}
+/* line 234, ../scss/_inschrijven.scss */
+.paginainschrijven form .captcha div:nth-child(2) {
+  padding-top: 7px;
+}
+/* line 238, ../scss/_inschrijven.scss */
+.paginainschrijven form .captcha div:nth-child(3) {
+  padding: 5px 10px;
+}
+/* line 242, ../scss/_inschrijven.scss */
+.paginainschrijven form .captcha h5 {
+  font-family: 'MyriadProBold';
+  font-size: 16px;
+  color: black;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 3px;
+}
+/* line 251, ../scss/_inschrijven.scss */
+.paginainschrijven form .captcha input {
+  margin-bottom: 6px;
+  color: black;
+  border: 0;
+  width: 100%;
+  margin: auto;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  position: relative;
+  top: 12px;
+}
+@media (max-width: 420px) {
+  /* line 251, ../scss/_inschrijven.scss */
+  .paginainschrijven form .captcha input {
+    width: 90%;
+    margin-right: 6px;
+  }
+}
+/* line 268, ../scss/_inschrijven.scss */
+.paginainschrijven form .captcha img {
+  padding: 5px;
+  padding-left: 7px;
+  min-height: 65px;
+  width: 100%;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  border-radius: 14px;
+}
+/* line 283, ../scss/_inschrijven.scss */
+.paginainschrijven form .captchaold {
   margin-top: 20px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1316,47 +1546,47 @@ header img {
   border-radius: 5px;
   background-color: #cccccc;
 }
-/* line 181, ../scss/_inschrijven.scss */
-.paginainschrijven form .captcha label {
+/* line 287, ../scss/_inschrijven.scss */
+.paginainschrijven form .captchaold label {
   display: none;
 }
-/* line 185, ../scss/_inschrijven.scss */
-.paginainschrijven form .captcha .image {
+/* line 291, ../scss/_inschrijven.scss */
+.paginainschrijven form .captchaold .image {
   padding: 7px;
 }
-/* line 187, ../scss/_inschrijven.scss */
-.paginainschrijven form .captcha .image img {
+/* line 293, ../scss/_inschrijven.scss */
+.paginainschrijven form .captchaold .image img {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 191, ../scss/_inschrijven.scss */
-.paginainschrijven form .captcha .antwoord {
+/* line 297, ../scss/_inschrijven.scss */
+.paginainschrijven form .captchaold .antwoord {
   padding-right: 0px;
 }
-/* line 193, ../scss/_inschrijven.scss */
-.paginainschrijven form .captcha .antwoord h5 {
+/* line 299, ../scss/_inschrijven.scss */
+.paginainschrijven form .captchaold .antwoord h5 {
   font-family: 'MyriadProBold';
   font-size: 16px;
   color: black;
   text-align: left;
 }
-/* line 203, ../scss/_inschrijven.scss */
-.paginainschrijven form .captcha .antwoord .row div {
+/* line 309, ../scss/_inschrijven.scss */
+.paginainschrijven form .captchaold .antwoord .row div {
   padding: 0px;
   padding-right: 5px;
 }
-/* line 205, ../scss/_inschrijven.scss */
-.paginainschrijven form .captcha .antwoord .row div input[type='submit'] {
+/* line 311, ../scss/_inschrijven.scss */
+.paginainschrijven form .captchaold .antwoord .row div input[type='submit'] {
   background-color: #aaae01;
   color: white;
   font-family: 'MyriadProBoldItalic';
   text-transform: uppercase;
 }
-/* line 212, ../scss/_inschrijven.scss */
-.paginainschrijven form .captcha .antwoord .row div input {
+/* line 318, ../scss/_inschrijven.scss */
+.paginainschrijven form .captchaold .antwoord .row div input {
   height: 28px;
   border: 0;
   -webkit-border-radius: 6px;
@@ -1364,53 +1594,54 @@ header img {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   border-radius: 6px;
+  color: black;
 }
 
-/* line 227, ../scss/_inschrijven.scss */
+/* line 334, ../scss/_inschrijven.scss */
 #carousel-spelers {
   margin-top: 15px;
 }
-/* line 229, ../scss/_inschrijven.scss */
+/* line 336, ../scss/_inschrijven.scss */
 #carousel-spelers .controls {
   margin-bottom: 10px;
 }
-/* line 232, ../scss/_inschrijven.scss */
+/* line 339, ../scss/_inschrijven.scss */
 #carousel-spelers .controls .volgende, #carousel-spelers .controls .vorige {
   cursor: pointer;
 }
-/* line 235, ../scss/_inschrijven.scss */
+/* line 342, ../scss/_inschrijven.scss */
 #carousel-spelers .controls .vorige {
   float: right;
   visibility: hidden;
 }
-/* line 239, ../scss/_inschrijven.scss */
+/* line 346, ../scss/_inschrijven.scss */
 #carousel-spelers .controls .volgende {
   float: left;
 }
-/* line 242, ../scss/_inschrijven.scss */
-#carousel-spelers .controls #spelernaam {
-  font-size: 20px;
+/* line 349, ../scss/_inschrijven.scss */
+#carousel-spelers .controls #titelspelernaam {
+  font-size: 26px;
 }
-/* line 248, ../scss/_inschrijven.scss */
+/* line 355, ../scss/_inschrijven.scss */
 #carousel-spelers .uitleg h5, #carousel-spelers .uitleg h6 {
   color: #6b7103;
   font-family: 'MyriadProRegular';
 }
-/* line 253, ../scss/_inschrijven.scss */
+/* line 360, ../scss/_inschrijven.scss */
 #carousel-spelers .uitleg h5 {
   font-size: 20px;
 }
-/* line 257, ../scss/_inschrijven.scss */
+/* line 364, ../scss/_inschrijven.scss */
 #carousel-spelers .uitleg h6 {
   font-size: 16px;
 }
 
-/* line 266, ../scss/_inschrijven.scss */
+/* line 373, ../scss/_inschrijven.scss */
 .hiddenspelernummer, .hiddendirty, .hiddenrow {
   display: none;
 }
 
-/* line 269, ../scss/_inschrijven.scss */
+/* line 376, ../scss/_inschrijven.scss */
 .spelerstabel {
   margin-top: 15px;
   background-color: #bebf87;
@@ -1421,43 +1652,43 @@ header img {
   border-radius: 5px;
   border: solid 2px white;
 }
-/* line 275, ../scss/_inschrijven.scss */
+/* line 382, ../scss/_inschrijven.scss */
 .spelerstabel table {
   margin-bottom: 0px;
 }
-/* line 279, ../scss/_inschrijven.scss */
+/* line 386, ../scss/_inschrijven.scss */
 .spelerstabel table tbody tr td, .spelerstabel table tbody tr th {
   padding: 1px;
   text-align: left;
   vertical-align: middle;
   padding-left: 4px;
 }
-/* line 286, ../scss/_inschrijven.scss */
+/* line 393, ../scss/_inschrijven.scss */
 .spelerstabel table tbody tr td:last-child img {
   display: block;
   margin: auto;
 }
-/* line 294, ../scss/_inschrijven.scss */
+/* line 401, ../scss/_inschrijven.scss */
 .spelerstabel table tbody tr:hover td, .spelerstabel table tbody tr:hover th {
   background-color: #83853d;
   cursor: pointer;
 }
 
-/* line 305, ../scss/_inschrijven.scss */
+/* line 412, ../scss/_inschrijven.scss */
 #modalbevestig, .modal {
   color: #6b7103;
 }
-/* line 307, ../scss/_inschrijven.scss */
+/* line 414, ../scss/_inschrijven.scss */
 #modalbevestig .modal-title, .modal .modal-title {
   color: #6b7103;
   font-family: 'MyriadProBoldItalic';
 }
-/* line 312, ../scss/_inschrijven.scss */
+/* line 419, ../scss/_inschrijven.scss */
 #modalbevestig .modal-body p, .modal .modal-body p {
   font-size: 16px;
   font-family: 'MyriadProRegular';
 }
-/* line 317, ../scss/_inschrijven.scss */
+/* line 424, ../scss/_inschrijven.scss */
 #modalbevestig .btn-primary, .modal .btn-primary {
   background-image: -webkit-gradient(linear, to bottom, to top, color-stop(0%, #d3d800), color-stop(100%, #6b7103));
   background-image: -webkit-linear-gradient(to bottom, #d3d800, #6b7103);
@@ -1466,7 +1697,7 @@ header img {
   background-image: linear-gradient(to bottom, #d3d800, #6b7103);
   border: solid 1px white;
 }
-/* line 321, ../scss/_inschrijven.scss */
+/* line 428, ../scss/_inschrijven.scss */
 #modalbevestig .btn-primary:hover, #modalbevestig .btn-primary:focus, #modalbevestig .btn-primary:active, .modal .btn-primary:hover, .modal .btn-primary:focus, .modal .btn-primary:active {
   background-image: -webkit-gradient(linear, to bottom, to top, color-stop(0%, #6b7103), color-stop(100%, #d3d800));
   background-image: -webkit-linear-gradient(to bottom, #6b7103, #d3d800);
@@ -1478,7 +1709,7 @@ header img {
   background-position: 0;
 }
 
-/* line 329, ../scss/_inschrijven.scss */
+/* line 436, ../scss/_inschrijven.scss */
 #modalload {
   -webkit-transition: 0.05s;
   -moz-transition: 0.05s;
@@ -1487,7 +1718,7 @@ header img {
   color: #d3d800;
 }
 
-/* line 334, ../scss/_inschrijven.scss */
+/* line 441, ../scss/_inschrijven.scss */
 #foutmelding {
   display: none;
   color: red;
@@ -1497,20 +1728,20 @@ header img {
   padding-top: 15px;
 }
 @media (min-width: 600px) {
-  /* line 334, ../scss/_inschrijven.scss */
+  /* line 441, ../scss/_inschrijven.scss */
   #foutmelding {
     padding-top: 40px;
   }
 }
 
-/* line 350, ../scss/_inschrijven.scss */
+/* line 457, ../scss/_inschrijven.scss */
 .groen {
   background-color: #aaae01;
   width: 100%;
   padding: 30px;
 }
 
-/* line 357, ../scss/_inschrijven.scss */
+/* line 464, ../scss/_inschrijven.scss */
 #login input {
   width: 100%;
   color: black;
@@ -1523,7 +1754,7 @@ header img {
   border: 0;
   padding: 6px;
 }
-/* line 365, ../scss/_inschrijven.scss */
+/* line 472, ../scss/_inschrijven.scss */
 #login label {
   width: 100%;
   display: block;
@@ -1531,11 +1762,17 @@ header img {
   text-align: left;
   font-family: 'MyriadProLight';
   font-weight: 100;
-  font-size: 22px;
+  font-size: 12px;
   padding-left: 3px;
   margin-top: 7px;
 }
-/* line 369, ../scss/_inschrijven.scss */
+@media (min-width: 600px) {
+  /* line 472, ../scss/_inschrijven.scss */
+  #login label {
+    font-size: 22px;
+  }
+}
+/* line 476, ../scss/_inschrijven.scss */
 #login input[type='submit'] {
   border: 0;
   color: #d3d800;
@@ -1555,14 +1792,25 @@ header img {
   display: block;
   float: left;
   position: relative;
-  height: 350px;
+  height: 60%;
 }
-/* line 14, ../scss/_fotos.scss */
+@media (min-width: 600px) {
+  /* line 9, ../scss/_fotos.scss */
+  .fotolijn .eerstefoto, .fotolijn .tweedefoto, .fotolijn .derdefoto {
+    height: 350px;
+  }
+}
+/* line 18, ../scss/_fotos.scss */
+.fotolijn .eerstefoto a, .fotolijn .tweedefoto a, .fotolijn .derdefoto a {
+  width: 100%;
+  display: block;
+}
+/* line 23, ../scss/_fotos.scss */
 .fotolijn .eerstefoto .overlay, .fotolijn .eerstefoto .foto, .fotolijn .tweedefoto .overlay, .fotolijn .tweedefoto .foto, .fotolijn .derdefoto .overlay, .fotolijn .derdefoto .foto {
   margin: auto;
   display: block;
 }
-/* line 19, ../scss/_fotos.scss */
+/* line 28, ../scss/_fotos.scss */
 .fotolijn .eerstefoto .overlay, .fotolijn .tweedefoto .overlay, .fotolijn .derdefoto .overlay {
   overflow: hidden;
   position: relative;
@@ -1570,19 +1818,29 @@ header img {
   z-index: 2;
   background: transparent;
   border: solid 5px white;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
   top: 50%;
-  -webkit-transform: translateY(-50%) skewX(-10deg);
-  -moz-transform: translateY(-50%) skewX(-10deg);
-  -ms-transform: translateY(-50%) skewX(-10deg);
-  -o-transform: translateY(-50%) skewX(-10deg);
-  transform: translateY(-50%) skewX(-10deg);
+  -webkit-transform: skewX(-10deg);
+  -moz-transform: skewX(-10deg);
+  -ms-transform: skewX(-10deg);
+  -o-transform: skewX(-10deg);
+  transform: skewX(-10deg);
 }
-/* line 33, ../scss/_fotos.scss */
+@media (min-width: 600px) {
+  /* line 28, ../scss/_fotos.scss */
+  .fotolijn .eerstefoto .overlay, .fotolijn .tweedefoto .overlay, .fotolijn .derdefoto .overlay {
+    -webkit-transform: translateY(-50%) skewX(-10deg);
+    -moz-transform: translateY(-50%) skewX(-10deg);
+    -ms-transform: translateY(-50%) skewX(-10deg);
+    -o-transform: translateY(-50%) skewX(-10deg);
+    transform: translateY(-50%) skewX(-10deg);
+  }
+}
+/* line 46, ../scss/_fotos.scss */
 .fotolijn .eerstefoto .overlay img, .fotolijn .tweedefoto .overlay img, .fotolijn .derdefoto .overlay img {
   /* min-width: 120%;
   min-height: 120%;
@@ -1596,7 +1854,7 @@ header img {
   position: relative;
   left: -50px;
 }
-/* line 45, ../scss/_fotos.scss */
+/* line 58, ../scss/_fotos.scss */
 .fotolijn .eerstefoto .foto, .fotolijn .tweedefoto .foto, .fotolijn .derdefoto .foto {
   position: absolute;
   top: 50%;
@@ -1606,37 +1864,94 @@ header img {
   transform: translate(-50%, -50%);
   z-index: 1;
 }
-/* line 50, ../scss/_fotos.scss */
+/* line 63, ../scss/_fotos.scss */
 .fotolijn .eerstefoto, .fotolijn .derdefoto {
   width: 25%;
 }
-/* line 51, ../scss/_fotos.scss */
-.fotolijn .eerstefoto .overlay, .fotolijn .derdefoto .overlay {
-  width: 200px;
-  height: 200px;
+@media (max-width: 420px) {
+  /* line 63, ../scss/_fotos.scss */
+  .fotolijn .eerstefoto, .fotolijn .derdefoto {
+    display: none;
+  }
 }
-/* line 55, ../scss/_fotos.scss */
+/* line 67, ../scss/_fotos.scss */
+.fotolijn .eerstefoto .overlay, .fotolijn .derdefoto .overlay {
+  width: 80%;
+}
+@media (min-width: 600px) {
+  /* line 67, ../scss/_fotos.scss */
+  .fotolijn .eerstefoto .overlay, .fotolijn .derdefoto .overlay {
+    width: 200px;
+    height: 200px;
+  }
+}
+/* line 75, ../scss/_fotos.scss */
 .fotolijn .eerstefoto .overlay img, .fotolijn .derdefoto .overlay img {
   width: 300px;
   height: auto;
 }
-/* line 63, ../scss/_fotos.scss */
+/* line 83, ../scss/_fotos.scss */
 .fotolijn .tweedefoto {
-  width: 50%;
+  width: 100%;
 }
-/* line 64, ../scss/_fotos.scss */
+/* line 84, ../scss/_fotos.scss */
 .fotolijn .tweedefoto .overlay {
-  width: 300px;
-  height: 300px;
+  width: 80%;
 }
-/* line 67, ../scss/_fotos.scss */
+@media (min-width: 600px) {
+  /* line 84, ../scss/_fotos.scss */
+  .fotolijn .tweedefoto .overlay {
+    width: 300px;
+    height: 300px;
+  }
+}
+/* line 91, ../scss/_fotos.scss */
 .fotolijn .tweedefoto .overlay img {
   width: 450px;
   height: auto;
   left: -70px;
 }
+@media (min-width: 600px) {
+  /* line 83, ../scss/_fotos.scss */
+  .fotolijn .tweedefoto {
+    width: 50%;
+  }
+}
 
-/* line 78, ../scss/_fotos.scss */
+/* line 105, ../scss/_fotos.scss */
+.paginafotos {
+  height: 90%;
+}
+/* line 107, ../scss/_fotos.scss */
+.paginafotos .fotos {
+  min-height: 13%;
+}
+/* line 110, ../scss/_fotos.scss */
+.paginafotos footer {
+  min-height: 87%;
+}
+@media (min-width: 600px) {
+  /* line 110, ../scss/_fotos.scss */
+  .paginafotos footer {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, ../scss/_fotos.scss */
+  .paginafotos footer {
+    min-height: 87%;
+  }
+}
+
+@media (max-width: 420px) {
+  /* line 124, ../scss/_fotos.scss */
+  .fotos {
+    width: 100%;
+    padding: 0px;
+  }
+}
+/* line 131, ../scss/_fotos.scss */
 .fotos i {
   position: relative;
   top: 50%;
@@ -1646,28 +1961,219 @@ header img {
   color: white;
   cursor: pointer;
 }
-/* line 83, ../scss/_fotos.scss */
+/* line 136, ../scss/_fotos.scss */
 .fotos .row {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  width: 100%;
   height: 350px;
 }
-/* line 85, ../scss/_fotos.scss */
+/* line 141, ../scss/_fotos.scss */
 .fotos .row .col-xs-1 {
   height: 100%;
 }
+@media (max-width: 420px) {
+  /* line 141, ../scss/_fotos.scss */
+  .fotos .row .col-xs-1 {
+    padding: 0px;
+  }
+}
+/* line 147, ../scss/_fotos.scss */
+.fotos .row .col-xs-10 {
+  padding: 0px;
+}
 
-/* line 91, ../scss/_fotos.scss */
+/* line 153, ../scss/_fotos.scss */
 #huidige, #aantalfotos {
   display: none;
 }
 
-/* line 95, ../scss/_fotos.scss */
+/* line 157, ../scss/_fotos.scss */
 .volgendefoto, .vorigefoto {
   display: inline-block;
 }
 
-/* line 98, ../scss/_fotos.scss */
+/* line 160, ../scss/_fotos.scss */
 .volgendefoto.onzichtbaar, .vorigefoto.onzichtbaar {
   display: none;
+}
+
+/* line 164, ../scss/_fotos.scss */
+.albums {
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* line 167, ../scss/_fotos.scss */
+.albums a, .albums a:hover, .albums a:focus {
+  color: white;
+}
+/* line 171, ../scss/_fotos.scss */
+.albums span {
+  color: white;
+  font-family: 'MyriadProRegular';
+  font-size: 18px;
+  display: inline-block;
+}
+@media (min-width: 1200px) {
+  /* line 171, ../scss/_fotos.scss */
+  .albums span {
+    font-size: 22px;
+  }
+}
+/* line 182, ../scss/_fotos.scss */
+.albums span .tekst {
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  top: -6px;
+}
+
+/* line 193, ../scss/_fotos.scss */
+.round {
+  border-corner-shape: scoop;
+}
+
+/* line 197, ../scss/_fotos.scss */
+.fotooverzicht {
+  overflow: hidden;
+}
+/* line 199, ../scss/_fotos.scss */
+.fotooverzicht .fotocontainer {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  width: 50%;
+  float: left;
+}
+@media (min-width: 600px) {
+  /* line 199, ../scss/_fotos.scss */
+  .fotooverzicht .fotocontainer {
+    width: 20%;
+  }
+}
+/* line 209, ../scss/_fotos.scss */
+.fotooverzicht .foto {
+  padding: 10px;
+  border: solid 5px white;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-transform: skew(-12deg);
+  -moz-transform: skew(-12deg);
+  -ms-transform: skew(-12deg);
+  -o-transform: skew(-12deg);
+  transform: skew(-12deg);
+  width: 100%;
+  max-width: 165px;
+  display: block;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 720px) {
+  /* line 209, ../scss/_fotos.scss */
+  .fotooverzicht .foto {
+    border: solid 8px white;
+  }
+}
+@media (min-width: 600px) {
+  /* line 209, ../scss/_fotos.scss */
+  .fotooverzicht .foto {
+    max-width: none;
+  }
+}
+/* line 234, ../scss/_fotos.scss */
+.fotooverzicht .foto img {
+  -webkit-transform: skew(12deg);
+  -moz-transform: skew(12deg);
+  -ms-transform: skew(12deg);
+  -o-transform: skew(12deg);
+  transform: skew(12deg);
+  max-width: 300%;
+  height: 150%;
+  position: absolute;
+  left: -30px;
+  top: 0px;
+}
+/* line 242, ../scss/_fotos.scss */
+.fotooverzicht .foto img.portrait {
+  width: 150%;
+  height: auto;
+  left: 0px;
+  top: -50px;
+}
+@media (max-width: 420px) {
+  /* line 242, ../scss/_fotos.scss */
+  .fotooverzicht .foto img.portrait {
+    left: -30px;
+  }
+}
+/* line 254, ../scss/_fotos.scss */
+.fotooverzicht .foto a {
+  display: block;
+  min-height: 100px;
+}
+@media (min-width: 600px) {
+  /* line 254, ../scss/_fotos.scss */
+  .fotooverzicht .foto a {
+    min-height: 120px;
+  }
+}
+
+/* line 264, ../scss/_fotos.scss */
+.paginering {
+  text-align: center;
+  color: white;
+}
+/* line 266, ../scss/_fotos.scss */
+.paginering a.verborgen {
+  visibility: hidden;
+}
+/* line 269, ../scss/_fotos.scss */
+.paginering a.pagina {
+  font-family: 'MyriadProBoldItalic';
+  color: white;
+  font-size: 25px;
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+/* line 278, ../scss/_fotos.scss */
+.paginering a.pagina.actief {
+  padding: 0px 8px;
+  background-color: #575f04;
+  -webkit-transform: skew(-12deg);
+  -moz-transform: skew(-12deg);
+  -ms-transform: skew(-12deg);
+  -o-transform: skew(-12deg);
+  transform: skew(-12deg);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 283, ../scss/_fotos.scss */
+.paginering a.pagina.actief span.tekst {
+  -webkit-transform: skew(12deg);
+  -moz-transform: skew(12deg);
+  -ms-transform: skew(12deg);
+  -o-transform: skew(12deg);
+  transform: skew(12deg);
+}
+/* line 288, ../scss/_fotos.scss */
+.paginering a {
+  color: white;
+}
+/* line 291, ../scss/_fotos.scss */
+.paginering a.icoontje {
+  position: relative;
+  top: -6px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* line 1, ../scss/_test.scss */
@@ -1751,9 +2257,15 @@ header img {
   text-align: left;
   font-family: 'MyriadProLight';
   font-weight: 100;
-  font-size: 22px;
+  font-size: 12px;
   padding-left: 3px;
   margin-top: 7px;
+}
+@media (min-width: 600px) {
+  /* line 17, ../scss/_contact.scss */
+  .contactformulier form .titel {
+    font-size: 22px;
+  }
 }
 /* line 21, ../scss/_contact.scss */
 .contactformulier form .invoerveld {
@@ -1932,7 +2444,31 @@ footer p {
   margin: auto;
 }
 
-/* line 36, ../scss/Coldkitchen.scss */
+/* line 1, ../scss/_programma.scss */
+.paginaprogramma {
+  height: 90%;
+}
+/* line 4, ../scss/_programma.scss */
+.paginaprogramma .programmatitel {
+  height: 15%;
+}
+/* line 8, ../scss/_programma.scss */
+.paginaprogramma footer {
+  min-height: 85%;
+}
+/* line 11, ../scss/_programma.scss */
+.paginaprogramma footer p {
+  font-family: 'MyriadProRegular';
+  font-size: 18px;
+}
+@media (min-width: 1200px) {
+  /* line 11, ../scss/_programma.scss */
+  .paginaprogramma footer p {
+    font-size: 22px;
+  }
+}
+
+/* line 38, ../scss/Coldkitchen.scss */
 html, body {
   width: 100%;
   height: 100%;
@@ -1941,17 +2477,17 @@ html, body {
   padding: 0px;
 }
 
-/* line 43, ../scss/Coldkitchen.scss */
+/* line 45, ../scss/Coldkitchen.scss */
 body {
   font-family: 'MyriadProRegular';
 }
 
-/* line 47, ../scss/Coldkitchen.scss */
+/* line 49, ../scss/Coldkitchen.scss */
 a, a:hover, a:focus, a:active {
   text-decoration: none;
 }
 
-/* line 51, ../scss/Coldkitchen.scss */
+/* line 53, ../scss/Coldkitchen.scss */
 h1, h2, h3, h4, h5 {
   text-align: center;
   width: 100%;
@@ -1959,42 +2495,47 @@ h1, h2, h3, h4, h5 {
   font-family: 'MyriadProBoldItalic';
 }
 
-/* line 57, ../scss/Coldkitchen.scss */
+/* line 59, ../scss/Coldkitchen.scss */
 h1 {
   font-size: 36px;
   color: #080808;
 }
 @media (min-width: 600px) {
-  /* line 57, ../scss/Coldkitchen.scss */
+  /* line 59, ../scss/Coldkitchen.scss */
   h1 {
     font-size: 72px;
   }
 }
 
-/* line 65, ../scss/Coldkitchen.scss */
+/* line 67, ../scss/Coldkitchen.scss */
 h3 {
   color: #605f60;
   font-size: 22px;
 }
 
-/* line 69, ../scss/Coldkitchen.scss */
+/* line 71, ../scss/Coldkitchen.scss */
 h5 {
   font-family: 'MyriadProLight';
   font-size: 22px;
 }
 
-/* line 75, ../scss/Coldkitchen.scss */
+/* line 77, ../scss/Coldkitchen.scss */
 .section {
   overflow: hidden;
-  padding: 20px 0px;
+}
+@media (min-width: 600px) {
+  /* line 77, ../scss/Coldkitchen.scss */
+  .section {
+    padding: 20px 0px;
+  }
 }
 
-/* line 82, ../scss/Coldkitchen.scss */
+/* line 83, ../scss/Coldkitchen.scss */
 .section.eerstepagina {
   padding: 0px;
 }
 
-/* line 86, ../scss/Coldkitchen.scss */
+/* line 87, ../scss/Coldkitchen.scss */
 .overtest {
   display: none;
   position: fixed;
@@ -2004,7 +2545,7 @@ h5 {
   height: 100%;
   z-index: -2;
 }
-/* line 94, ../scss/Coldkitchen.scss */
+/* line 95, ../scss/Coldkitchen.scss */
 .overtest:before {
   content: '';
   position: absolute;
@@ -2019,8 +2560,14 @@ h5 {
   background: linear-gradient(to bottom right, rgba(183, 199, 15, 0.6), rgba(183, 199, 15, 0.6)), radial-gradient(#cc0000, #ffffff 100px);
 }
 
-/* line 105, ../scss/Coldkitchen.scss */
+/* line 107, ../scss/Coldkitchen.scss */
+.backstretch {
+  mix-blend-mode: multiply;
+}
+
+/* line 111, ../scss/Coldkitchen.scss */
 .test {
+  background-color: #758008 !important;
   position: fixed;
   top: 0;
   left: 0;
@@ -2028,7 +2575,7 @@ h5 {
   height: 100%;
   z-index: -1;
 }
-/* line 112, ../scss/Coldkitchen.scss */
+/* line 119, ../scss/Coldkitchen.scss */
 .test:before {
   content: '';
   position: absolute;
@@ -2036,11 +2583,12 @@ h5 {
   right: 0;
   bottom: 0;
   left: 0;
-  background: -webkit-gradient(radial, 100% 100%, 0, 100% 100%, 100, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.9)));
-  background: -webkit-radial-gradient(100% 100%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
-  background: -moz-radial-gradient(100% 100%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
-  background: -o-radial-gradient(100% 100%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
-  background: radial-gradient(100% 100%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+  background: -webkit-gradient(radial, 35% 35%, 0, 35% 35%, 100, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-radial-gradient(35% 35%, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+  background: -moz-radial-gradient(35% 35%, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+  background: -o-radial-gradient(35% 35%, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+  background: radial-gradient(35% 35%, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+  background-position: center center;
   /* background: -moz-radial-gradient(center, ellipse cover,  rgba(183,193,10,0.24) 0%, rgba(183,193,10,0.24) 1%, rgba(183,193,15,0.6) 100%); FF3.6+
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(183,193,10,0.24)), color-stop(1%,rgba(183,193,10,0.24)), color-stop(100%,rgba(183,193,15,0.6))); Chrome,Safari4+
   background: -webkit-radial-gradient(center, ellipse cover,  rgba(183,193,10,0.24) 0%,rgba(183,193,10,0.24) 1%,rgba(183,193,15,0.6) 100%); Chrome10+,Safari5.1+
@@ -2050,27 +2598,27 @@ h5 {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3db7c10a', endColorstr='#99b7c10f',GradientType=1 ); IE6-9 fallback on horizontal gradient  		 */
 }
 
-/* line 132, ../scss/Coldkitchen.scss */
+/* line 142, ../scss/Coldkitchen.scss */
 .pagina {
   overflow: hidden;
 }
 
-/* line 136, ../scss/Coldkitchen.scss */
+/* line 146, ../scss/Coldkitchen.scss */
 .nopadding {
   padding: 0px;
 }
 
-/* line 140, ../scss/Coldkitchen.scss */
+/* line 150, ../scss/Coldkitchen.scss */
 .nopaddingright {
   padding-right: 0px;
 }
 
-/* line 144, ../scss/Coldkitchen.scss */
+/* line 154, ../scss/Coldkitchen.scss */
 .nopaddingleft {
   padding-left: 0px;
 }
 
-/* line 148, ../scss/Coldkitchen.scss */
+/* line 158, ../scss/Coldkitchen.scss */
 .modalloading {
   display: none;
   position: fixed;
@@ -2084,24 +2632,24 @@ h5 {
 
 /* When the body has the loading class, we turn
    the scrollbar off with overflow:hidden */
-/* line 164, ../scss/Coldkitchen.scss */
+/* line 174, ../scss/Coldkitchen.scss */
 body.loading {
   overflow: hidden;
 }
 
 /* Anytime the body has the loading class, our
    modal element will be visible */
-/* line 170, ../scss/Coldkitchen.scss */
+/* line 180, ../scss/Coldkitchen.scss */
 body.loading .modalloading {
   display: block;
 }
 
-/* line 174, ../scss/Coldkitchen.scss */
+/* line 184, ../scss/Coldkitchen.scss */
 .hidden {
   display: hidden;
 }
 
-/* line 178, ../scss/Coldkitchen.scss */
+/* line 188, ../scss/Coldkitchen.scss */
 a.terugfooter {
   display: block;
   -webkit-transform: skew(-12deg);

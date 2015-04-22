@@ -37,6 +37,13 @@ class AchtergrondFoto
      */
     private $zichtbaar;
 
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="portrait", type="boolean")
+     */
+    private $portrait;
+
 
     /**
      * Get id

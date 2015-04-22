@@ -97,7 +97,7 @@ class Ploeg implements UserInterface, \Serializable
     /**
      * @var string
      *
-     * @ORM\Column(name="Telefoon", type="string", length=255)
+     * @ORM\Column(name="Telefoon", type="string", length=255, nullable=true)
      */
     private $telefoon;
 

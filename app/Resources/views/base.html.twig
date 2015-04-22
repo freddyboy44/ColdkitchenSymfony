@@ -3,29 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}
-            {% stylesheets filter='cssrewrite'
-                '%kernel.root_dir%/../vendor/twbs/bootstrap/dist/css/bootstrap.css'
-                '%kernel.root_dir%/../vendor/twbs/bootstrap/dist/css/bootstrap-theme.css'
-                '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'
-                'bundles/coldkitchen/css/Coldkitchen.css'
-                'bundles/coldkitchen/css/magnific-popup.css'
-            %}
-                <link rel="stylesheet" href="{{ asset_url }}">
-            {% endstylesheets %}
-        {% endblock %}
+        <title>{% block title %}Home{% endblock %} - Coldkitchen Tornooi</title>
+        {% include "::stylesheets.html.twig" %}
+        
         {% block javascripts %}
-            {% javascripts
+            {% javascripts output='js/main.js' filter='uglifyjs2' 
                 '%kernel.root_dir%/../vendor/components/jquery/jquery.js'
                 '%kernel.root_dir%/../vendor/twbs/bootstrap/dist/js/bootstrap.js'
                 '%kernel.root_dir%/../vendor/components/underscore/underscore-min.js'
                 '%kernel.root_dir%/../vendor/moment/moment/min/moment.min.js'
                 '%kernel.root_dir%/../vendor/dimsemenov/magnific-popup/dist/jquery.magnific-popup.min.js'
-                '@ColdkitchenBundle/Resources/public/js/altijd/*'
+                    '@ColdkitchenBundle/Resources/public/js/altijd/*'
                 'https://maps.googleapis.com/maps/api/js'
             %}
-            <script src="{{ asset_url }}"></script>
+            <script src="{{ asset('js/main.js') }}"></script>
             {% endjavascripts %}
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
@@ -51,4 +42,14 @@
         {% block body %}{% endblock %}
         
     </body>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-16154352-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 </html>

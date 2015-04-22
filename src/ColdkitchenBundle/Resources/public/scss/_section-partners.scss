@@ -1,9 +1,9 @@
 #section-partners {
 	background-color: $partnerskleur;
 	
-	height: 100%;
+	//min-height: 100%;
 	.container  {
-		height: 100%;
+		//min-height: 100%;
 		position: relative;
 	}
 	
@@ -25,26 +25,44 @@
 		@include breakpoint(tablet) {
 			padding: 30px;
 		}
-		height: 200px;
+		height: 100px;
+		@include breakpoint(tablet) {
+			height: 200px;	
+		}
+		
 		
 		img {
 			//@include vertical-align();
+			@include breakpoint(mobileonly) {
+				max-height: 110px;
+			}
 			max-height: 170px;
 		}
 	}
 	.supplierfoto {
 		padding: 15px;
-		height: 150px;
+		height: 75px;
 		@include breakpoint(tablet) {
 			padding: 30px;
+			height: 150px;
 		}
+		
+		a, span.leeg {
+			@include breakpoint(mobileonly) {
+				margin: 3px;
+			}
+		}
+
 		img {
 			max-height: 130px;
 		}
 	}
 	div.partners{
 		padding: 20px;
-		height: 110px;
+		height: 50px;
+		@include breakpoint(tablet) {
+			height: 100px;
+		}
 		img {
 			max-height: 90px;
 		}
